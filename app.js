@@ -74,6 +74,10 @@ app.get('/pARk', function(req, res){
     res.render('dmv.html',{root: dir[0]});
 });
 
+app.get('/snacks', function(req, res){
+    res.render('snackshack.html',{root: dir[0]});
+});
+
 app.get('/remote', function(req, res){
     res.render('remote.html',{root: dir[0]});
 });
