@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pARk | public Augmented Reality kinectome</title>
+    <link rel='stylesheet' type='text/css' href='../css/metropARk.css'/>
+    <script src='../js/socket.io.js'></script>
+    <script src='../js/jquery-3.2.1.min.js'></script>
+    <script src='../js/broadcastOriginalAugmentedRealityDapps.js'></script>
+    <script>        
+        var stationInFocus = 'Silver Spring';
+        
+        document.addEventListener('DOMContentLoaded', function(){
+            let MetroMap = broadcastOriginalAugmentedRealityDapps.main.map;
+            let MetroStations = broadcastOriginalAugmentedRealityDapps.main.stations;
+            
+            setTimeout(function(){
+                let yellowKeys = Object.keys(MetroStations.yellowLineStations);
+                
+                for(var i=0; i<yellowKeys.length; i++){
+                    MetroMap.addStation(MetroStations.yellowLineStations, yellowKeys[i], i);
+                }
+                
+                let greenKeys = Object.keys(MetroStations.greenLineStations);
+                
+                for(var j=0; j<greenKeys.length; j++){
+                    MetroMap.addStation(MetroStations.greenLineStations, greenKeys[j], j);
+                }
+                
+                let blueKeys = Object.keys(MetroStations.blueLineStations);
+                
+                for(var k=0; k<blueKeys.length; k++){
+                    MetroMap.addStation(MetroStations.blueLineStations, blueKeys[k], k);
+                }
+                
+                let orangeKeys = Object.keys(MetroStations.orangeLineStations);
+                
+                for(var l=0; l<orangeKeys.length; l++){
+                    MetroMap.addStation(MetroStations.orangeLineStations, orangeKeys[l], l);
+                }
+                
+                let redKeys = Object.keys(MetroStations.redLineStations);
+                
+                for(var m=0; m<redKeys.length; m++){
+                    MetroMap.addStation(MetroStations.redLineStations, redKeys[m], m);
+                }
+                
+                let silverKeys = Object.keys(MetroStations.silverLineStations);
+                
+                for(var n=0; n<silverKeys.length; n++){
+                    MetroMap.addStation(MetroStations.silverLineStations, silverKeys[n], n);
+                }
+                
+                $('.station-marker').click(function(){
+                    let ygStations = MetroMap.extend(MetroStations.yellowLineStations, MetroStations.greenLineStations);
+                    let ygbStations = MetroMap.extend(ygStations, MetroStations.blueLineStations);
+                    let rygbStations = MetroMap.extend(MetroStations.redLineStations, ygbStations);
+                    let roygbStations = MetroMap.extend(rygbStations, MetroStations.orangeLineStations);
+                    let allStations = MetroMap.extend(roygbStations, MetroStations.silverLineStations);
+                    
+                    var name = $(this).attr('name');
+                    this.style.fill = 'violet'; 
+                    document.getElementById(`${allStations[stationInFocus].id}`).style.fill = 'white';
+                    //console.log(`previous station: ${stationInFocus}`);
+                    stationInFocus = name;
+                    //console.log(allStations[stationInFocus].id);
+                    
+                    $('#mission-container').empty().append(allStations[name].mission);
+                    $('#pARk-address').text(allStations[name].url);
+
+                    if(name=='Mt Vernon Sq/7th St-Convention Center'){
+                        name = 'Mt Vernon Sq';
+                    }
+
+                    $('#station-title').text(name);
+                    
+                    document.getElementById('acornpark-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@acornpark', '_blank');
+                    });
+                    
+                    document.getElementById('glenmont-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@glenmont', '_blank');
+                    });
+                    
+                    document.getElementById('wheaton-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/wheaton', '_blank');
+                    });
+                    
+                    document.getElementById('forestglen-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@forestglen', '_blank');
+                    });
+                    
+                    document.getElementById('takoma-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@takoma', '_blank');
+                    });
+                    
+                    document.getElementById('forttotten-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@forttotten', '_blank');
+                    });
+                    
+                    document.getElementById('brooklandcua-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@brooklandcua', '_blank');
+                    });
+                    
+                    document.getElementById('rhodeislandave-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@rhodeislandave', '_blank');
+                    });
+                    
+                    document.getElementById('noma-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@noma', '_blank');
+                    });
+                    
+                    document.getElementById('unionstation-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@unionstation', '_blank');
+                    });
+                    
+                    document.getElementById('judiciarysq-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@judiciarysq', '_blank');
+                    });
+                    
+                    document.getElementById('galleryplace-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@galleryplace', '_blank');
+                    });
+                    
+                    document.getElementById('metrocenter-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@metrocenter', '_blank');
+                    });       
+                    
+                    document.getElementById('mcphersons-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@mcphersons', '_blank');
+                    });
+                    
+                    document.getElementById('farragutnorth-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@farragutnorth', '_blank');
+                    });
+                    
+                    document.getElementById('dupontcircle-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@dupontcircle', '_blank');
+                    });
+                    
+                    document.getElementById('woodleypark-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@woodleypark', '_blank');
+                    });
+                    
+                    document.getElementById('clevelandpark-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@clevelandpark', '_blank');
+                    });
+                    
+                    document.getElementById('vanness-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@vanness', '_blank');
+                    });
+                    
+                    document.getElementById('tenleytownau-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@tenleytownau', '_blank');
+                    });
+                    
+                    document.getElementById('friendshipheights-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@friendshipheights', '_blank');
+                    });
+                    
+                    document.getElementById('bethesda-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@bethesda', '_blank');
+                    });
+                    
+                    document.getElementById('medicalcenter-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@medicalcenter', '_blank');
+                    });
+                    
+                    document.getElementById('grosvenor-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@grosvenor', '_blank');
+                    });
+                    
+                    document.getElementById('whiteflint-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@whiteflint', '_blank');
+                    });
+                    
+                    document.getElementById('twinbrook-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@twinbrook', '_blank');
+                    });
+                    
+                    document.getElementById('rockville-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@rockville', '_blank');
+                    });
+                    
+                    document.getElementById('shadygrove-boARd-portal').addEventListener('click', function(){
+                        window.open('./b/@shadygrove', '_blank');
+                    });
+                });
+            }, 2000);
+            
+            
+            document.getElementById('explore-button').addEventListener('click', function(){
+                $('#station-title').text('How to Browse');
+                $('#mission-container').empty().append(`<div class='instruction'>Click on a node to access its boARd</div>`);
+                
+                $('#app-header-container').animate({
+                    opacity: 0
+                }, 500, function(){
+                    $(this).text('House of Venus, Benefit Corporation').animate({
+                        opacity: 1.0
+                    }, 500);
+                });
+                
+                $('#explore-button').animate({
+                    opacity: 0,
+                }, 500, function(){
+                    $(this).hide();
+                });
+                $('#dmv-metro-pARk').animate({
+                    opacity: 1.0
+                }, 1000);
+                
+                $('#mission-container').css({
+                    fontSize: '1.0em'
+                });
+                
+                $('#station-details-container').animate({
+                    width: '200px',
+                    height: '125px',
+                    margin: 0,
+                    left: '2%',
+                    top: '40%'
+                }, 1000, function(){
+                    $(this).css({
+                        backgroundColor: 'rgba(255, 255, 255, 0.4)',
+                        color: 'black'
+                    });
+                });
+            });
+            
+            
+            document.getElementById('return-to-map').addEventListener('click', function(){
+                $('#station-title').text('how to browse');
+                $('#mission-container').empty().append(`<div class='instruction'>click on a node to visit the site</div>`);
+                
+                $('#pARk-address').text('@houseofvenus');
+                
+                $('#station-details-container').animate({
+                    width: '200px',
+                    height: '125px',
+                    margin: 0,
+                    left: '2%',
+                    top: '40%',
+                }, 1000, function(){
+                    $(this).css({
+                        backgroundColor: 'rgba(255, 255, 255, 0.4)',
+                        color: 'black'
+                    });
+                });
+                
+                $('#mission-container').css({
+                    fontSize: '1.0em'
+                });
+                
+                $(this).animate({
+                    opacity: 0
+                }, 500, function(){
+                    $(this).hide();
+                });
+            })
+            
+            
+            document.getElementById('cARd-page-button').addEventListener('click', function(){
+                $('#pARk-address').text('cARd');
+                $('#station-title').text('creative Augmented Reality desktop');
+                
+                $('#station-details-container').css({
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                    color: 'white'
+                });
+                
+                $('#station-details-container').animate({
+                    width: '600px',
+                    height: '450px',
+                    left: '50%',
+                    top: '50%',
+                    margin: '-250px 0 0 -300px'
+                }, 1000, function(){
+                    $('#mission-container').css({
+                        margin: '1% auto'
+                    }).empty().append(`<div id=''></div><iframe width="480" height="360" src="https://www.youtube.com/embed/QGUhFcRjgus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><input type='button' id='order-cARd-button' value='BUY'/><input type='button' id='view-docs-button' value='TRY'/>`);
+                    
+                    $('#view-docs-button').addEventListener('click', function(){
+                        window.location.href = './cARd'
+                    });
+                });
+                
+                $('#return-to-map').show().animate({
+                    opacity: 1.0
+                }, 500);
+            });
+                        
+            document.getElementById('faq-page-button').addEventListener('click', function(){
+                $('#pARk-address').text('public Augmented Reality kinectome');
+                $('#station-title').text('frequently asked questions');
+                
+                $('#mission-container').css({
+                    fontSize: '1.2em'
+                });
+                
+                $('#station-details-container').css({
+                    backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                    color: 'white'
+                });
+                
+                $('#station-details-container').animate({
+                    width: '600px',
+                    height: '500px',
+                    left: '50%',
+                    top: '50%',
+                    margin: '-250px 0 0 -300px'
+                }, 1000, function(){
+                    $('#mission-container').css({
+                        margin: '1% auto'
+                    }).empty().append(`<div id='what-section-header' class='section-header'>?</div>
+<div id='what-section-text' class='section-text'>the public Augmented Reality kinectome, or pARk, is 5G immersive internet owned and operated by its users. remove the constraints of past interfaces to explore, build, and share as you are meant to.</div>
+<div id='why-section-header' class='section-header'>!</div>
+<div id='why-section-text' class='section-text'>boARds are local "hotspots" that list all the DIAs in a given area. </div>
+<div id='when-section-header' class='section-header'>...</div>
+<div id='when-section-text'>if you live in Silver Spring, MD start building here. If you live elsewhere, order a cARd to start building on your own!</div>`);
+                });
+                
+                $('#return-to-map').show().animate({
+                    opacity: 1.0
+                }, 500);
+            });    
+            
+            
+            document.getElementById('pARk-page-button').addEventListener('click', function(){
+                $('#pARk-address').text('public Augmented Reality kinectome');
+                $('#station-title').text('OLD ROW MARYLAND');
+                
+                $('#station-details-container').css({
+                    backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                    color: 'white'
+                });
+                
+                $('#station-details-container').animate({
+                    width: '600px',
+                    height: '475px',
+                    left: '50%',
+                    top: '50%',
+                    margin: '-275px 0 0 -300px'
+                }, 1000, function(){
+                    $('#mission-container').css({
+                        margin: '1% auto',
+                        width: '90%'
+                    }).empty().append(`<div id='content-container'><div id='weekly-highlights-container'><div id='weekly-highlights-title'>week 9</div><div id='weekly-highlights'><p>(1) published first public docs for the pARk system</p><p> (2) completed cARd v3; orders ship october 21</p></div></div><div id='content-link-dashboard'><input type='button' id='medium-link-button' class='content-link-button' value='' /><input type='button' id='instagram-link-button' class='content-link-button' value='' /><input type='button' id='twitter-link-button' class='content-link-button' value='' /><input type='button' id='docs-link-button' class='content-link-button' value='' /></div><div id='potw-container'><h3>roster</h3><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div></div></div>`);
+                });
+                
+                
+                $('#return-to-map').show().animate({
+                    opacity: 1.0
+                }, 500);
+            });
+            
+            document.getElementById('house-of-venus-board-icon').addEventListener('click', function(){
+                window.open('./b/@houseofvenus', '_blank');
+            });
+                
+        });
+    </script>
+</head>
+<body>
+    <div id='app-header-container'>
+        public Augmented Reality kinectome
+    </div>
+    <div id='main-app-container'>
+        
+        <div id='station-details-container'>
+            <div id='pARk-address'>@houseofvenus</div>
+            <div id='station-title'>welcome</div>
+            <div id='mission-container'>
+                <p>These are maps of the House of Venus PUBLIC AUGMENTED REALITY KINECTOME.</p>
+                <p>Each node represents a BOARD, a hotspot that indexes all nearby content, DIAs, and exchanges.
+                </p>
+                <p>Some media is visible on the World Wide Web through this portal. For the rest you will have to travel there yourself!
+                </p>
+            </div>
+            <div id='details-footer-container'>
+                <div id='pARk-option'>visit pARk</div>
+            </div>
+            <input type='button' id='explore-button' value='explore' />
+            <input type='button' id='return-to-map' value='back' />
+        </div>
+        <svg id='dmv-metro-pARk' class='pARk-container' width="640" height="540">
+            <path d="M580 450 l -25 -25 l -25 -25 l -30 5 l -30 -25 l -20 -20 l -40 -20 l -30 0 l -20 -60 l 0 -30 l 0 -30 l 0 -30 l 0 -30 l -20 -20 l -30 -20 l 30 -20 l 30 -10 l 40 -20 l 30 -20 l 30 -20 l 30 -15 z" stroke-width="10" stroke="green" fill="none" />
+            <path d="M585 470 l -80 -448 z" stroke-width="20" stroke="white" fill="white" />
+            
+            <path d="M280 470 l 0 -25 l 0 -30 l 0 -25 l 0 -30 l -25 -10 l -25 -10 l 0 -25 l 40 -20 l 80 0 l 0 -140 l -20 -20 l -30 -20 l 30 -20 l 30 -10 l -30 10 l -30 20 l 30 20 l 20 20 l 0 140 z" stroke-width="10" stroke="yellow" fill="none" />
+            <path d="M280 470 l 65 -168 z" stroke-width="20" stroke="white" fill="white" />
+            
+            <path d="M630 220 l -25 0 l -25 0 l -25 0 l -25 0 l -25 0 l -25 15 l -20 15 l -30 30 l -30 0 l -40 0 l -40 -20 l 0 -30 l 0 -30 l -20 -30 l -50 0 l -30 0 l -60 30 l 30 70 l 40 55 l 0 20 l 25 10 l 15 10 l 0 30 l 0 25 l 0 30 l 0 25 l -100 10 l -20 40 l 20 -40 l 100 -10 l 0 -25 l 0 -30 l 0 -25 l 0 -30 l -15 -10 l -25 -10 l 0 -20 l -40 -55 l -30 -70 l 60 -30 l 30 0 l 50 0 l 20 30 l 0 30 l 0 30 l 40 20 l 40 0 l 30 0 l 30 -30 l 20 -15 l 25 -15 z" stroke-width="10" stroke="blue" fill="none" />
+            
+            <path d="M15 230 l 140 0 l 0 -30 l 60 -30 l 30 0 l 50 0 l 20 30 l 0 30 l 0 30 l 40 20 l 40 0 l 30 0 l 30 -30 l 20 -15 l 25 -15 l 40 -30 l 20 -30 l 20 -30 l 20 -30 l 20 -30 l -20 30 l -20 30 l -20 30 l -20 30 l -40 30 l -25 15 l -20 15 l -30 30 l -30 0 l -40 0 l -40 -20 l 0 -30 l 0 -30 l -20 -30 l -20 0 l -30 0 l -30 0 l -60 30 l 0 30 l -140 0 z" stroke-width="10" stroke="orange" fill="none" />
+            
+            <path d="M50 20 l 15 15 l 15 15 l 15 15 l 15 15 l 15 15 l 25 10 l 20 0 l 25 0 l 20 0 l 20 0 l 15 15 l 15 15 l 15 15 l 0 50 l 40 0 l 40 20 l 35 0 l 30 -15 l 0 -20 l 0 -20 l 0 -20 l -85 -65 l -15 -10 l 0 -20 l 0 -20 l 0 -20 z" stroke-width="10" stroke="red" fill="none" />
+            <path d="M60 18 l 275 -10 z" stroke-width="15" stroke="white" fill="white" />
+            
+            <path d="M25 130 l 15 20 l 15 20 l 15 20 l 15 20 l 15 20 l 60 0 l 0 -30 l 65 -30 l 30 0 l 50 0 l 20 30 l 0 30 l 0 30 l 40 20 l 70 0 l 20 -30 l 40 -20 l 10 0 l 125 0 l -125 0 l -10 0 l -40 20 l -20 30 l -70 0 l -40 -20 l 0 -30 l 0 -30 l -20 -30 l -50 0 l -30 0 l -65 30 l 0 30 l -60 0 l -15 -20 z" stroke-width="10" stroke="silver" fill="none" />
+            
+            <image xlink:href="../media/img/home-icon.png" id="house-of-venus-board-icon" x="380" y="20" height="25px" width="25px"/>
+        </svg>
+    </div>
+    <select id='pARk-selector'>
+        <option class='pARk-location' value="dmv">dmv</option>
+        <option class='pARk-location' value="cp">paris</option>
+        <option class='pARk-location' value="opel">bangalore</option>
+    </select>
+    <img id='cARd-page-button' src='../media/img/card-icon.png' width='50px' height='50px'/>
+    <img id='pARk-page-button' src='../media/img/globe-icon.png' width='50px' height='50px'/>
+    <img id='faq-page-button' src='../media/img/faq-icon.png' width='50px' height='50px'/>
+</body>
+</html>

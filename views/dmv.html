@@ -2,1458 +2,1121 @@
 <html>
 <head>
     <title>pARk | public Augmented Reality kinectome</title>
-    <style>
-        #content-container{
-            width: 100%;
-            vertical-align: top;
-        }
-        
-        #weekly-highlights-container{
-            vertical-align: top;
-            text-align: justify;
-            width: 100%;
-            height: 100px;
-            margin-left: 2%;
-            display: inline-block;
-        }
-        
-        #weekly-highlights-title{
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            font-size: 1.4em;
-        }
-        
-        #weekly-highlights{
-            width: 100%;
-            height: auto;
-            font-size: 1.1em;
-        }
-        
-        #content-link-dashboard{
-            width: 410px;
-            height: 75px;
-            margin: 1% auto;
-        }
-        
-        #medium-link-button{
-            background-image: url('../media/img/medium-logo.png');
-        }
-        
-        #medium-link-button:hover{
-            background-image: url('../media/img/medium-icon.png');
-            background-size: 90% 90%;
-        }
-        
-        .content-link-button{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 10px 25px;
-            background-size: 100% 100%;
-            cursor: pointer;
-            border: 0;
-        }
-        
-        .content-link-button:focus{
-            outline: none;
-        }
-
-        #instagram-link-button{
-            background-size: 100% 100%;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-image: url('../media/img/ig-logo.png');
-        }
-        
-        #instagram-link-button:hover{
-            background-image: url('../media/img/hover-ig-logo.png');
-            background-size: 60% 60%;
-        }
-        
-        #twitter-link-button{
-            background-image: url('../media/img/twitter-icon.png');
-        }
-        
-        #twitter-link-button:hover{
-            background-image: url('../media/img/blue-twitter-icon.png');
-        }
-        
-        #docs-link-button{
-            background-image: url('../media/img/docs-icon.png');
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-        
-        #docs-link-button:hover{
-            background-size: 60% 60%;
-        }
-        
-        #docs-link-button:hover{
-            background-color: yellow;
-        }
-        
-        #potw-container{
-            font-size: 1.2em;
-        }
-        
-        #cARd-page-button{
-            position: absolute;
-            bottom: 12%;
-            left: 20%;
-            margin-left: -25px;
-            cursor: pointer;
-        }
-        
-        #pARk-page-button{
-            position: absolute;
-            bottom: 12%;
-            left: 50%;
-            margin-left: -25px;
-            cursor: pointer;
-        }
-        .section-text{
-            margin-bottom: 5%;
-        }
-        .section-header{
-            font-style: italic;
-            font-size: 1.2em;
-            font-weight: 900;
-            height: 25px;
-            width: 100%;
-            line-height: 25px;
-        }
-        #order-cARd-button{
-            border: 2px red solid;
-            position: absolute;
-            cursor: pointer;
-            bottom: 3%;
-            left: 25%;
-            width: 120px;
-            height: 50px;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            background-color: rgba(255, 0, 0, 1.0);
-            color: white;
-            font-size: 1.2em;
-            font-weight: 900;
-            font-family: monospace;
-        }
-        
-        #order-cARd-button:focus{
-            outline: none;
-        }
-        
-        #view-docs-button{
-            border: 2px blue solid;
-            position: absolute;
-            cursor: pointer;
-            bottom: 3%;
-            right: 25%;
-            width: 120px;
-            height: 50px;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            background-color: rgba(0, 0, 255, 1.0);
-            color: white;
-            font-size: 1.2em;
-            font-weight: 900;
-            font-family: monospace;
-        }
-        
-        #view-docs-button:focus{
-            outline: none;
-        }
-        
-        #faq-page-button{
-            position: absolute;
-            bottom: 12%;
-            right: 20%;
-            margin-left: -25px;
-            cursor: pointer;
-        }
-        
-        #dmv-metro-pARk{
-           /* border: 2px black solid;*/
-            margin: 0 auto;
-            display: block;
-            position: relative;
-            opacity: 0.2;
-        }
-        
-        #app-header-container{
-            position: absolute;
-            font-weight: 400;
-            display: block;
-            top: 0;
-            width: 100%;
-            text-align: center;
-            height: 50px;
-            line-height: 50px;
-            font-weight: 900px;
-            font-family: monospace;
-            font-size: 1.3em;
-            z-index: 500;
-        }
-        
-        .instruction{
-            margin-top: 2%;
-            text-align: center;
-            width: 100%;
-        }
-        
-        #pARk-selector:focus{
-            outline: none;
-        }
-        
-        #pARk-selector{
-            position: absolute;
-            font-family: monospace;
-            font-size: 1.3em;
-            width: 150px;
-            height: 30px;
-            display: block;
-            bottom: 5%;
-            left: 50%;
-            margin-left: -75px;
-            text-align: center;
-            text-align-last: center;
-        }
-        
-        .pARk-location{
-            text-align: center;
-        }
-        .station-marker{
-            opacity: 0;
-            cursor: pointer;
-        }
-        
-        #main-app-container{
-            width: 650px;
-            height: 600px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -225px 0 0 -325px;
-        }
-        
-        #explore-button:focus{
-            outline: none;
-        }
-        
-        #explore-button{
-            display: block;
-            cursor: pointer;
-            position: absolute;
-            bottom: 5%;
-            left: 50%;
-            width: 100px;
-            height: 50px;
-            border-radius: 10px;
-            margin-left: -50px;
-            font-family: monospace;
-            text-align: center;
-            text-transform: uppercase;
-            color: black;
-        }
-        
-        #return-to-map{
-            display: none;
-            cursor: pointer;
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            width: 100%;
-            height: 50px;
-            border: 0;
-            border-radius: 0 0 25px 25px;
-            margin-left: -50%;
-            font-family: monospace;
-            text-align: center;
-            text-transform: uppercase;
-            color: white;
-            background-color: rgba(255, 255, 255, 0);
-        }
-        
-        #return-to-map:hover{
-            background-color: rgba(255, 255, 225, 1.0);
-            color: black;
-        }
-        #return-to-map:focus{
-            outline: none;
-        }
-        
-        #station-details-container{
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            border: 2px black solid;
-            border-radius: 10px;
-            z-index: 100;
-            left: 50%;
-            top: 50%;
-            font-family: monospace;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            margin: -250px 0 0 -200px;
-        }
-        
-        #mission-container{
-            width: 80%;
-            margin: 2% auto;
-            font-size: 1.2em;
-        }
-        
-        #pARk-address{
-            text-align: center;
-            height: 25px;
-            line-height: 30px;
-        }
-        
-        #station-title{
-            font-size: 1.5em;
-            width: 80%;
-            text-align: center;
-            height: 30px;
-            line-height: 25px;
-            margin: 0 auto;
-        }
-        
-        #details-footer-container{
-            opacity: 0;
-            display: none;
-            width: 200px;
-            height: 35px;
-            position: absolute;
-            bottom: 25px;
-            left: 50%;
-            line-height: 35px;
-            margin-left: -100px;
-        }
-        
-        #roster-option{
-            border-radius: 10px 0 0 10px;
-        }
-        
-        #pARk-option{
-            border-radius: 0 10px 10px 0;
-        }
-        
-        #roster-option, #pARk-option{
-            display: inline-block;
-            cursor: pointer;
-            width: 48%;
-            height: 100%;
-            text-align: center;
-        }
-        
-        #roster-option:hover, #pARk-option:hover{
-            background-color: black;
-            color: white;
-        }
-    </style>
+    <link rel='stylesheet' type='text/css' href='../css/metropARk.css'/>
     <script src='../js/jquery-3.2.1.min.js'></script>
     <script>
-        var greenLineStations = {
-            'Branch Ave': {
-                name: 'Branch Ave',
-                id: 'branch-ave-station',
-                position: {
-                    x: 580,
-                    y: 450
+        var broadcastOriginalAugmentedRealityDapps = {
+            author: 'Patrice-Morgan T. Ongoly',
+            serialid: '05202019',
+            description: 'An object that reads a treeHouse Distributed Ledger to identify all of the public and/or localizable ARias in a pARk and visualizes the network interactions in a way that allows commmunity members to visit and explore, i.e. browse, the pARk DIAs.',
+            notes: 'This boARd uses a visualization inspired by the Washington Metropolitan Area Transit Authority Metro Line Route Map. The House of Venus has laid out ARias along these routes as a nod to its commitment to produce technology that benefits the public.',
+            main: {
+                stations: {
+                    greenLineStations : {
+                        'Branch Ave': {
+                            name: 'Branch Ave',
+                            id: 'branch-ave-station',
+                            position: {
+                                x: 580,
+                                y: 450
+                            },
+                            url: '@branchave',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='branch-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Suitland': {
+                            name: 'Suitland',
+                            id: 'suitland-station',
+                            position: {
+                                x: 555,
+                                y: 425
+                            },
+                            url: '@suitland',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='suitland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Naylor Rd': {
+                            name: 'Naylor Rd',
+                            id: 'naylor-rd-station',
+                            position: {
+                                x: 530,
+                                y: 400
+                            },
+                            url: '@naylor',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='naylor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Southern Ave': {
+                            name: 'Southern Ave',
+                            id: 'southern-ave-station',
+                            position: {
+                                x: 500,
+                                y: 405
+                            },
+                            url: '@southernave',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='southern-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Congress Heights': {
+                            name: 'Congress Heights',
+                            id: 'congress-heights-station',
+                            position: {
+                                x: 470,
+                                y: 380
+                            },
+                            url: '@congressheights',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='congressheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Anacostia': {
+                            name: 'Anacostia',
+                            id: 'anacostia-station',
+                            position: {
+                                x: 450,
+                                y: 360
+                            },
+                            url: '@anacostia',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='anacostia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Navy Yard-Ballpark': {
+                            name: 'Navy Yard-Ballpark',
+                            id: 'navy-yard-ballpark-station',
+                            position: {
+                                x: 410,
+                                y: 340
+                            },
+                            url: '@navyyard',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Waterfront': {
+                            name: 'Waterfront',
+                            id: 'waterfront-station',
+                            position: {
+                                x: 380,
+                                y: 340
+                            },
+                            url: '@waterfront',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='waterfront-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'L Enfant Plaza': {
+                            name: 'L Enfant Plaza',
+                            id: 'lenfant-plaza-station',
+                            position: {
+                                x: 360,
+                                y: 280
+                            },
+                            url: '@lenfant',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='lenfant-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Archives': {
+                            name: 'Archives',
+                            id: 'archives-station',
+                            position: {
+                                x: 360,
+                                y: 250
+                            },
+                            url: '@archives',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='archives-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Gallery Place': {
+                            name: 'Gallery Place',
+                            id: 'gallery-place-station',
+                            position: {
+                                x: 360,
+                                y: 220
+                            },
+                            url: '@galleryplace',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='galleryplace-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Mt Vernon Sq/7th St-Convention Center': {
+                            name: 'Mt Vernon Sq/7th St-Convention Center',
+                            id: 'mt-vernon-station',
+                            position: {
+                                x: 360,
+                                y: 190
+                            },
+                            url: '@mtvernon',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mtvernon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Shaw-Howard U': {
+                            name: 'Shaw-Howard U',
+                            id: 'shaw-howardu-station',
+                            position: {
+                                x: 360,
+                                y: 160
+                            },
+                            url: '@howard',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shaw-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'U Street': {
+                            name: 'U Street',
+                            id: 'u-street-station',
+                            position: {
+                                x: 340,
+                                y: 140
+                            },
+                            url: '@ustreet',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ustreet-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Columbia Heights': {
+                            name: 'Columbia Heights',
+                            id: 'columbia-heights-station',
+                            position: {
+                                x: 310,
+                                y: 120
+                            },
+                            url: '@columbiaheights',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='columbiaheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Georgia Ave-Pentworth': {
+                            name: 'Georgia Ave-Pentworth',
+                            id: 'georgia-ave-pentworth-station',
+                            position: {
+                                x: 340,
+                                y: 100
+                            },
+                            url: '@georgiaave',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='georgiaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Fort Totten': {
+                            name: 'Fort Totten',
+                            id: 'fort-totten-station',
+                            position: {
+                                x: 370,
+                                y: 90
+                            },
+                            url: '@forttotten',
+                            fillColor: 'white',
+                            mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                        },
+                        'West Hyattsville': {
+                            name: 'West Hyattsville',
+                            id: 'west-hyattsville-station',
+                            position: {
+                                x: 410,
+                                y: 70
+                            },
+                            url: '@hyattsville',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Prince Georges Plaza': {
+                            name: 'Prince Georges Plaza',
+                            id: 'pg-plaza-station',
+                            position: {
+                                x: 440,
+                                y: 50
+                            },
+                            url: '@pgplaza',
+                            fillColor: 'white',
+                            mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                        },
+                        'College Park-U of Md': {
+                            name: 'College Park-U of Md',
+                            id: 'college-park-station',
+                            position: {
+                                x: 470,
+                                y: 30
+                            },
+                            url: '@cp',
+                            fillColor: 'white',
+                            mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                        },
+                        'Greenbelt': {
+                            name: 'Greenbelt',
+                            id: 'greenbelt-station',
+                            position: {
+                                x: 500,
+                                y: 15
+                            },
+                            url: '@greenbelt',
+                            fillColor: 'white',
+                            mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                        }
+                    },
+                    yellowLineStations : {
+                        'Huntington': {
+                            name: 'Huntington',
+                            id: 'huntington-station',
+                            position: {
+                                x: 280,
+                                y: 470
+                            },
+                            url: '@huntington',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='huntington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Eisenhower Ave': {
+                            name: 'Eisenhower Ave',
+                            id: 'eisenhower-ave-station',
+                            position: {
+                                x: 280,
+                                y: 445
+                            },
+                            url: '@eisenhower',
+                            fillColor: 'white',
+                            mission:  `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'King St-Old Town': {
+                            name: 'King St-Old Town',
+                            id: 'king-st-old-town-station',
+                            position: {
+                                x: 280,
+                                y: 415
+                            },
+                            url: '@kingstoldtown',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Braddock Rd': {
+                            name: 'Braddock Rd',
+                            id: 'braddock-rd-station',
+                            position: {
+                                x: 280,
+                                y: 390
+                            },
+                            url: '@braddockrd',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='braddock-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Ronald Reagan Washington National Airport': {
+                            name: 'Ronald Reagan Washington National Airport',
+                            id: 'ronald-reagan-national-station',
+                            position: {
+                                x: 280,
+                                y: 360
+                            },
+                            url: '@reagannational',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='reagan-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Crystal City': {
+                            name: 'Crystal City',
+                            id: 'crystal-city-station',
+                            position: {
+                                x: 255,
+                                y: 350
+                            },
+                            url: '@crystalcity',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Pentagon City': {
+                            name: 'Pentagon City',
+                            id: 'pentagon-city-station',
+                            position: {
+                                x: 230,
+                                y: 340
+                            },
+                            url: '@navyyard',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Pentagon': {
+                            name: 'Pentagon',
+                            id: 'pentagon-station',
+                            position: {
+                                x: 230,
+                                y: 315
+                            },
+                            url: '@pentagon',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        }
+                    },
+                    blueLineStations : {
+                        'Franconia-Springfield': {
+                            name: 'Franconia-Springfield',
+                            id: 'franconia-springfield-station',
+                            position: {
+                                x: 150,
+                                y: 520
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='franconia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Van Dorn': {
+                            name: 'Van Dorn',
+                            id: 'van-dorn-station',
+                            position: {
+                                x: 175,
+                                y: 480
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Arlington Cemetery': {
+                            name: 'Arlington Cemetery',
+                            id: 'arlington-cemetery-station',
+                            position: {
+                                x: 190,
+                                y: 270 
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Rosslyn': {
+                            name: 'Rosslyn',
+                            id: 'rosslyn-station',
+                            position: {
+                                x: 160,
+                                y: 200
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Foggy Bottom-GWU': {
+                            name: 'Foggy Bottom-GWU',
+                            id: 'foggy-bottom-gwu-station',
+                            position: {
+                                x: 220,
+                                y: 170
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Farragut West': {
+                            name: 'Farragut West',
+                            id: 'farragut-west-station',
+                            position: {
+                                x: 250,
+                                y: 170
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragut-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'McPherson Square': {
+                            name: 'McPherson Square',
+                            id: 'mcpherson-square-station',
+                            position: {
+                                x: 300,
+                                y: 170
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Metro Center': {
+                            name: 'Metro Center',
+                            id: 'metro-center-station',
+                            position: {
+                                x: 320,
+                                y: 200
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Federal Triangle': {
+                            name: 'Federal Triangle',
+                            id: 'federal-triangle-station',
+                            position: {
+                                x: 320,
+                                y: 230
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Smithsonian': {
+                            name: 'Smithsonian',
+                            id: 'smithsonian-station',
+                            position: {
+                                x: 320,
+                                y: 260
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Federal Center SW': {
+                            name: 'Federal Center SW',
+                            id: 'federal-center-sw-station',
+                            position: {
+                                x: 400,
+                                y: 280
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Capitol South': {
+                            name: 'Capitol South',
+                            id: 'capitol-south-station',
+                            position: {
+                                x: 430,
+                                y: 280
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Eastern Market': {
+                            name: 'Eastern Market',
+                            id: 'eastern-market-station',
+                            position: {
+                                x: 460,
+                                y: 250
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Potomac Ave': {
+                            name: 'Potomac Ave',
+                            id: 'potomac-ave-station',
+                            position: {
+                                x: 480,
+                                y: 235 
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },        
+                        'Stadium-Armory': {
+                            name: 'Stadium-Armory',
+                            id: 'stadium-armory-station',
+                            position: {
+                                x: 505,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Benning Road': {
+                            name: 'Benning Road',
+                            id: 'benning-road-station',
+                            position: {
+                                x: 530,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='benningroad-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Capitol Heights': {
+                            name: 'Capitol Heights',
+                            id: 'capitol-heights-station',
+                            position: {
+                                x: 555,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Addison Rd/Seat Pleasant': {
+                            name: 'Addison Rd/Seat Pleasant',
+                            id: 'addison-rd-station',
+                            position: {
+                                x: 580,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id=addison-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Morgan Blvd': {
+                            name: 'Morgan Blvd',
+                            id: 'morgan-blvd-station',
+                            position: {
+                                x: 605,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Largo Town Center': {
+                            name: 'Largo Town Center',
+                            id: 'largo-town-center-station',
+                            position: {
+                                x: 630,
+                                y: 220
+                            },
+                            url: '@',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='largo-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                    },
+                    orangeLineStations : {
+                        'Vienna/ Fairfax-GMU': {
+                            name: 'Vienna/ Fairfax-GMU',
+                            id: 'vienna-gmu-station',
+                            position: {
+                                x: 15,
+                                y: 230
+                            },
+                            url: '@gmu',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Dunn Loring/ Merrifeld': {
+                            name: 'Dunn Loring/ Merrifeld',
+                            id: 'dunn-loring-merrifeld-station',
+                            position: {
+                                x: 35,
+                                y: 230
+                            },
+                            url: '@dunnloring',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'West Falls Church/ VT-UVA': {
+                            name: 'West Falls Church/ VT-UVA',
+                            id: 'west-falls-vt-uva-station',
+                            position: {
+                                x: 55,
+                                y: 230
+                            },
+                            url: '@westfallschurch',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'East Falls Church': {
+                            name: 'East Falls Church',
+                            id: 'east-falls-church-station',
+                            position: {
+                                x: 75,
+                                y: 230
+                            },
+                            url: '@eastfallschurch',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Ballston-MU': {
+                            name: 'Ballston-MU',
+                            id: 'ballston-mu-station',
+                            position: {
+                                x: 95,
+                                y: 230
+                            },
+                            url: '@ballston',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Virginia Sq-GMU': {
+                            name: 'Virginia Sq-GMU',
+                            id: 'virginia-square-gmu-station',
+                            position: {
+                                x: 115,
+                                y: 230
+                            },
+                            url: '@gmu',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Clarendon': {
+                            name: 'Clarendon',
+                            id: 'clarendon-station',
+                            position: {
+                                x: 135,
+                                y: 230
+                            },
+                            url: '@navyyard',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Court House': {
+                            name: 'Court House',
+                            id: 'court-house-station',
+                            position: {
+                                x: 155,
+                                y: 230
+                            },
+                            url: '@courthouse',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Minnesota Ave': {
+                            name: 'Minnesota Ave',
+                            id: 'minnesota-ave-station',
+                            position: {
+                                x: 545,
+                                y: 190
+                            },
+                            url: '@minnesotaave',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Deanwood': {
+                            name: 'Deanwood',
+                            id: 'deanwood-station',
+                            position: {
+                                x: 565,
+                                y: 160
+                            },
+                            url: '@deanwood',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Cheverly': {
+                            name: 'Cheverly',
+                            id: 'cheverly-station',
+                            position: {
+                                x: 585,
+                                y: 130
+                            },
+                            url: '@cheverly',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Landover': {
+                            name: 'Landover',
+                            id: 'landover-station',
+                            position: {
+                                x: 605,
+                                y: 100
+                            },
+                            url: '@landover',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='landover-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'New Carrolton': {
+                            name: 'New Carrolton',
+                            id: 'new-carrolton-station',
+                            position: {
+                                x: 625,
+                                y: 70
+                            },
+                            url: '@newcarrolton',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        }
+                    },
+                    silverLineStations : {	
+                        'Wiehle-Reston East': {
+                            name: 'Wiehle-Reston East',
+                            id: 'wiehle-reston-east-station',
+                            position: {
+                                x: 25,
+                                y: 130
+                            },
+                            url: '@wiehle-reston-east',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Spring Hill': {
+                            name: 'Spring Hill',
+                            id: 'spring-hill-station',
+                            position: {
+                                x: 40,
+                                y: 150
+                            },
+                            url: '@springhill',
+                            fillColor: 'white',
+                            mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='springhill-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Greensboro': {
+                            name: 'Greensboro',
+                            id: 'greensboro-station',
+                            position: {
+                                x: 55,
+                                y: 170
+                            },
+                            url: '@greensboro',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Tysons Corner': {
+                            name: 'Tysons Corner',
+                            id: 'tysons-corner-station',
+                            position: {
+                                x: 70,
+                                y: 190
+                            },
+                            url: '@tysonscorner',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'McLean': {
+                            name: 'McLean',
+                            id: 'mclean-station',
+                            position: {
+                                x: 85,
+                                y: 210
+                            },
+                            url: '@mclean',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        }
+                    },
+                    redLineStations : {        	     
+                        'Shady Grove': {
+                            name: 'Shady Grove',
+                            id: 'shady-grove-station',
+                            position: {
+                                x: 50,
+                                y: 20
+                            },
+                            url: '@shadygrove',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Rockville': {
+                            name: 'Rockville',
+                            id: 'rockville-station',
+                            position: {
+                                x: 65,
+                                y: 35
+                            },
+                            url: '@rockville',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rockville-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },	
+                        'Twinbrook': {
+                            name: 'Twinbrook',
+                            id: 'twinbrook-station',
+                            position: {
+                                x: 80,
+                                y: 50
+                            },
+                            url: '@twinbrook',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='twinbrook-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'White Flint': {
+                            name: 'White Flint',
+                            id: 'white-flint-station',
+                            position: {
+                                x: 95,
+                                y: 65
+                            },
+                            url: '@whiteflint',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='whiteflint-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Grosvenor-Strathmore': {
+                            name: 'Grosvenor-Strathmore',
+                            id: 'grosvenor-strathmore-station',
+                            position: {
+                                x: 110,
+                                y: 80
+                            },
+                            url: '@grosvenor-strathmore',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='grosvenor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Medical Center': {
+                            name: 'Medical Center',
+                            id: 'medical-center-station',
+                            position: {
+                                x: 125,
+                                y: 95
+                            },
+                            url: '@medicalcenter',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='medicalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Bethesda': {
+                            name: 'Bethesda',
+                            id: 'bethesda-station',
+                            position: {
+                                x: 150,
+                                y: 105
+                            },
+                            url: '@bethesda',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='bethesda-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Friendship Heights': {
+                            name: 'Friendship Heights',
+                            id: 'friendship-heights-station',
+                            position: {
+                                x: 170,
+                                y: 105
+                            },
+                            url: '@friendshipheights',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='friendship-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },         
+                        'Tenleytown  AU': {
+                            name: 'Tenleytown  AU',
+                            id: 'tenleytown-au-station',
+                            position: {
+                                x: 195,
+                                y: 105
+                            },
+                            url: '@tenleytownau',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tenleytownau-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Van Ness-UDC': {
+                            name: 'Van Ness-UDC',
+                            id: 'van-ness-udc-station',
+                            position: {
+                                x: 215,
+                                y: 105
+                            },
+                            url: '@udc',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vanness-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Cleveland Park': {
+                            name: 'Cleveland Park',
+                            id: 'cleveland-park-station',
+                            position: {
+                                x: 235,
+                                y: 105
+                            },
+                            url: '@clevelandpARk',
+                            fillColor: 'white',
+                            mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clevelandpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Woodley Park': {
+                            name: 'Woodley Park',
+                            id: 'woodley-park-station',
+                            position: {
+                                x: 250,
+                                y: 120
+                            },
+                            url: '@woodleypARk',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='woodleypark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'DuPont Circle': {
+                            name: 'DuPont Circle',
+                            id: 'dupont-circle-station',
+                            position: {
+                                x: 265,
+                                y: 135
+                            },
+                            url: '@dupontcircle',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dupont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Farragut North': {
+                            name: 'Farragut North',
+                            id: 'farragut-north-station',
+                            position: {
+                                x: 280,
+                                y: 150
+                            },
+                            url: '@farragutnorth',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragutnorth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Takoma': {
+                            name: 'Takoma',
+                            id: 'takoma-station',
+                            position: {
+                                x: 325,
+                                y: 85
+                            },
+                            url: '@takoma',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Judiciary Sq': {
+                            name: 'Judiciary Sq',
+                            id: 'judiciary-sq-station',
+                            position: {
+                                x: 395,
+                                y: 220
+                            },
+                            url: '@judiciarysq',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='judiciarysq-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Union Station': {
+                            name: 'Union Station',
+                            id: 'union-station-station',
+                            position: {
+                                x: 425,
+                                y: 205
+                            },
+                            url: '@unionstation',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='union-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'NoMa-Gallaudet U': {
+                            name: 'NoMa-Gallaudet U',
+                            id: 'noma-gallaudetu-station',
+                            position: {
+                                x: 425,
+                                y: 185
+                            },
+                            url: '@noma',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='noma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Rhode Island Ave': {
+                            name: 'Rhode Island Ave',
+                            id: 'rhode-island-ave-station',
+                            position: {
+                                x: 425,
+                                y: 165
+                            },
+                            url: '@rhodeislandave',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rhodeisland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Brookland-CUA': {
+                            name: 'Brookland-CUA',
+                            id: 'brookland-cua-station',
+                            position: {
+                                x: 425,
+                                y: 145
+                            },
+                            url: '@brooklancua',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='brooklandcua-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Takoma': {
+                            name: 'Takoma',
+                            id: 'takoma-station',
+                            position: {
+                                x: 340,
+                                y: 80
+                            },
+                            url: '@takoma',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Silver Spring': {
+                            name: 'Silver Spring',
+                            id: 'silver-spring-station',
+                            position: {
+                                x: 325,
+                                y: 70
+                            },
+                            url: '@acornpARk',
+                            fillColor: 'red',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='acornpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Forest Glen': {
+                            name: 'Forest Glen',
+                            id: 'forest-glen-station',
+                            position: {
+                                x: 325,
+                                y: 50
+                            },
+                            url: '@forestglen',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Wheaton': {
+                            name: 'Wheaton',
+                            id: 'wheaton-station',
+                            position: {
+                                x: 325,
+                                y: 30
+                            },
+                            url: '@wheaton',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wheatonboARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        },
+                        'Glenmont': {
+                            name: 'Glenmont',
+                            id: 'glenmont-station',
+                            position: {
+                                x: 325,
+                                y: 10
+                            },
+                            url: '@glenmont',
+                            fillColor: 'white',
+                            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        }
+                    },
                 },
-                url: '@branchave',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='branch-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Suitland': {
-                name: 'Suitland',
-                id: 'suitland-station',
-                position: {
-                    x: 555,
-                    y: 425
-                },
-                url: '@suitland',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='suitland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Naylor Rd': {
-                name: 'Naylor Rd',
-                id: 'naylor-rd-station',
-                position: {
-                    x: 530,
-                    y: 400
-                },
-                url: '@naylor',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='naylor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Southern Ave': {
-                name: 'Southern Ave',
-                id: 'southern-ave-station',
-                position: {
-                    x: 500,
-                    y: 405
-                },
-                url: '@southernave',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='southern-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Congress Heights': {
-                name: 'Congress Heights',
-                id: 'congress-heights-station',
-                position: {
-                    x: 470,
-                    y: 380
-                },
-                url: '@congressheights',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='congressheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Anacostia': {
-                name: 'Anacostia',
-                id: 'anacostia-station',
-                position: {
-                    x: 450,
-                    y: 360
-                },
-                url: '@anacostia',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='anacostia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Navy Yard-Ballpark': {
-                name: 'Navy Yard-Ballpark',
-                id: 'navy-yard-ballpark-station',
-                position: {
-                    x: 410,
-                    y: 340
-                },
-                url: '@navyyard',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Waterfront': {
-                name: 'Waterfront',
-                id: 'waterfront-station',
-                position: {
-                    x: 380,
-                    y: 340
-                },
-                url: '@waterfront',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='waterfront-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'L Enfant Plaza': {
-                name: 'L Enfant Plaza',
-                id: 'lenfant-plaza-station',
-                position: {
-                    x: 360,
-                    y: 280
-                },
-                url: '@lenfant',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='lenfant-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Archives': {
-                name: 'Archives',
-                id: 'archives-station',
-                position: {
-                    x: 360,
-                    y: 250
-                },
-                url: '@archives',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='archives-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Gallery Place': {
-                name: 'Gallery Place',
-                id: 'gallery-place-station',
-                position: {
-                    x: 360,
-                    y: 220
-                },
-                url: '@galleryplace',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='galleryplace-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Mt Vernon Sq/7th St-Convention Center': {
-                name: 'Mt Vernon Sq/7th St-Convention Center',
-                id: 'mt-vernon-station',
-                position: {
-                    x: 360,
-                    y: 190
-                },
-                url: '@mtvernon',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mtvernon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Shaw-Howard U': {
-                name: 'Shaw-Howard U',
-                id: 'shaw-howardu-station',
-                position: {
-                    x: 360,
-                    y: 160
-                },
-                url: '@howard',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shaw-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'U Street': {
-                name: 'U Street',
-                id: 'u-street-station',
-                position: {
-                    x: 340,
-                    y: 140
-                },
-                url: '@ustreet',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ustreet-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Columbia Heights': {
-                name: 'Columbia Heights',
-                id: 'columbia-heights-station',
-                position: {
-                    x: 310,
-                    y: 120
-                },
-                url: '@columbiaheights',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='columbiaheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Georgia Ave-Pentworth': {
-                name: 'Georgia Ave-Pentworth',
-                id: 'georgia-ave-pentworth-station',
-                position: {
-                    x: 340,
-                    y: 100
-                },
-                url: '@georgiaave',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='georgiaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Fort Totten': {
-                name: 'Fort Totten',
-                id: 'fort-totten-station',
-                position: {
-                    x: 370,
-                    y: 90
-                },
-                url: '@forttotten',
-                fillColor: 'white',
-                mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/hov.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
-            },
-            'West Hyattsville': {
-                name: 'West Hyattsville',
-                id: 'west-hyattsville-station',
-                position: {
-                    x: 410,
-                    y: 70
-                },
-                url: '@hyattsville',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Prince Georges Plaza': {
-                name: 'Prince Georges Plaza',
-                id: 'pg-plaza-station',
-                position: {
-                    x: 440,
-                    y: 50
-                },
-                url: '@pgplaza',
-                fillColor: 'white',
-                mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/hov.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
-            },
-            'College Park-U of Md': {
-                name: 'College Park-U of Md',
-                id: 'college-park-station',
-                position: {
-                    x: 470,
-                    y: 30
-                },
-                url: '@cp',
-                fillColor: 'white',
-                mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/hov.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
-            },
-            'Greenbelt': {
-                name: 'Greenbelt',
-                id: 'greenbelt-station',
-                position: {
-                    x: 500,
-                    y: 15
-                },
-                url: '@greenbelt',
-                fillColor: 'white',
-                mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/hov.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
-            }
-        };
+                map: {
+                    addStation: function(line, target, delay){
+                        var station = line[target];
+                       // console.log(station);
+                        var svg = document.getElementsByTagName('svg')[0]; //Get svg element
+                        var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'circle'); //Create a path in SVG's namespace
+                        newElement.style.stroke = "#000"; //Set stroke colour
+                        newElement.style.strokeWidth = "2px"; //Set stroke width
+                        newElement.style.fill = `${station.fillColor}`;
+                        newElement.setAttribute("id",`${station.id}`);
+                        newElement.setAttribute("name",`${station.name}`);
+                        newElement.setAttribute("class","station-marker");
+                        newElement.setAttribute("cx",`${station.position.x}`);
+                        newElement.setAttribute("cy",`${station.position.y}`);
+                        newElement.setAttribute("r","7");
+                        svg.appendChild(newElement);
 
-        var yellowLineStations = {
-            'Huntington': {
-                name: 'Huntington',
-                id: 'huntington-station',
-                position: {
-                    x: 280,
-                    y: 470
-                },
-                url: '@huntington',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='huntington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Eisenhower Ave': {
-                name: 'Eisenhower Ave',
-                id: 'eisenhower-ave-station',
-                position: {
-                    x: 280,
-                    y: 445
-                },
-                url: '@eisenhower',
-                fillColor: 'white',
-                mission:  `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'King St-Old Town': {
-                name: 'King St-Old Town',
-                id: 'king-st-old-town-station',
-                position: {
-                    x: 280,
-                    y: 415
-                },
-                url: '@kingstoldtown',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Braddock Rd': {
-                name: 'Braddock Rd',
-                id: 'braddock-rd-station',
-                position: {
-                    x: 280,
-                    y: 390
-                },
-                url: '@braddockrd',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='braddock-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Ronald Reagan Washington National Airport': {
-                name: 'Ronald Reagan Washington National Airport',
-                id: 'ronald-reagan-national-station',
-                position: {
-                    x: 280,
-                    y: 360
-                },
-                url: '@reagannational',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='reagan-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Crystal City': {
-                name: 'Crystal City',
-                id: 'crystal-city-station',
-                position: {
-                    x: 255,
-                    y: 350
-                },
-                url: '@crystalcity',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Pentagon City': {
-                name: 'Pentagon City',
-                id: 'pentagon-city-station',
-                position: {
-                    x: 230,
-                    y: 340
-                },
-                url: '@navyyard',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Pentagon': {
-                name: 'Pentagon',
-                id: 'pentagon-station',
-                position: {
-                    x: 230,
-                    y: 315
-                },
-                url: '@pentagon',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                        setTimeout(function(){
+                            $(`#${station.id}`).animate({
+                                opacity: 1.0
+                            }, 1000);
+                        }, delay*100);
+                    },
+                    extend: function(obj, src){
+                        Object.keys(src).forEach(function(key) { obj[key] = src[key]; });
+                        return obj;
+                    }
+                }
             }
-        };
-        
-        var blueLineStations = {
-            'Franconia-Springfield': {
-                name: 'Franconia-Springfield',
-                id: 'franconia-springfield-station',
-                position: {
-                    x: 150,
-                    y: 520
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='franconia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Van Dorn': {
-                name: 'Van Dorn',
-                id: 'van-dorn-station',
-                position: {
-                    x: 175,
-                    y: 480
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Arlington Cemetery': {
-                name: 'Arlington Cemetery',
-                id: 'arlington-cemetery-station',
-                position: {
-                    x: 190,
-                    y: 270 
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Rosslyn': {
-                name: 'Rosslyn',
-                id: 'rosslyn-station',
-                position: {
-                    x: 160,
-                    y: 200
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Foggy Bottom-GWU': {
-                name: 'Foggy Bottom-GWU',
-                id: 'foggy-bottom-gwu-station',
-                position: {
-                    x: 220,
-                    y: 170
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Farragut West': {
-                name: 'Farragut West',
-                id: 'farragut-west-station',
-                position: {
-                    x: 250,
-                    y: 170
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragut-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'McPherson Square': {
-                name: 'McPherson Square',
-                id: 'mcpherson-square-station',
-                position: {
-                    x: 300,
-                    y: 170
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Metro Center': {
-                name: 'Metro Center',
-                id: 'metro-center-station',
-                position: {
-                    x: 320,
-                    y: 200
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Federal Triangle': {
-                name: 'Federal Triangle',
-                id: 'federal-triangle-station',
-                position: {
-                    x: 320,
-                    y: 230
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Smithsonian': {
-                name: 'Smithsonian',
-                id: 'smithsonian-station',
-                position: {
-                    x: 320,
-                    y: 260
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Federal Center SW': {
-                name: 'Federal Center SW',
-                id: 'federal-center-sw-station',
-                position: {
-                    x: 400,
-                    y: 280
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Capitol South': {
-                name: 'Capitol South',
-                id: 'capitol-south-station',
-                position: {
-                    x: 430,
-                    y: 280
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Eastern Market': {
-                name: 'Eastern Market',
-                id: 'eastern-market-station',
-                position: {
-                    x: 460,
-                    y: 250
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Potomac Ave': {
-                name: 'Potomac Ave',
-                id: 'potomac-ave-station',
-                position: {
-                    x: 480,
-                    y: 235 
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },        
-            'Stadium-Armory': {
-                name: 'Stadium-Armory',
-                id: 'stadium-armory-station',
-                position: {
-                    x: 505,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Benning Road': {
-                name: 'Benning Road',
-                id: 'benning-road-station',
-                position: {
-                    x: 530,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='benningroad-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Capitol Heights': {
-                name: 'Capitol Heights',
-                id: 'capitol-heights-station',
-                position: {
-                    x: 555,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Addison Rd/Seat Pleasant': {
-                name: 'Addison Rd/Seat Pleasant',
-                id: 'addison-rd-station',
-                position: {
-                    x: 580,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id=addison-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Morgan Blvd': {
-                name: 'Morgan Blvd',
-                id: 'morgan-blvd-station',
-                position: {
-                    x: 605,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Largo Town Center': {
-                name: 'Largo Town Center',
-                id: 'largo-town-center-station',
-                position: {
-                    x: 630,
-                    y: 220
-                },
-                url: '@',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='largo-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-        };
-        
-        var orangeLineStations = {
-            'Vienna/ Fairfax-GMU': {
-                name: 'Vienna/ Fairfax-GMU',
-                id: 'vienna-gmu-station',
-                position: {
-                    x: 15,
-                    y: 230
-                },
-                url: '@gmu',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Dunn Loring/ Merrifeld': {
-                name: 'Dunn Loring/ Merrifeld',
-                id: 'dunn-loring-merrifeld-station',
-                position: {
-                    x: 35,
-                    y: 230
-                },
-                url: '@dunnloring',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'West Falls Church/ VT-UVA': {
-                name: 'West Falls Church/ VT-UVA',
-                id: 'west-falls-vt-uva-station',
-                position: {
-                    x: 55,
-                    y: 230
-                },
-                url: '@westfallschurch',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'East Falls Church': {
-                name: 'East Falls Church',
-                id: 'east-falls-church-station',
-                position: {
-                    x: 75,
-                    y: 230
-                },
-                url: '@eastfallschurch',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Ballston-MU': {
-                name: 'Ballston-MU',
-                id: 'ballston-mu-station',
-                position: {
-                    x: 95,
-                    y: 230
-                },
-                url: '@ballston',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Virginia Sq-GMU': {
-                name: 'Virginia Sq-GMU',
-                id: 'virginia-square-gmu-station',
-                position: {
-                    x: 115,
-                    y: 230
-                },
-                url: '@gmu',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Clarendon': {
-                name: 'Clarendon',
-                id: 'clarendon-station',
-                position: {
-                    x: 135,
-                    y: 230
-                },
-                url: '@navyyard',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Court House': {
-                name: 'Court House',
-                id: 'court-house-station',
-                position: {
-                    x: 155,
-                    y: 230
-                },
-                url: '@courthouse',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Minnesota Ave': {
-                name: 'Minnesota Ave',
-                id: 'minnesota-ave-station',
-                position: {
-                    x: 545,
-                    y: 190
-                },
-                url: '@minnesotaave',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Deanwood': {
-                name: 'Deanwood',
-                id: 'deanwood-station',
-                position: {
-                    x: 565,
-                    y: 160
-                },
-                url: '@deanwood',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Cheverly': {
-                name: 'Cheverly',
-                id: 'cheverly-station',
-                position: {
-                    x: 585,
-                    y: 130
-                },
-                url: '@cheverly',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Landover': {
-                name: 'Landover',
-                id: 'landover-station',
-                position: {
-                    x: 605,
-                    y: 100
-                },
-                url: '@landover',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='landover-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'New Carrolton': {
-                name: 'New Carrolton',
-                id: 'new-carrolton-station',
-                position: {
-                    x: 625,
-                    y: 70
-                },
-                url: '@newcarrolton',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            }
-        };
-        
-        var silverLineStations = {	
-            'Wiehle-Reston East': {
-                name: 'Wiehle-Reston East',
-                id: 'wiehle-reston-east-station',
-                position: {
-                    x: 25,
-                    y: 130
-                },
-                url: '@wiehle-reston-east',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Spring Hill': {
-                name: 'Spring Hill',
-                id: 'spring-hill-station',
-                position: {
-                    x: 40,
-                    y: 150
-                },
-                url: '@springhill',
-                fillColor: 'white',
-                mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='springhill-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Greensboro': {
-                name: 'Greensboro',
-                id: 'greensboro-station',
-                position: {
-                    x: 55,
-                    y: 170
-                },
-                url: '@greensboro',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Tysons Corner': {
-                name: 'Tysons Corner',
-                id: 'tysons-corner-station',
-                position: {
-                    x: 70,
-                    y: 190
-                },
-                url: '@tysonscorner',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'McLean': {
-                name: 'McLean',
-                id: 'mclean-station',
-                position: {
-                    x: 85,
-                    y: 210
-                },
-                url: '@mclean',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            }
-        };
-        
-        var redLineStations = {        	     
-            'Shady Grove': {
-                name: 'Shady Grove',
-                id: 'shady-grove-station',
-                position: {
-                    x: 50,
-                    y: 20
-                },
-                url: '@shadygrove',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Rockville': {
-                name: 'Rockville',
-                id: 'rockville-station',
-                position: {
-                    x: 65,
-                    y: 35
-                },
-                url: '@rockville',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rockville-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },	
-            'Twinbrook': {
-                name: 'Twinbrook',
-                id: 'twinbrook-station',
-                position: {
-                    x: 80,
-                    y: 50
-                },
-                url: '@twinbrook',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='twinbrook-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'White Flint': {
-                name: 'White Flint',
-                id: 'white-flint-station',
-                position: {
-                    x: 95,
-                    y: 65
-                },
-                url: '@whiteflint',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='whiteflint-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Grosvenor-Strathmore': {
-                name: 'Grosvenor-Strathmore',
-                id: 'grosvenor-strathmore-station',
-                position: {
-                    x: 110,
-                    y: 80
-                },
-                url: '@grosvenor-strathmore',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='grosvenor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Medical Center': {
-                name: 'Medical Center',
-                id: 'medical-center-station',
-                position: {
-                    x: 125,
-                    y: 95
-                },
-                url: '@medicalcenter',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='medicalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Bethesda': {
-                name: 'Bethesda',
-                id: 'bethesda-station',
-                position: {
-                    x: 150,
-                    y: 105
-                },
-                url: '@bethesda',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='bethesda-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Friendship Heights': {
-                name: 'Friendship Heights',
-                id: 'friendship-heights-station',
-                position: {
-                    x: 170,
-                    y: 105
-                },
-                url: '@friendshipheights',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='friendship-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },         
-            'Tenleytown  AU': {
-                name: 'Tenleytown  AU',
-                id: 'tenleytown-au-station',
-                position: {
-                    x: 195,
-                    y: 105
-                },
-                url: '@tenleytownau',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tenleytownau-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Van Ness-UDC': {
-                name: 'Van Ness-UDC',
-                id: 'van-ness-udc-station',
-                position: {
-                    x: 215,
-                    y: 105
-                },
-                url: '@udc',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vanness-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Cleveland Park': {
-                name: 'Cleveland Park',
-                id: 'cleveland-park-station',
-                position: {
-                    x: 235,
-                    y: 105
-                },
-                url: '@clevelandpARk',
-                fillColor: 'white',
-                mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clevelandpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Woodley Park': {
-                name: 'Woodley Park',
-                id: 'woodley-park-station',
-                position: {
-                    x: 250,
-                    y: 120
-                },
-                url: '@woodleypARk',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='woodleypark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'DuPont Circle': {
-                name: 'DuPont Circle',
-                id: 'dupont-circle-station',
-                position: {
-                    x: 265,
-                    y: 135
-                },
-                url: '@dupontcircle',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dupont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Farragut North': {
-                name: 'Farragut North',
-                id: 'farragut-north-station',
-                position: {
-                    x: 280,
-                    y: 150
-                },
-                url: '@farragutnorth',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragutnorth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Takoma': {
-                name: 'Takoma',
-                id: 'takoma-station',
-                position: {
-                    x: 325,
-                    y: 85
-                },
-                url: '@takoma',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Judiciary Sq': {
-                name: 'Judiciary Sq',
-                id: 'judiciary-sq-station',
-                position: {
-                    x: 395,
-                    y: 220
-                },
-                url: '@judiciarysq',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='judiciarysq-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Union Station': {
-                name: 'Union Station',
-                id: 'union-station-station',
-                position: {
-                    x: 425,
-                    y: 205
-                },
-                url: '@unionstation',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='union-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'NoMa-Gallaudet U': {
-                name: 'NoMa-Gallaudet U',
-                id: 'noma-gallaudetu-station',
-                position: {
-                    x: 425,
-                    y: 185
-                },
-                url: '@noma',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='noma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Rhode Island Ave': {
-                name: 'Rhode Island Ave',
-                id: 'rhode-island-ave-station',
-                position: {
-                    x: 425,
-                    y: 165
-                },
-                url: '@rhodeislandave',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rhodeisland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Brookland-CUA': {
-                name: 'Brookland-CUA',
-                id: 'brookland-cua-station',
-                position: {
-                    x: 425,
-                    y: 145
-                },
-                url: '@brooklancua',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='brooklandcua-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Takoma': {
-                name: 'Takoma',
-                id: 'takoma-station',
-                position: {
-                    x: 340,
-                    y: 80
-                },
-                url: '@takoma',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Silver Spring': {
-                name: 'Silver Spring',
-                id: 'silver-spring-station',
-                position: {
-                    x: 325,
-                    y: 70
-                },
-                url: '@acornpARk',
-                fillColor: 'red',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='acornpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Forest Glen': {
-                name: 'Forest Glen',
-                id: 'forest-glen-station',
-                position: {
-                    x: 325,
-                    y: 50
-                },
-                url: '@forestglen',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Wheaton': {
-                name: 'Wheaton',
-                id: 'wheaton-station',
-                position: {
-                    x: 325,
-                    y: 30
-                },
-                url: '@wheaton',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wheatonboARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            },
-            'Glenmont': {
-                name: 'Glenmont',
-                id: 'glenmont-station',
-                position: {
-                    x: 325,
-                    y: 10
-                },
-                url: '@glenmont',
-                fillColor: 'white',
-                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/hov.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-            }
-        };
-               
-        function addStation(line, target, delay){
-            var station = line[target];
-           // console.log(station);
-            var svg = document.getElementsByTagName('svg')[0]; //Get svg element
-            var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'circle'); //Create a path in SVG's namespace
-            newElement.style.stroke = "#000"; //Set stroke colour
-            newElement.style.strokeWidth = "2px"; //Set stroke width
-            newElement.style.fill = `${station.fillColor}`;
-            newElement.setAttribute("id",`${station.id}`);
-            newElement.setAttribute("name",`${station.name}`);
-            newElement.setAttribute("class","station-marker");
-            newElement.setAttribute("cx",`${station.position.x}`);
-            newElement.setAttribute("cy",`${station.position.y}`);
-            newElement.setAttribute("r","7");
-            svg.appendChild(newElement);
-            
-            setTimeout(function(){
-                $(`#${station.id}`).animate({
-                    opacity: 1.0
-                }, 1000);
-            }, delay*100);
         }
         
         var stationInFocus = 'Silver Spring';
-        function extend(obj, src) {
-            Object.keys(src).forEach(function(key) { obj[key] = src[key]; });
-            return obj;
-        }
         
         $(document).ready(function(){
+            let MetroMap = broadcastOriginalAugmentedRealityDapps.main.map;
+            let MetroStations = broadcastOriginalAugmentedRealityDapps.main.stations;
+            
             setTimeout(function(){
-                var yellowKeys = Object.keys(yellowLineStations);
+                let yellowKeys = Object.keys(MetroStations.yellowLineStations);
+                
                 for(var i=0; i<yellowKeys.length; i++){
-                    addStation(yellowLineStations, yellowKeys[i], i);
+                    MetroMap.addStation(MetroStations.yellowLineStations, yellowKeys[i], i);
                 }
                 
-                var greenKeys = Object.keys(greenLineStations);
+                let greenKeys = Object.keys(MetroStations.greenLineStations);
+                
                 for(var j=0; j<greenKeys.length; j++){
-                    addStation(greenLineStations, greenKeys[j], j);
+                    MetroMap.addStation(MetroStations.greenLineStations, greenKeys[j], j);
                 }
                 
-                var blueKeys = Object.keys(blueLineStations);
+                let blueKeys = Object.keys(MetroStations.blueLineStations);
+                
                 for(var k=0; k<blueKeys.length; k++){
-                    addStation(blueLineStations, blueKeys[k], k);
+                    MetroMap.addStation(MetroStations.blueLineStations, blueKeys[k], k);
                 }
                 
-                var orangeKeys = Object.keys(orangeLineStations);
+                let orangeKeys = Object.keys(MetroStations.orangeLineStations);
+                
                 for(var l=0; l<orangeKeys.length; l++){
-                    addStation(orangeLineStations, orangeKeys[l], l);
+                    MetroMap.addStation(MetroStations.orangeLineStations, orangeKeys[l], l);
                 }
                 
-                var redKeys = Object.keys(redLineStations);
+                let redKeys = Object.keys(MetroStations.redLineStations);
+                
                 for(var m=0; m<redKeys.length; m++){
-                    addStation(redLineStations, redKeys[m], m);
+                    MetroMap.addStation(MetroStations.redLineStations, redKeys[m], m);
                 }
                 
-                var silverKeys = Object.keys(silverLineStations);
+                let silverKeys = Object.keys(MetroStations.silverLineStations);
+                
                 for(var n=0; n<silverKeys.length; n++){
-                    addStation(silverLineStations, silverKeys[n], n);
+                    MetroMap.addStation(MetroStations.silverLineStations, silverKeys[n], n);
                 }
                 
                 $('.station-marker').click(function(){
-                    var ygStations = extend(yellowLineStations, greenLineStations);
-                    var ygbStations = extend(ygStations, blueLineStations);
-                    var rygbStations = extend(redLineStations, ygbStations);
-                    var roygbStations = extend(rygbStations, orangeLineStations);
-                    var allStations = extend(roygbStations, silverLineStations);
+                    let ygStations = MetroMap.extend(MetroStations.yellowLineStations, MetroStations.greenLineStations);
+                    let ygbStations = MetroMap.extend(ygStations, MetroStations.blueLineStations);
+                    let rygbStations = MetroMap.extend(MetroStations.redLineStations, ygbStations);
+                    let roygbStations = MetroMap.extend(rygbStations, MetroStations.orangeLineStations);
+                    let allStations = MetroMap.extend(roygbStations, MetroStations.silverLineStations);
                     
                     var name = $(this).attr('name');
                     this.style.fill = 'violet'; 
@@ -1472,115 +1135,115 @@
                     $('#station-title').text(name);
                     
                     $('#acornpark-boARd-portal').click(function(){
-                        window.open('./b/acornpark', '_blank');
+                        window.open('./board/acornpark', '_blank');
                     });
                     
                     $('#glenmont-boARd-portal').click(function(){
-                        window.open('./b/glenmont', '_blank');
+                        window.open('./board/glenmont', '_blank');
                     });
                     
                     $('#wheaton-boARd-portal').click(function(){
-                        window.open('./b/wheaton', '_blank');
+                        window.open('./board/wheaton', '_blank');
                     });
                     
                     $('#forestglen-boARd-portal').click(function(){
-                        window.open('./b/forestglen', '_blank');
+                        window.open('./board/forestglen', '_blank');
                     });
                     
                     $('#takoma-boARd-portal').click(function(){
-                        window.open('./b/takoma', '_blank');
+                        window.open('./board/takoma', '_blank');
                     });
                     
                     $('#forttotten-boARd-portal').click(function(){
-                        window.open('./b/forttotten', '_blank');
+                        window.open('./board/forttotten', '_blank');
                     });
                     
                     $('#brooklandcua-boARd-portal').click(function(){
-                        window.open('./b/brooklandcua', '_blank');
+                        window.open('./board/brooklandcua', '_blank');
                     });
                     
                     $('#rhodeislandave-boARd-portal').click(function(){
-                        window.open('./b/rhodeislandave', '_blank');
+                        window.open('./board/rhodeislandave', '_blank');
                     });
                     
                     v$('#noma-boARd-portal').click(function(){
-                        window.open('./b/noma', '_blank');
+                        window.open('./board/noma', '_blank');
                     });
                     
                     $('#unionstation-boARd-portal').click(function(){
-                        window.open('./b/unionstation', '_blank');
+                        window.open('./board/unionstation', '_blank');
                     });
                     
                     $('#judiciarysq-boARd-portal').click(function(){
-                        window.open('./b/judiciarysq', '_blank');
+                        window.open('./board/judiciarysq', '_blank');
                     });
                     
                     $('#galleryplace-boARd-portal').click(function(){
-                        window.open('./b/galleryplace', '_blank');
+                        window.open('./board/galleryplace', '_blank');
                     });
                     
                     $('#metrocenter-boARd-portal').click(function(){
-                        window.open('./b/metrocenter', '_blank');
+                        window.open('./board/metrocenter', '_blank');
                     });
                     
                     
                     $('#mcphersons-boARd-portal').click(function(){
-                        window.open('./b/mcphersons', '_blank');
+                        window.open('./board/mcphersons', '_blank');
                     });
                     
                     $('#farragutnorth-boARd-portal').click(function(){
-                        window.open('./b/farragutnorth', '_blank');
+                        window.open('./board/farragutnorth', '_blank');
                     });
                     
                     $('#dupontcircle-boARd-portal').click(function(){
-                        window.open('./b/dupontcircle', '_blank');
+                        window.open('./board/dupontcircle', '_blank');
                     });
                     
                     $('#woodleypark-boARd-portal').click(function(){
-                        window.open('./b/woodleypark', '_blank');
+                        window.open('./board/woodleypark', '_blank');
                     });
                     $('#clevelandpark-boARd-portal').click(function(){
-                        window.open('./b/clevelandpark', '_blank');
+                        window.open('./board/clevelandpark', '_blank');
                     });
                     
                     $('#vanness-boARd-portal').click(function(){
-                        window.open('./b/vanness', '_blank');
+                        window.open('./board/vanness', '_blank');
                     });
                     
                     $('#tenleytownau-boARd-portal').click(function(){
-                        window.open('./b/tenleytownau', '_blank');
+                        window.open('./board/tenleytownau', '_blank');
                     });
                     
                     $('#friendshipheights-boARd-portal').click(function(){
-                        window.open('./b/friendshipheights', '_blank');
+                        window.open('./board/friendshipheights', '_blank');
                     });
                     
                     $('#bethesda-boARd-portal').click(function(){
-                        window.open('./b/bethesda', '_blank');
+                        window.open('./board/bethesda', '_blank');
                     });
                     
                     $('#medicalcenter-boARd-portal').click(function(){
-                        window.open('./b/medicalcenter', '_blank');
+                        window.open('./board/medicalcenter', '_blank');
                     });
                     
                     $('#grosvenor-boARd-portal').click(function(){
-                        window.open('./b/grosvenor', '_blank');
+                        window.open('./board/grosvenor', '_blank');
                     });
                     
                     $('#whiteflint-boARd-portal').click(function(){
-                        window.open('./b/whiteflint', '_blank');
+                        window.open('./board/whiteflint', '_blank');
                     });
                     
                     $('#twinbrook-boARd-portal').click(function(){
-                        window.open('./b/twinbrook', '_blank');
+                        window.open('./board/twinbrook', '_blank');
                     });
                     
                     $('#rockville-boARd-portal').click(function(){
-                        window.open('./b/rockville', '_blank');
+                        window.open('./board/rockville', '_blank');
                     });
                     
                     $('#shadygrove-boARd-portal').click(function(){
-                        window.open('./b/shadygrove', '_blank');
+                        window.open('./board/shadygrove', '_blank');
                     });
                 });
             }, 2000);
@@ -1759,10 +1422,10 @@
             <div id='pARk-address'>@houseofvenus</div>
             <div id='station-title'>welcome</div>
             <div id='mission-container'>
-                <p>This is the BOARD MAP for serializations of the HOUSE OF VENUS PARK or PUBLIC AUGMENTED REALITY KINECTOME.</p>
-                <p>A boARd is a local "hotspot" that distributes content by indexing of all nearby DIAs and exchanges, forming the backbone of the PARK.
+                <p>These are maps of the House of Venus PUBLIC AUGMENTED REALITY KINECTOME.</p>
+                <p>Each node represents a BOARD, a hotspot that indexes all nearby content, DIAs, and exchanges.
                 </p>
-                <p> What people decide to share with the World Wide Web is visible through here; for the rest you will have to travel there yourself!
+                <p>Some media is visible on the World Wide Web through this portal. For the rest you will have to travel there yourself!
                 </p>
             </div>
             <div id='details-footer-container'>

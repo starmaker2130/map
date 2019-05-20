@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html{
+            width: 100%;
+            height: 100%;
+        }
+        
+        #summary-container{
+            width: 500px;
+            height: 500px;
+            border-radius: 15px;
+            
+        }
+    </style>
+    <script src='../js/socket.io.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var socket = io.connect(location.host);
+            
+            socket.emit('pingARIA', {name: 'HOUSEOFVENUS', type: 'SUBJECT-OBJECT'});
+            
+            socket.on('returnARIALedgerSpaceSummary', function(data){
+                let summary = data.summary;
+                if(data.status){
+                    console.log(summary);
+                }
+            })
+        });         
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
