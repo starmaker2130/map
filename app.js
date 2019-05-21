@@ -474,13 +474,13 @@ var stations = {
             },
             moderators: [],
             description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-        id: 'naylor-rd-station',
-        position: {
-              x: 530,
-              y: 400
-        },
-        fillColor: 'white',
-        mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='naylor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+            id: 'naylor-rd-station',
+            position: {
+                  x: 530,
+                  y: 400
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='naylor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Southern Ave': {
@@ -641,7 +641,6 @@ var stations = {
                 x: 360,
                 y: 280
             },
-            url: '@lenfant',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='lenfant-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
@@ -702,6 +701,7 @@ var stations = {
     },
     'Mt Vernon Sq/7th St-Convention Center': {
         name: 'Mt Vernon Sq/7th St-Convention Center',
+        handle: '@mtvernon',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -722,13 +722,13 @@ var stations = {
                 x: 360,
                 y: 190
             },
-            url: '@mtvernon',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mtvernon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Shaw-Howard U': {
         name: 'Shaw-Howard U',
+        handle: '@howard',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -749,13 +749,13 @@ var stations = {
                 x: 360,
                 y: 160
             },
-            url: '@howard',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shaw-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'U Street': {
         name: 'U Street',
+        handle: '@ustreet',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -776,13 +776,13 @@ var stations = {
                 x: 340,
                 y: 140
             },
-            url: '@ustreet',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ustreet-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Columbia Heights': {
         name: 'Columbia Heights',
+        handle: '@columbiaheights',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -803,13 +803,13 @@ var stations = {
                 x: 310,
                 y: 120
             },
-            url: '@columbiaheights',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='columbiaheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Georgia Ave-Pentworth': {
         name: 'Georgia Ave-Pentworth',
+        handle: '@georgiaave',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -830,7 +830,6 @@ var stations = {
                 x: 340,
                 y: 100
             },
-            url: '@georgiaave',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='georgiaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
@@ -891,6 +890,7 @@ var stations = {
     },
     'Prince Georges Plaza': {
         name: 'Prince Georges Plaza',
+        handle: '@pgplaza',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -911,40 +911,40 @@ var stations = {
                 x: 440,
                 y: 50
             },
-            url: '@pgplaza',
             fillColor: 'white',
             mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
         }
     },
     'College Park-U of Md': {
         name: 'College Park-U of Md',
+        handle: '@collegepARk',
         neighbors: {
             ordinality: 0,
             cARds: 0,
             weight: 0
         },
         content:{
-        capacity: 0,
-        percentage: 0,
-        value: {
-            LYOKOIN: 0,
-            USD: 0,
-            EUR: 0
-        },
-        moderators: [],
-        description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-        id: 'college-park-station',
-        position: {
-            x: 470,
-            y: 30
-        },
-        url: '@cp',
-        fillColor: 'white',
-        mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
-    }
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'college-park-station',
+            position: {
+                x: 470,
+                y: 30
+            },
+            fillColor: 'white',
+            mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+        }
     },
     'Greenbelt': {
         name: 'Greenbelt',
+        handle: '@greenbelt',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -965,528 +965,13 @@ var stations = {
                 x: 500,
                 y: 15
             },
-            url: '@greenbelt',
             fillColor: 'white',
             mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
         }
     },
-   /* yellowLineStations : {
-        'Huntington': {
-            name: 'Huntington',
-            id: 'huntington-station',
-            position: {
-                x: 280,
-                y: 470
-            },
-            url: '@huntington',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='huntington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Eisenhower Ave': {
-            name: 'Eisenhower Ave',
-            id: 'eisenhower-ave-station',
-            position: {
-                x: 280,
-                y: 445
-            },
-            url: '@eisenhower',
-            fillColor: 'white',
-            mission:  `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'King St-Old Town': {
-            name: 'King St-Old Town',
-            id: 'king-st-old-town-station',
-            position: {
-                x: 280,
-                y: 415
-            },
-            url: '@kingstoldtown',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Braddock Rd': {
-            name: 'Braddock Rd',
-            id: 'braddock-rd-station',
-            position: {
-                x: 280,
-                y: 390
-            },
-            url: '@braddockrd',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='braddock-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Ronald Reagan Washington National Airport': {
-            name: 'Ronald Reagan Washington National Airport',
-            id: 'ronald-reagan-national-station',
-            position: {
-                x: 280,
-                y: 360
-            },
-            url: '@reagannational',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='reagan-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Crystal City': {
-            name: 'Crystal City',
-            id: 'crystal-city-station',
-            position: {
-                x: 255,
-                y: 350
-            },
-            url: '@crystalcity',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Pentagon City': {
-            name: 'Pentagon City',
-            id: 'pentagon-city-station',
-            position: {
-                x: 230,
-                y: 340
-            },
-            url: '@navyyard',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Pentagon': {
-            name: 'Pentagon',
-            id: 'pentagon-station',
-            position: {
-                x: 230,
-                y: 315
-            },
-            url: '@pentagon',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        }
-    },
-    blueLineStations : {
-        'Franconia-Springfield': {
-            name: 'Franconia-Springfield',
-            id: 'franconia-springfield-station',
-            position: {
-                x: 150,
-                y: 520
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='franconia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Van Dorn': {
-            name: 'Van Dorn',
-            id: 'van-dorn-station',
-            position: {
-                x: 175,
-                y: 480
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Arlington Cemetery': {
-            name: 'Arlington Cemetery',
-            id: 'arlington-cemetery-station',
-            position: {
-                x: 190,
-                y: 270 
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Rosslyn': {
-            name: 'Rosslyn',
-            id: 'rosslyn-station',
-            position: {
-                x: 160,
-                y: 200
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Foggy Bottom-GWU': {
-            name: 'Foggy Bottom-GWU',
-            id: 'foggy-bottom-gwu-station',
-            position: {
-                x: 220,
-                y: 170
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Farragut West': {
-            name: 'Farragut West',
-            id: 'farragut-west-station',
-            position: {
-                x: 250,
-                y: 170
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragut-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'McPherson Square': {
-            name: 'McPherson Square',
-            id: 'mcpherson-square-station',
-            position: {
-                x: 300,
-                y: 170
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Metro Center': {
-            name: 'Metro Center',
-            id: 'metro-center-station',
-            position: {
-                x: 320,
-                y: 200
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Federal Triangle': {
-            name: 'Federal Triangle',
-            id: 'federal-triangle-station',
-            position: {
-                x: 320,
-                y: 230
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Smithsonian': {
-            name: 'Smithsonian',
-            id: 'smithsonian-station',
-            position: {
-                x: 320,
-                y: 260
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Federal Center SW': {
-            name: 'Federal Center SW',
-            id: 'federal-center-sw-station',
-            position: {
-                x: 400,
-                y: 280
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Capitol South': {
-            name: 'Capitol South',
-            id: 'capitol-south-station',
-            position: {
-                x: 430,
-                y: 280
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Eastern Market': {
-            name: 'Eastern Market',
-            id: 'eastern-market-station',
-            position: {
-                x: 460,
-                y: 250
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Potomac Ave': {
-            name: 'Potomac Ave',
-            id: 'potomac-ave-station',
-            position: {
-                x: 480,
-                y: 235 
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },        
-        'Stadium-Armory': {
-            name: 'Stadium-Armory',
-            id: 'stadium-armory-station',
-            position: {
-                x: 505,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Benning Road': {
-            name: 'Benning Road',
-            id: 'benning-road-station',
-            position: {
-                x: 530,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='benningroad-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Capitol Heights': {
-            name: 'Capitol Heights',
-            id: 'capitol-heights-station',
-            position: {
-                x: 555,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Addison Rd/Seat Pleasant': {
-            name: 'Addison Rd/Seat Pleasant',
-            id: 'addison-rd-station',
-            position: {
-                x: 580,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id=addison-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Morgan Blvd': {
-            name: 'Morgan Blvd',
-            id: 'morgan-blvd-station',
-            position: {
-                x: 605,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Largo Town Center': {
-            name: 'Largo Town Center',
-            id: 'largo-town-center-station',
-            position: {
-                x: 630,
-                y: 220
-            },
-            url: '@',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='largo-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-    },
-    orangeLineStations : {
-        'Vienna/ Fairfax-GMU': {
-            name: 'Vienna/ Fairfax-GMU',
-            id: 'vienna-gmu-station',
-            position: {
-                x: 15,
-                y: 230
-            },
-            url: '@gmu',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Dunn Loring/ Merrifeld': {
-            name: 'Dunn Loring/ Merrifeld',
-            id: 'dunn-loring-merrifeld-station',
-            position: {
-                x: 35,
-                y: 230
-            },
-            url: '@dunnloring',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'West Falls Church/ VT-UVA': {
-            name: 'West Falls Church/ VT-UVA',
-            id: 'west-falls-vt-uva-station',
-            position: {
-                x: 55,
-                y: 230
-            },
-            url: '@westfallschurch',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'East Falls Church': {
-            name: 'East Falls Church',
-            id: 'east-falls-church-station',
-            position: {
-                x: 75,
-                y: 230
-            },
-            url: '@eastfallschurch',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Ballston-MU': {
-            name: 'Ballston-MU',
-            id: 'ballston-mu-station',
-            position: {
-                x: 95,
-                y: 230
-            },
-            url: '@ballston',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Virginia Sq-GMU': {
-            name: 'Virginia Sq-GMU',
-            id: 'virginia-square-gmu-station',
-            position: {
-                x: 115,
-                y: 230
-            },
-            url: '@gmu',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Clarendon': {
-            name: 'Clarendon',
-            id: 'clarendon-station',
-            position: {
-                x: 135,
-                y: 230
-            },
-            url: '@navyyard',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Court House': {
-            name: 'Court House',
-            id: 'court-house-station',
-            position: {
-                x: 155,
-                y: 230
-            },
-            url: '@courthouse',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Minnesota Ave': {
-            name: 'Minnesota Ave',
-            id: 'minnesota-ave-station',
-            position: {
-                x: 545,
-                y: 190
-            },
-            url: '@minnesotaave',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Deanwood': {
-            name: 'Deanwood',
-            id: 'deanwood-station',
-            position: {
-                x: 565,
-                y: 160
-            },
-            url: '@deanwood',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Cheverly': {
-            name: 'Cheverly',
-            id: 'cheverly-station',
-            position: {
-                x: 585,
-                y: 130
-            },
-            url: '@cheverly',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Landover': {
-            name: 'Landover',
-            id: 'landover-station',
-            position: {
-                x: 605,
-                y: 100
-            },
-            url: '@landover',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='landover-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'New Carrolton': {
-            name: 'New Carrolton',
-            id: 'new-carrolton-station',
-            position: {
-                x: 625,
-                y: 70
-            },
-            url: '@newcarrolton',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        }
-    },
-    silverLineStations : {	
-        'Wiehle-Reston East': {
-            name: 'Wiehle-Reston East',
-            id: 'wiehle-reston-east-station',
-            position: {
-                x: 25,
-                y: 130
-            },
-            url: '@wiehle-reston-east',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Spring Hill': {
-            name: 'Spring Hill',
-            id: 'spring-hill-station',
-            position: {
-                x: 40,
-                y: 150
-            },
-            url: '@springhill',
-            fillColor: 'white',
-            mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='springhill-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Greensboro': {
-            name: 'Greensboro',
-            id: 'greensboro-station',
-            position: {
-                x: 55,
-                y: 170
-            },
-            url: '@greensboro',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'Tysons Corner': {
-            name: 'Tysons Corner',
-            id: 'tysons-corner-station',
-            position: {
-                x: 70,
-                y: 190
-            },
-            url: '@tysonscorner',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        },
-        'McLean': {
-            name: 'McLean',
-            id: 'mclean-station',
-            position: {
-                x: 85,
-                y: 210
-            },
-            url: '@mclean',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-        }
-    },*/   	     
-    'Shady Grove': {
-        name: 'Shady Grove',
-        handle: '@ARia',
+    'Huntington': {
+        name: 'Huntington',
+        handle: '@huntington',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1501,20 +986,1260 @@ var stations = {
                 EUR: 0
             },
             moderators: [],
-            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'huntington-station',
+            position: {
+                x: 280,
+                y: 470
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='huntington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Eisenhower Ave': {
+        name: 'Eisenhower Ave',
+        handle: '@eisenhower',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
         },
-        id: 'shady-grove-station',
-        position: {
-            x: 50,
-            y: 20
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'eisenhower-ave-station',
+            position: {
+                x: 280,
+                y: 445
+            },
+            fillColor: 'white',
+            mission:  `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'King St-Old Town': {
+        name: 'King St-Old Town',
+        handle: '@kingstoldtown',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
         },
-        url: '@shadygrove',
-        fillColor: 'white',
-        mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'king-st-old-town-station',
+            position: {
+                x: 280,
+                y: 415
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Braddock Rd': {
+        name: 'Braddock Rd',
+        handle: '@braddockrd',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'braddock-rd-station',
+            position: {
+                x: 280,
+                y: 390
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='braddock-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Ronald Reagan Washington National Airport': {
+        name: 'Ronald Reagan Washington National Airport',
+        handle: '@reagan',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'ronald-reagan-national-station',
+            position: {
+                x: 280,
+                y: 360
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='reagan-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Crystal City': {
+        name: 'Crystal City',
+        handle: '@crystalcity',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'crystal-city-station',
+            position: {
+                x: 255,
+                y: 350
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Pentagon City': {
+        name: 'Pentagon City',
+        handle: '@pentagoncity',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'pentagon-city-station',
+            position: {
+                x: 230,
+                y: 340
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Pentagon': {
+        name: 'Pentagon',
+        handle: '@pentagon',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'pentagon-station',
+            position: {
+                x: 230,
+                y: 315
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Franconia-Springfield': {
+        name: 'Franconia-Springfield',
+        handle: '@franconia',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'franconia-springfield-station',
+            position: {
+                x: 150,
+                y: 520
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='franconia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Van Dorn': {
+        name: 'Van Dorn',
+        handle: '@vandorn',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'van-dorn-station',
+            position: {
+                x: 175,
+                y: 480
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Arlington Cemetery': {
+        name: 'Arlington Cemetery',
+        handle: '@arlingtoncemetery',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'arlington-cemetery-station',
+            position: {
+                x: 190,
+                y: 270 
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Rosslyn': {
+        name: 'Rosslyn',
+        handle: '@rosslyn',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'rosslyn-station',
+            position: {
+                x: 160,
+                y: 200
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Foggy Bottom-GWU': {
+        name: 'Foggy Bottom-GWU',
+        handle: '@foggybottom',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'foggy-bottom-gwu-station',
+            position: {
+                x: 220,
+                y: 170
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Farragut West': {
+        name: 'Farragut West',
+        handle: '@farragutwest',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'farragut-west-station',
+            position: {
+                x: 250,
+                y: 170
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragut-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'McPherson Square': {
+        name: 'McPherson Square',
+        handle: '@mcphersonsq',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'mcpherson-square-station',
+            position: {
+                x: 300,
+                y: 170
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Metro Center': {
+        name: 'Metro Center',
+        handle: '@metrocenter',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'metro-center-station',
+            position: {
+                x: 320,
+                y: 200
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Federal Triangle': {
+        name: 'Federal Triangle',
+        handle: '@federaltriangle',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'federal-triangle-station',
+            position: {
+                x: 320,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Smithsonian': {
+        name: 'Smithsonian',
+        handle: '@smithsonian',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'smithsonian-station',
+            position: {
+                x: 320,
+                y: 260
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Federal Center SW': {
+        name: 'Federal Center SW',
+        handle: '@federalcenter',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'federal-center-sw-station',
+            position: {
+                x: 400,
+                y: 280
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Capitol South': {
+        name: 'Capitol South',
+        handle: '@capitolsouth',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'capitol-south-station',
+            position: {
+                x: 430,
+                y: 280
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Eastern Market': {
+        name: 'Eastern Market',
+        handle: '@easternmarket',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'eastern-market-station',
+            position: {
+                x: 460,
+                y: 250
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Potomac Ave': {
+        name: 'Potomac Ave',
+        hanlde: '@potomacave',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'potomac-ave-station',
+            position: {
+                x: 480,
+                y: 235 
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },        
+    'Stadium-Armory': {
+        name: 'Stadium-Armory',
+        handle: '@stadiumarmory',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'stadium-armory-station',
+            position: {
+                x: 505,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Benning Road': {
+        name: 'Benning Road',
+        handle: '@benningroad',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'benning-road-station',
+            position: {
+                x: 530,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='benningroad-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Capitol Heights': {
+       name: 'Capitol Heights',
+        handle: '@capitolheights',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',id: 'capitol-heights-station',
+            position: {
+                x: 555,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+   'Addison Rd/Seat Pleasant': {
+        name: 'Addison Rd/Seat Pleasant',
+        handle: '@addisonrd',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'addison-rd-station',
+            position: {
+                x: 580,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id=addison-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+   },
+    'Morgan Blvd': {
+        name: 'Morgan Blvd',
+        handle: '@morganblvd',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'morgan-blvd-station',
+            position: {
+                x: 605,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        },
+    },
+    'Largo Town Center': {
+        name: 'Largo Town Center',
+        handle: '@largo',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'largo-town-center-station',
+            position: {
+                x: 630,
+                y: 220
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='largo-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        },
+    },
+    'Vienna/ Fairfax-GMU': {
+        name: 'Vienna/ Fairfax-GMU',
+        handle: '@vienna',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'vienna-gmu-station',
+            position: {
+                x: 15,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Dunn Loring/ Merrifeld': {
+        name: 'Dunn Loring/ Merrifeld',
+        handle: '@dunnloring',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'dunn-loring-merrifeld-station',
+            position: {
+                x: 35,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'West Falls Church/ VT-UVA': {
+        name: 'West Falls Church/ VT-UVA',
+        handle: '@westfallschurch',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'west-falls-vt-uva-station',
+            position: {
+                x: 55,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'East Falls Church': {
+        name: 'East Falls Church',
+        handle: '@eastfallschurch',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'east-falls-church-station',
+            position: {
+                x: 75,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Ballston-MU': {
+        name: 'Ballston-MU',
+        handle: '@ballston',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'ballston-mu-station',
+            position: {
+                x: 95,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Virginia Sq-GMU': {
+        name: 'Virginia Sq-GMU',
+        handle: '@gmu',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'virginia-square-gmu-station',
+            position: {
+                x: 115,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Clarendon': {
+        name: 'Clarendon',
+        handle: '@clarendon',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'clarendon-station',
+            position: {
+                x: 135,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Court House': {
+        name: 'Court House',
+        handle: '@courthouse',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'court-house-station',
+            position: {
+                x: 155,
+                y: 230
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Minnesota Ave': {
+        name: 'Minnesota Ave',
+        handle: '@minnesotaave',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'minnesota-ave-station',
+            position: {
+                x: 545,
+                y: 190
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Deanwood': {
+        name: 'Deanwood',
+        handle:'@deanwood',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'deanwood-station',
+            position: {
+                x: 565,
+                y: 160
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Cheverly': {
+        name: 'Cheverly',
+        handle: '@cheverly',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'cheverly-station',
+            position: {
+                x: 585,
+                y: 130
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Landover': {
+        name: 'Landover',
+        handle: '@landover',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'landover-station',
+            position: {
+                x: 605,
+                y: 100
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='landover-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'New Carrolton': {
+        name: 'New Carrolton',
+        handle: '@newcarrolton',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'new-carrolton-station',
+            position: {
+                x: 625,
+                y: 70
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Wiehle-Reston East': {
+        name: 'Wiehle-Reston East',
+        handle: '@reston',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'wiehle-reston-east-station',
+            position: {
+                x: 25,
+                y: 130
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Spring Hill': {
+        name: 'Spring Hill',
+        handle: '@springhill',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'spring-hill-station',
+            position: {
+                x: 40,
+                y: 150
+            },
+            fillColor: 'white',
+            mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='springhill-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Greensboro': {
+        name: 'Greensboro',
+        handle: '@greensboro',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'greensboro-station',
+            position: {
+                x: 55,
+                y: 170
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'Tysons Corner': {
+        name: 'Tysons Corner',
+        handle: '@tysonscorner',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'tysons-corner-station',
+            position: {
+                x: 70,
+                y: 190
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },
+    'McLean': {
+        name: 'McLean',
+        handle: '@mclean',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'mclean-station',
+            position: {
+                x: 85,
+                y: 210
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
+    },   	     
+    'Shady Grove': {
+        name: 'Shady Grove',
+        handle: '@shadygrove',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
+            id: 'shady-grove-station',
+            position: {
+                x: 50,
+                y: 20
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+        }
     },
     'Rockville': {
         name: 'Rockville',
-        handle: '@ARia',
+        handle: '@rockville',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1535,14 +2260,13 @@ var stations = {
                 x: 65,
                 y: 35
             },
-            url: '@rockville',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rockville-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },	
     'Twinbrook': {
         name: 'Twinbrook',
-        handle: '@ARia',
+        handle: '@twinbrook',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1563,14 +2287,13 @@ var stations = {
                 x: 80,
                 y: 50
             },
-            url: '@twinbrook',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='twinbrook-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'White Flint': {
         name: 'White Flint',
-        handle: '@ARia',
+        handle: '@whiteflint',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1591,14 +2314,13 @@ var stations = {
                 x: 95,
                 y: 65
             },
-            url: '@whiteflint',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='whiteflint-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
 },
     'Grosvenor-Strathmore': {
         name: 'Grosvenor-Strathmore',
-        handle: '@ARia',
+        handle: '@grosvenor',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1619,14 +2341,13 @@ var stations = {
                 x: 110,
                 y: 80
             },
-            url: '@grosvenor-strathmore',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='grosvenor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Medical Center': {
         name: 'Medical Center',
-        handle: '@ARia',
+        handle: '@medicalcenter',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1647,14 +2368,13 @@ var stations = {
                 x: 125,
                 y: 95
             },
-            url: '@medicalcenter',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='medicalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Bethesda': {
         name: 'Bethesda',
-        handle: '@ARia',
+        handle: '@bethesda',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1675,14 +2395,13 @@ var stations = {
                 x: 150,
                 y: 105
             },
-            url: '@bethesda',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='bethesda-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Friendship Heights': {
         name: 'Friendship Heights',
-        handle: '@ARia',
+        handle: '@friendshipheights',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1703,14 +2422,13 @@ var stations = {
                 x: 170,
                 y: 105
             },
-            url: '@friendshipheights',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='friendship-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },         
     'Tenleytown  AU': {
         name: 'Tenleytown  AU',
-        handle: '@ARia',
+        handle: '@tenleytownau',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1731,14 +2449,13 @@ var stations = {
                 x: 195,
                 y: 105
             },
-            url: '@tenleytownau',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tenleytownau-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
     }
     },
     'Van Ness-UDC': {
         name: 'Van Ness-UDC',
-        handle: '@ARia',
+        handle: '@udc',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1759,7 +2476,6 @@ var stations = {
                 x: 215,
                 y: 105
             },
-            url: '@udc',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vanness-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
@@ -1787,14 +2503,13 @@ var stations = {
                 x: 235,
                 y: 105
             },
-            url: '@clevelandpARk',
             fillColor: 'white',
             mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clevelandpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Woodley Park': {
         name: 'Woodley Park',
-        handle: '@ARia',
+        handle: '@woodleypARk',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1815,14 +2530,13 @@ var stations = {
                 x: 250,
                 y: 120
             },
-            url: '@woodleypARk',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='woodleypark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'DuPont Circle': {
         name: 'DuPont Circle',
-        handle: '@ARia',
+        handle: '@dupontcircle',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1843,14 +2557,13 @@ var stations = {
                 x: 265,
                 y: 135
             },
-            url: '@dupontcircle',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dupont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Farragut North': {
         name: 'Farragut North',
-        handle: '@ARia',
+        handle: '@farragutnorth',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1871,42 +2584,13 @@ var stations = {
                 x: 280,
                 y: 150
             },
-            url: '@farragutnorth',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragutnorth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
-    'Takoma': {
-        name: 'Takoma',
-        handle: '@ARia',
-        neighbors: {
-            ordinality: 0,
-            cARds: 0,
-            weight: 0
-        },
-        content:{
-            capacity: 0,
-            percentage: 0,
-            value: {
-                LYOKOIN: 0,
-                USD: 0,
-                EUR: 0
-            },
-            moderators: [],
-            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-        id: 'takoma-station',
-        position: {
-            x: 325,
-            y: 85
-        },
-        url: '@takoma',
-        fillColor: 'white',
-        mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
-    }
-    },
     'Judiciary Sq': {
         name: 'Judiciary Sq',
-        handle: '@ARia',
+        handle: '@judiciarysq',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1927,14 +2611,13 @@ var stations = {
                 x: 395,
                 y: 220
             },
-            url: '@judiciarysq',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='judiciarysq-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Union Station': {
         name: 'Union Station',
-        handle: '@ARia',
+        handle: '@unionstation',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1955,14 +2638,13 @@ var stations = {
                 x: 425,
                 y: 205
             },
-            url: '@unionstation',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='union-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'NoMa-Gallaudet U': {
         name: 'NoMa-Gallaudet U',
-        handle: '@ARia',
+        handle: '@noma',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -1983,14 +2665,13 @@ var stations = {
                 x: 425,
                 y: 185
             },
-            url: '@noma',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='noma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Rhode Island Ave': {
         name: 'Rhode Island Ave',
-        handle: '@ARia',
+        handle: '@rhodeisland',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2011,14 +2692,13 @@ var stations = {
                 x: 425,
                 y: 165
             },
-            url: '@rhodeislandave',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rhodeisland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Brookland-CUA': {
         name: 'Brookland-CUA',
-        handle: '@ARia',
+        handle: '@brooklandcua',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2039,14 +2719,13 @@ var stations = {
                 x: 425,
                 y: 145
             },
-            url: '@brooklancua',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='brooklandcua-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Takoma': {
         name: 'Takoma',
-        handle: '@ARia',
+        handle: '@takoma',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2067,7 +2746,6 @@ var stations = {
                 x: 340,
                 y: 80
             },
-            url: '@takoma',
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
@@ -2122,14 +2800,13 @@ var stations = {
                 x: 325,
                 y: 70
             },
-            url: '@acornpARk',
             fillColor: 'red',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='acornpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Forest Glen': {
         name: 'Forest Glen',
-        handle: '@ARia',
+        handle: '@forestglen',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2145,19 +2822,18 @@ var stations = {
             },
             moderators: [],
             description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-        id: 'forest-glen-station',
-        position: {
-            x: 325,
-            y: 50
-        },
-        url: '@forestglen',
-        fillColor: 'white',
-        mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+            id: 'forest-glen-station',
+            position: {
+                x: 325,
+                y: 50
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Wheaton': {
         name: 'Wheaton',
-        handle: '@ARia',
+        handle: '@wheaton',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2173,19 +2849,18 @@ var stations = {
             },
             moderators: [],
             description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-        id: 'wheaton-station',
-        position: {
-            x: 325,
-            y: 30
-        },
-        url: '@wheaton',
-        fillColor: 'white',
-        mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wheatonboARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+            id: 'wheaton-station',
+            position: {
+                x: 325,
+                y: 30
+            },
+            fillColor: 'white',
+            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wheatonboARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     },
     'Glenmont': {
         name: 'Glenmont',
-        handle: '@ARia',
+        handle: '@glenmont',
         neighbors: {
             ordinality: 0,
             cARds: 0,
@@ -2201,14 +2876,13 @@ var stations = {
             },
             moderators: [],
                 description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
-            id: 'glenmont-station',
-            position: {
-                x: 325,
-                y: 10
-            },
-            url: '@glenmont',
-            fillColor: 'white',
-            mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                id: 'glenmont-station',
+                position: {
+                    x: 325,
+                    y: 10
+                },
+                fillColor: 'white',
+                mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
     }    
 };
