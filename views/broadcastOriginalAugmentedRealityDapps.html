@@ -10,6 +10,8 @@
         var stationInFocus = 'Silver Spring';
         
         document.addEventListener('DOMContentLoaded', function(){
+            var socket = io.connect(location.host);
+            
             let MetroMap = broadcastOriginalAugmentedRealityDapps.main.map;
             let MetroStations = broadcastOriginalAugmentedRealityDapps.main.stations;
             
@@ -51,6 +53,7 @@
                 }
                 
                 $('.station-marker').click(function(){
+                    
                     let ygStations = MetroMap.extend(MetroStations.yellowLineStations, MetroStations.greenLineStations);
                     let ygbStations = MetroMap.extend(ygStations, MetroStations.blueLineStations);
                     let rygbStations = MetroMap.extend(MetroStations.redLineStations, ygbStations);
@@ -67,123 +70,25 @@
                     $('#mission-container').empty().append(allStations[name].mission);
                     $('#pARk-address').text(allStations[name].url);
 
+                    socket.emit('requestStationHandle', {name: name});
+                    
                     if(name=='Mt Vernon Sq/7th St-Convention Center'){
                         name = 'Mt Vernon Sq';
                     }
 
                     $('#station-title').text(name);
                     
-                    document.getElementById('acornpark-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@acornpark', '_blank');
+                    let target = $('.boARd-launch-pin').attr('id');
+                    console.log(target);
+                    
+                    socket.on('returnStationHandle', function(data){
+                        let address = data.handle;
+                        console.log(address)
+                        $(`#${target}`).click(function(){
+                             window.open(`./b/${address}`, '_blank');
+                        });
                     });
                     
-                    document.getElementById('glenmont-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@glenmont', '_blank');
-                    });
-                    
-                    document.getElementById('wheaton-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/wheaton', '_blank');
-                    });
-                    
-                    document.getElementById('forestglen-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@forestglen', '_blank');
-                    });
-                    
-                    document.getElementById('takoma-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@takoma', '_blank');
-                    });
-                    
-                    document.getElementById('forttotten-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@forttotten', '_blank');
-                    });
-                    
-                    document.getElementById('brooklandcua-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@brooklandcua', '_blank');
-                    });
-                    
-                    document.getElementById('rhodeislandave-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@rhodeislandave', '_blank');
-                    });
-                    
-                    document.getElementById('noma-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@noma', '_blank');
-                    });
-                    
-                    document.getElementById('unionstation-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@unionstation', '_blank');
-                    });
-                    
-                    document.getElementById('judiciarysq-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@judiciarysq', '_blank');
-                    });
-                    
-                    document.getElementById('galleryplace-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@galleryplace', '_blank');
-                    });
-                    
-                    document.getElementById('metrocenter-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@metrocenter', '_blank');
-                    });       
-                    
-                    document.getElementById('mcphersons-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@mcphersons', '_blank');
-                    });
-                    
-                    document.getElementById('farragutnorth-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@farragutnorth', '_blank');
-                    });
-                    
-                    document.getElementById('dupontcircle-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@dupontcircle', '_blank');
-                    });
-                    
-                    document.getElementById('woodleypark-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@woodleypark', '_blank');
-                    });
-                    
-                    document.getElementById('clevelandpark-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@clevelandpark', '_blank');
-                    });
-                    
-                    document.getElementById('vanness-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@vanness', '_blank');
-                    });
-                    
-                    document.getElementById('tenleytownau-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@tenleytownau', '_blank');
-                    });
-                    
-                    document.getElementById('friendshipheights-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@friendshipheights', '_blank');
-                    });
-                    
-                    document.getElementById('bethesda-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@bethesda', '_blank');
-                    });
-                    
-                    document.getElementById('medicalcenter-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@medicalcenter', '_blank');
-                    });
-                    
-                    document.getElementById('grosvenor-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@grosvenor', '_blank');
-                    });
-                    
-                    document.getElementById('whiteflint-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@whiteflint', '_blank');
-                    });
-                    
-                    document.getElementById('twinbrook-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@twinbrook', '_blank');
-                    });
-                    
-                    document.getElementById('rockville-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@rockville', '_blank');
-                    });
-                    
-                    document.getElementById('shadygrove-boARd-portal').addEventListener('click', function(){
-                        window.open('./b/@shadygrove', '_blank');
-                    });
                 });
             }, 2000);
             
@@ -356,6 +261,8 @@
             document.getElementById('house-of-venus-board-icon').addEventListener('click', function(){
                 window.open('./b/@houseofvenus', '_blank');
             });
+            
+            
                 
         });
     </script>

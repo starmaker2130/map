@@ -80,12 +80,6 @@ app.get('/b/:dia_handle', function(req, res){
 
 /* DIAs */
 
-app.get('/board/houseofvenus/:dia_handle', function(req, res){
-    let handle = req.params.dia_handle;
-    handle = handle.substring(1);
-    res.render(handle,{root: dir[0]});
-});
-
 app.get('/stream', function(req, res){
     res.render('stream-main-menu.html',{root: dir[0]});
 });
@@ -2097,6 +2091,9 @@ var stations = {
             moderators: [
                 {
                     name: 'Patrice-Morgan Tandou Ongoly'
+                },
+                {
+                    name: 'Beatrice Goma'
                 }
             ],
             description: 'This is a the first serialization of an unpermissioned BOARD for DECENTRALIZED IMMERSIVE APPLICATIONS on a HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME [pARk v. 0.20.0. released on May 21, 2019 at 00:00 (UTC-0500)].'
@@ -2254,6 +2251,14 @@ io.sockets.on('connection', function(socket){
             console.log('no action associated with this ENTITY type in the current ATOWN specification v. 0.20.0');
             console.log(type);
         }
+    });
+    
+    socket.on('requestStationHandle', function(data){
+        console.log('-------------------------------- \n REQUEST STATION HANDLE FX \n --------------------------------')
+        let result = stations[data.name].handle;
+        console.log(result);
+        console.log(' ------sub complete ------------');
+        socket.emit('returnStationHandle', {status: true, handle: result});
     });
     
     socket.on('identify', function(data){
