@@ -182,11 +182,11 @@
                 }, 1000, function(){
                     $('#mission-container').css({
                         margin: '1% auto'
-                    }).empty().append(`<div id=''></div><iframe width="480" height="360" src="https://www.youtube.com/embed/QGUhFcRjgus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><input type='button' id='order-cARd-button' value='BUY'/><input type='button' id='view-docs-button' value='TRY'/>`);
+                    }).empty().append(`<div id=''></div><video id="demo-video-container" width="440" height="330" controls><source src="../media/img/testvideo.mp4" type="video/mp4"></video>`);
                     
-                    $('#view-docs-button').addEventListener('click', function(){
+                    /*$('#view-docs-button').addEventListener('click', function(){
                         window.location.href = './cARd'
-                    });
+                    });*/
                 });
                 
                 $('#return-to-map').show().animate({
@@ -217,11 +217,11 @@
                     $('#mission-container').css({
                         margin: '1% auto'
                     }).empty().append(`<div id='what-section-header' class='section-header'>?</div>
-<div id='what-section-text' class='section-text'>the public Augmented Reality kinectome, or pARk, is 5G immersive internet owned and operated by its users. remove the constraints of past interfaces to explore, build, and share as you are meant to.</div>
+<div id='what-section-text' class='section-text'>the public Augmented Reality kinectome (pARk) is a community-owned, immersive internet. let go of the restraints of the past and embrace a more natural way to collaborate and explore.</div>
 <div id='why-section-header' class='section-header'>!</div>
-<div id='why-section-text' class='section-text'>boARds are local "hotspots" that list all the DIAs in a given area. </div>
+<div id='why-section-text' class='section-text'>boARds are visualizations of the spread of experiences in a given geographic area. this site contains all <span style="color: pink; font-weight: 900; cursor: pointer;">public</span> boARds. </div>
 <div id='when-section-header' class='section-header'>...</div>
-<div id='when-section-text'>if you live in Silver Spring, MD start building here. If you live elsewhere, order a cARd to start building on your own!</div>`);
+<div id='when-section-text'>check out the release schedule <span style="cursor: pointer; color: aquamarine; font-weight: 900;">here</span> and order a cARd to start building on your own!</div>`);
                 });
                 
                 $('#return-to-map').show().animate({
@@ -311,7 +311,7 @@
     <select id='pARk-selector'>
         <option class='pARk-location' value="dmv">dmv</option>
         <option class='pARk-location' value="cp">paris</option>
-        <option class='pARk-location' value="opel">bangalore</option>
+        <option class='pARk-location' value="opel">brazza</option>
     </select>
     <img id='cARd-page-button' src='../media/img/card-icon.png' width='50px' height='50px'/>
     <img id='pARk-page-button' src='../media/img/globe-icon.png' width='50px' height='50px'/>

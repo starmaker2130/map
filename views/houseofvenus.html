@@ -21,7 +21,6 @@
             position: absolute;
             top: 50%;
             left: 50%;
-
             margin: -250px 0 0 -250px;
         }
         
@@ -145,6 +144,18 @@
             
             socket.emit('pingARIA', {name: 'HOUSEOFVENUS', type: 'SUBJECT-OBJECT'});
             
+            socket.on("connectHouseGuestToHosts", function(data){
+                if(data.status){
+                    window.open('../hosts','_blank');
+                }
+            });
+            
+            socket.on("connectHouseGuestToDIAs", function(data){
+                if(data.status){
+                    window.open('../dias','_blank');
+                }
+            });
+            
             socket.on('returnARIALedgerSpaceSummary', function(data){
                 let summary = data.summary;
                 if(data.status){
@@ -172,6 +183,14 @@
                 document.getElementById('lyokoin-valuation-container').textContent = Math.round(summary.content.value.LYOKOIN*100)/100;
                 document.getElementById('usd-valuation-container').textContent = summary.content.value.USD;
                 document.getElementById('euro-valuation-container').textContent = summary.content.value.EUR;
+                
+                document.getElementById('neighbors-list-container').addEventListener("click", function(){
+                    socket.emit("requestHostsForHouseGuest", {status: true, name: "HOUSEOFVENUS"});
+                });
+                
+                document.getElementById('cARds-list-container').addEventListener("click", function(){
+                    socket.emit("requestDIAsForHouseGuest", {status: true, name: "HOUSEOFVENUS"});
+                });
             });
         });         
     </script>

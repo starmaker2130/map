@@ -12,12 +12,14 @@ var fs = require('fs');
 var WhichBrowser = require('which-browser');
 // main application instance
 
+// var keypress = require('keypress');
+
 var app = express();
 
 // main application settings
 
 var config = {
-    PORT: process.env.PORT || 8008,
+    PORT: process.env.PORT || 8080,
     DIRECTORY: [
         './',           /* 0 */
         './css',        /* 1 */
@@ -26,7 +28,7 @@ var config = {
         './media/gifs', /* 4 */
         './media/pattern', /* 5 */
         './media/img',  /* 6 */
-        './media/sounds',   /* 7 */
+        './media/audio',   /* 7 */
         './media/model',    /* 8 */
         './uploads',        /* 9 */
         './drafts/docs',       /* 10 */
@@ -71,6 +73,20 @@ app.get('/', function(req, res){
 });
 
 /*boards*/
+
+app.get('/keyboard/main', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+    
+    res.render('azerty.html',{root: dir[0]});
+});
+
+app.get('/keyboard/piano', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+    
+    res.render('piano.html',{root: dir[0]});
+});
 
 app.get('/b/:dia_handle', function(req, res){
     let handle = req.params.dia_handle;
@@ -130,6 +146,14 @@ app.get('/cARd', function(req, res){
     res.render('cARd.html',{root: dir[0]});
 });
 
+app.get('/hosts', function(req, res){
+    res.render('hosts.html',{root: dir[0]});
+});
+
+app.get('/dias', function(req, res){
+    res.render('dias.html',{root: dir[0]});
+});
+
 app.get('/css/:stylesheet_id', function(req, res){
     let stylesheet_id = req.params.stylesheet_id;
     res.sendFile(stylesheet_id, {root: dir[1]});
@@ -160,8 +184,8 @@ app.get('/media/img/:img_id', function(req, res){
     res.sendFile(img_id, {root: dir[6]});
 });
 
-app.get('/media/sounds/:sound_id', function(req, res){
-    var sound_id = req.params.sound_id;
+app.get('/media/audio/:audio_id', function(req, res){
+    var audio_id = req.params.audio_id;
     res.sendFile(sound_id, {root: dir[7]});
 });
 
@@ -2759,7 +2783,223 @@ var stations = {
             weight: 0
         },
         content:{
-            capacity: 0,
+            ledgerspace: {
+                hosts: [
+                    {
+                        name: "",
+                        inception: "21 May, 2019",
+                        hdd: 128,
+                        ram: 10,
+                        wifi: 6,
+                        bluetooth: true,
+                        battery: {
+                            level: 100,
+                            type: "Li",
+                            manufacturer: "ONN"
+                        },
+                        ip: "127.0.0.1",
+                        lat: null,
+                        long: null,
+                        altitude: null,
+                        owner: "Patrice-Morgan T. Ongoly"
+                    },
+                    {
+                        name: "",
+                        inception: "21 May, 2019",
+                        hdd: 128,
+                        ram: 10,
+                        wifi: 6,
+                        bluetooth: true,
+                        battery: {
+                            level: 100,
+                            type: "Li",
+                            manufacturer: "ONN"
+                        },
+                        ip: "127.0.0.1",
+                        lat: null,
+                        long: null,
+                        altitude: null,
+                        owner: "Patrice-Morgan T. Ongoly"
+                    },
+                    {
+                        name: "",
+                        inception: "21 May, 2019",
+                        hdd: 128,
+                        ram: 10,
+                        wifi: 6,
+                        bluetooth: true,
+                        battery: {
+                            level: 100,
+                            type: "Li",
+                            manufacturer: "ONN"
+                        },
+                        ip: "127.0.0.1",
+                        lat: null,
+                        long: null,
+                        altitude: null,
+                        owner: "Patrice-Morgan T. Ongoly"
+                    },
+                    {
+                        name: "",
+                        inception: "21 May, 2019",
+                        hdd: 128,
+                        ram: 10,
+                        wifi: 6,
+                        bluetooth: true,
+                        battery: {
+                            level: 100,
+                            type: "Li",
+                            manufacturer: "ONN"
+                        },
+                        ip: "127.0.0.1",
+                        lat: null,
+                        long: null,
+                        altitude: null,
+                        owner: "Patrice-Morgan T. Ongoly"
+                    },
+                    {
+                        name: "",
+                        inception: "21 May, 2019",
+                        hdd: 128,
+                        ram: 10,
+                        wifi: 6,
+                        bluetooth: true,
+                        battery: {
+                            level: 100,
+                            type: "Li",
+                            manufacturer: "ONN"
+                        },
+                        ip: "127.0.0.1",
+                        lat: null,
+                        long: null,
+                        altitude: null,
+                        owner: "Patrice-Morgan T. Ongoly"
+                    },
+                ],
+                dias: [
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    },
+                    {
+                        name: "",
+                        author: "Patrice-Morgan T. Ongoly",
+                        base: {
+                            size: "14MB",
+                            pointer: "xpointerx"
+                        }
+                    }
+                ]
+            },
+            capacity: 128,
             percentage: 0,
             value: {
                 LYOKOIN: 67/3,
@@ -2774,19 +3014,19 @@ var stations = {
                     name: 'Beatrice Goma'
                 }
             ],
-            description: 'This is a the first serialization of an unpermissioned BOARD for DECENTRALIZED IMMERSIVE APPLICATIONS on a HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME [pARk v. 0.20.0. released on May 21, 2019 at 00:00 (UTC-0500)].'
+            description: 'The first serialization of an unpermissioned BOARD for DECENTRALIZED IMMERSIVE APPLICATIONs on a HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME [pARk v. 0.20.0. released on May 21, 2019 at 00:00 (UTC-0500)]. HOSTs are in blue; DIAs are in red.'
         }
     },
     'Silver Spring': {
         name: 'Silver Spring',
         handle: '@acornpARk',
         neighbors: {
-            ordinality: 0,
-            cARds: 0,
+            ordinality: 2,
+            cARds: 12,
             weight: 0
         },
         content:{
-            capacity: 0,
+            capacity: 128,
             percentage: 0,
             value: {
                 LYOKOIN: 0,
@@ -2887,9 +3127,50 @@ var stations = {
     }    
 };
 
+var WWWPeeks = {
+    requests: {
+        H: [],
+        D: []
+    },
+    visited: [],
+    hosts: {
+        
+    },
+    dias: {
+        
+    }
+};
+
 io.sockets.on('connection', function(socket){
     console.log('client connected.');
     var conn = socket;
+    
+    // make `process.stdin` begin emitting "keypress" events
+    //keypress(process.stdin);
+
+    // listen for the "keypress" event
+    
+    /*
+    process.stdin.on('keypress', function (ch, key) {
+        console.log('got "keypress"', key);
+        let name = key.name+"-button";
+        
+        socket.emit("keyPressEvent", {status: true, key: name})
+        if (key && key.ctrl && key.name == 'c') {
+            process.exit();
+        }
+    });
+
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+    */
+    
+    
+    
+    
+    
+    
+    /* NON-KEYBOARD RELATED FUNCTIONS */
     
     socket.on('checkDeviceType', function(data){
         socket.emit('loadDeviceType', {type: deviceType});
@@ -2924,6 +3205,59 @@ io.sockets.on('connection', function(socket){
         else{
             console.log('no action associated with this ENTITY type in the current ATOWN specification v. 0.20.0');
             console.log(type);
+        }
+    });
+    
+    socket.on("requestHostsForHouseGuest", function(data){
+        console.log(` -------------- fx] request hosts for house guest ------- \n status: ${data.status}`);
+        if(data.status){
+            let query = data.name;
+            let result = stations[query];
+           
+            console.log(` query: ${query} \n result: `);
+            console.log(result);
+            WWWPeeks.requests.H.push(query);
+            WWWPeeks.hosts[query] = result;
+            socket.emit("connectHouseGuestToHosts", {status: true});
+        }
+    });
+    
+    socket.on("requestDIAsForHouseGuest", function(data){
+        console.log(` -------------- fx] request dias for house guest ------- \n status: ${data.status}`);
+        if(data.status){
+            let query = data.name;
+            let result = stations[query];
+           
+            console.log(` query: ${query} \n result: `);
+            console.log(result);
+            WWWPeeks.requests.D.push(query);
+            WWWPeeks.dias[query] = result;
+            socket.emit("connectHouseGuestToDIAs", {status: true});
+        }
+    });
+    
+    socket.on("loadDataForHouseGuest", function(data){
+        console.log(` ~~~ fx] load data for house guest ~~~~~~~~~~~~~~~~`);
+        let req = null;
+        let latest = null;
+        let source = null;
+        if(data.status){
+            console.log(` type: ${data.type}`);
+            
+            if(data.type=="HOST"){
+                req = WWWPeeks.requests.H;
+                source = WWWPeeks.hosts[req.shift()];
+            }
+            else if(data.type=="DIA"){
+                req = WWWPeeks.requests.D;
+                source = WWWPeeks.dias[req.shift()];
+            }
+
+            latest = source;
+            console.log(latest);
+            WWWPeeks.visited.push(latest);
+        
+            socket.emit("populateDataFields", {status: true, type: data.type, list: [latest]});
         }
     });
     

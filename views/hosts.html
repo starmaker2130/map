@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html{
+            width: 100%;
+            height: 100%;
+            font-family: monospace;
+        }
+    </style>
+    <script src='../js/socket.io.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var socket = io.connect(location.host);
+            
+            socket.emit('loadDataForHouseGuest', {status: true, type: "HOST"});
+            
+            socket.on("populateDataFields", function(data){
+                if(data.status){
+                    console.log(data.type);
+                    console.log(data.list);
+                }
+            });
+        });         
+    </script>
+</head>
+<body>
+    <div id='host-list-container'>
+        
+    </div>
+</body>
+</html>
