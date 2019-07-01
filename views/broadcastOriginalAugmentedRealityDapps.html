@@ -69,7 +69,8 @@
                     
                     $('#mission-container').empty().append(allStations[name].mission);
                     $('#pARk-address').text(allStations[name].url);
-
+                    
+                    console.log("requesting station ", name);
                     socket.emit('requestStationHandle', {name: name});
                     
                     if(name=='Mt Vernon Sq/7th St-Convention Center'){
@@ -209,7 +210,7 @@
                 
                 $('#station-details-container').animate({
                     width: '600px',
-                    height: '500px',
+                    height: '475px',
                     left: '50%',
                     top: '50%',
                     margin: '-250px 0 0 -300px'
@@ -217,11 +218,18 @@
                     $('#mission-container').css({
                         margin: '1% auto'
                     }).empty().append(`<div id='what-section-header' class='section-header'>?</div>
-<div id='what-section-text' class='section-text'>the public Augmented Reality kinectome (pARk) is a community-owned, immersive internet. let go of the restraints of the past and embrace a more natural way to collaborate and explore.</div>
+<div id='what-section-text' class='section-text'>The public Augmented Reality kinectome (pARk) is a <span id="link-to-atown-explanation">decentralized, immersive internet.</span> Let go of the constraints of the past: use your hands to create, collaborate and explore as nature intended.</div>
 <div id='why-section-header' class='section-header'>!</div>
-<div id='why-section-text' class='section-text'>boARds are visualizations of the spread of experiences in a given geographic area. this site contains all <span style="color: pink; font-weight: 900; cursor: pointer;">public</span> boARds. </div>
+<div id='why-section-text' class='section-text'>boARds are indeces of experiences (DIAs) located in a given geographic area. This site contains all <span id="link-to-dmv-explanation">public boARds in the DMV.</span> </div>
 <div id='when-section-header' class='section-header'>...</div>
-<div id='when-section-text'>check out the release schedule <span style="cursor: pointer; color: aquamarine; font-weight: 900;">here</span> and order a cARd to start building on your own!</div>`);
+<div id='when-section-text'>Check out the release schedule <span id="link-to-release-schedule">here</span> and order a cARd to start building on your own!</div>`);
+                    
+                    $('#link-to-release-schedule').click(function(){
+                        $('#return-to-map').click();
+                        setTimeout(function(){
+                            $('#pARk-page-button').click();
+                        }, 1100);
+                    })
                 });
                 
                 $('#return-to-map').show().animate({
@@ -232,7 +240,7 @@
             
             document.getElementById('pARk-page-button').addEventListener('click', function(){
                 $('#pARk-address').text('public Augmented Reality kinectome');
-                $('#station-title').text('OLD ROW MARYLAND');
+                $('#station-title').text("");
                 
                 $('#station-details-container').css({
                     backgroundColor: 'rgba(0, 0, 0, 0.9)',
@@ -249,7 +257,7 @@
                     $('#mission-container').css({
                         margin: '1% auto',
                         width: '90%'
-                    }).empty().append(`<div id='content-container'><div id='weekly-highlights-container'><div id='weekly-highlights-title'>week 9</div><div id='weekly-highlights'><p>(1) published first public docs for the pARk system</p><p> (2) completed cARd v3; orders ship october 21</p></div></div><div id='content-link-dashboard'><input type='button' id='medium-link-button' class='content-link-button' value='' /><input type='button' id='instagram-link-button' class='content-link-button' value='' /><input type='button' id='twitter-link-button' class='content-link-button' value='' /><input type='button' id='docs-link-button' class='content-link-button' value='' /></div><div id='potw-container'><h3>roster</h3><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div><div style='width: 75px; height: 75px; border-radius: 50%; margin: 2% 3%; background-color: white; display: inline-block;' class='roster-bubble-container'></div></div></div>`);
+                    }).empty().append(`<div id='content-container'><div id='weekly-highlights-container'><div id='weekly-highlights-title'>week 21 (alpha)</div></div><div id='content-link-dashboard'><input type='button' id='medium-link-button' class='content-link-button' value='' /><input type='button' id='instagram-link-button' class='content-link-button' value='' /><input type='button' id='twitter-link-button' class='content-link-button' value='' /><input type='button' id='docs-link-button' class='content-link-button' value='' /></div><div id='potw-container'><h3 id="potw-header">roster</h3><div id="roster-bubble-1" class='roster-bubble-container'></div><div id="roster-bubble-ceo" class='roster-bubble-container'></div><div id="roster-bubble-2" class='roster-bubble-container'></div></div></div>`);
                 });
                 
                 
@@ -275,12 +283,12 @@
         
         <div id='station-details-container'>
             <div id='pARk-address'>@houseofvenus</div>
-            <div id='station-title'>welcome</div>
+            <div id='station-title'>Hello, World!</div>
             <div id='mission-container'>
-                <p>These are maps of the House of Venus PUBLIC AUGMENTED REALITY KINECTOME.</p>
-                <p>Each node represents a BOARD, a hotspot that indexes all nearby content, DIAs, and exchanges.
+                <p class="mission-paragraph">Welcome to the House of Venus PUBLIC AUGMENTED REALITY KINECTOME (pARk).</p>
+                <p class="mission-paragraph">This map is a visual search tool for hyper-real spaces, the pARk equivalent of a website. Each node represents a boARd, a hotspot that indexes all the content found within a given area.
                 </p>
-                <p>Some media is visible on the World Wide Web through this portal. For the rest you will have to travel there yourself!
+                <p class="mission-paragraph">You can preview some media on the World Wide Web through this portal. For the rest you will have to travel there yourself!
                 </p>
             </div>
             <div id='details-footer-container'>
@@ -310,8 +318,8 @@
     </div>
     <select id='pARk-selector'>
         <option class='pARk-location' value="dmv">dmv</option>
-        <option class='pARk-location' value="cp">paris</option>
-        <option class='pARk-location' value="opel">brazza</option>
+        <option class='pARk-location' value="cp">paris (coming soon)</option>
+        <option class='pARk-location' value="opel">brazza (coming soon)</option>
     </select>
     <img id='cARd-page-button' src='../media/img/card-icon.png' width='50px' height='50px'/>
     <img id='pARk-page-button' src='../media/img/globe-icon.png' width='50px' height='50px'/>

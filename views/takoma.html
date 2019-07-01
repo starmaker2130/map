@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html{
+            width: 100%;
+            height: 100%;
+            font-family: monospace;
+        }
+        
+        #summary-container{
+            width: 500px;
+            height: 500px;
+            border-radius: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            margin: -250px 0 0 -250px;
+        }
+        
+        #name-container{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        
+        #storage-capacity-container{
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            transition: font-size 1s;
+        }
+        
+        #storage-capacity-containe:hover{
+            font-size: 24px;
+        }
+        
+        #description-container{
+            width: 100%;
+            margin: 10% auto;
+            text-align: justify;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            transition: font-weight 1s;
+        }
+        
+        #description-container:hover{
+            font-weight: 900;
+        }
+        
+        .moderator-name-container{
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            opacity: 0.5;
+            transition: font-size 0.5s, opacity 1s;
+        }
+        
+        .moderator-name-container:hover{
+            font-size: 24px;
+            opacity: 1.0;
+        }
+        
+        #moderators-list-container{
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        #network-data-container{
+            width: 100%;
+            height: 100px;
+            font-size: 0;
+        }
+        
+        .network-data-item-container{
+            width: 50%;
+            display: inline-block;
+            font-size: 28px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 75px;
+            height: 75px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: font-size 1s, opacity 1s;
+        }
+        
+        .network-data-item-container:hover{
+            font-size: 30px;
+            opacity: 1.0;
+        }
+        
+        #neighbors-list-container{
+            background-color: rgba(0, 0, 255, 1.0);
+        }
+        
+        #cARds-list-container{
+            background-color: rgba(255, 0, 0, 1.0)
+        }
+        
+        #value-container{
+            font-size: 0;
+        }
+        
+        .valuation-container{
+            width: 33%;
+            display: inline-block;
+            font-size: 20px;
+            height: 45px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 400;
+            transition: font-size 1s, font-weight 1s;
+        }
+        
+        .valuation-container:hover{
+            font-size: 28px;
+            font-weight: 900;
+        }
+    </style>
+    <script src='../js/socket.io.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var socket = io.connect(location.host);
+            
+            socket.emit('pingARIA', {name: 'Takoma', type: 'SUBJECT-OBJECT'});
+            
+            socket.on('returnARIALedgerSpaceSummary', function(data){
+                let summary = data.summary;
+                if(data.status){
+                    console.log(summary);
+                }
+                
+                document.getElementById('name-container').textContent = summary.name;
+                document.getElementById('storage-capacity-amount').textContent = summary.content.capacity;
+                document.getElementById('description-container').textContent = summary.content.description;
+                
+                let mods = [];//`<p>`;
+                for(let i=0; i<summary.content.moderators.length; i++){
+                    //mods.push(curr);
+                    document.getElementById('moderators-list-container').appendChild(document.createElement('p'));
+                    document.getElementById('moderators-list-container').lastElementChild.textContent = summary.content.moderators[i].name;
+                    document.getElementById('moderators-list-container').lastElementChild.classList.add('moderator-name-container');
+                }
+                
+                /*for(let j=0; j<document.getElementById('moderators-list-container').childNodes.length; j++){
+                    let mod = document.getElementById('moderators-list-container').textContent = mods[j]
+                }*/
+                
+                document.getElementById('neighbors-list-container').textContent = summary.neighbors.ordinality;
+                document.getElementById('cARds-list-container').textContent = summary.neighbors.cARds;
+                document.getElementById('lyokoin-valuation-container').textContent = Math.round(summary.content.value.LYOKOIN*100)/100;
+                document.getElementById('usd-valuation-container').textContent = summary.content.value.USD;
+                document.getElementById('euro-valuation-container').textContent = summary.content.value.EUR;
+            });
+        });         
+    </script>
+</head>
+<body>
+    <div id='summary-container'>
+        <div id='name-container'></div>
+        <div id='storage-capacity-container'>
+            <span id='storage-capacity-amount'></span>
+            <span id='storage-capacity-label'>Gb</span>
+        </div>
+        <div id='meta-data-container'>
+            <div id='description-container'></div>
+            <div id='moderators-list-container'></div>
+        </div>
+        <div id='network-data-container'>
+            <div id='neighbors-list-container' class='network-data-item-container'></div>
+            <div id='cARds-list-container' class='network-data-item-container'></div>
+        </div>
+        <div id='value-container'>
+            <div id='lyokoin-valuation-container' class='valuation-container'></div>
+            <div id='usd-valuation-container' class='valuation-container'></div>
+            <div id='euro-valuation-container' class='valuation-container'></div>
+        </div>
+    </div>
+</body>
+</html>

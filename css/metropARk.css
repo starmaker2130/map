@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("../media/fonts/IBMPlexSans-Regular.woff") format("woff"),
+        url("../media/fonts/IBMPlexSans-Regular.tff") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "IBMPlexSans", Arial, sans-serif;
 }
 
 body, html{
@@ -17,12 +24,18 @@ body, html{
     vertical-align: top;
 }
 
+#potw-header{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
 #weekly-highlights-container{
     vertical-align: top;
     text-align: justify;
     width: 100%;
-    height: 100px;
-    margin-left: 2%;
+    height: 35px;
+    margin: 2% auto;
     display: inline-block;
 }
 
@@ -32,6 +45,24 @@ body, html{
     line-height: 30px;
     text-align: center;
     font-size: 1.4em;
+}
+
+#link-to-release-schedule{
+    cursor: pointer;
+    color: aquamarine;
+    font-weight: 900;
+}
+
+#link-to-dmv-explanation{
+    color: rgba(245, 66, 84, 0.9);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#link-to-atown-explanation{
+    color: deepskyblue;
+    font-weight: 900;
+    cursor: pointer;
 }
 
 #weekly-highlights{
@@ -105,6 +136,8 @@ body, html{
 
 #potw-container{
     font-size: 1.2em;
+    width: 450px;
+    margin: 1% auto;
 }
 
 #cARd-page-button{
@@ -113,6 +146,31 @@ body, html{
     left: 20%;
     margin-left: -25px;
     cursor: pointer;
+}
+
+.roster-bubble-container{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 5% 2% 0 2%;
+    background-color: white;
+    display: inline-block;'
+}
+
+#roster-bubble-ceo{
+    background-color: blue;
+    /*background-image: src("");*/
+}
+
+#roster-bubble-1{
+    background-image: url("../media/img/cam_profile.jpg");
+    background-size: 100% 100%;
+}
+
+#roster-bubble-2{
+    background-image: url("../media/img/v_profile.jpg");
+    background-size: 100% auto;
+    background-position: center top;
 }
 
 #pARk-page-button{
@@ -148,7 +206,7 @@ body, html{
     color: white;
     font-size: 1.2em;
     font-weight: 900;
-    font-family: monospace;
+    font-family: "IBMPlexSans", sans-serif;
 }
 
 #order-cARd-button:focus{
@@ -170,7 +228,6 @@ body, html{
     color: white;
     font-size: 1.2em;
     font-weight: 900;
-    font-family: monospace;
 }
 
 #view-docs-button:focus{
@@ -202,9 +259,9 @@ body, html{
     text-align: center;
     height: 50px;
     line-height: 50px;
-    font-weight: 900px;
-    font-family: monospace;
-    font-size: 1.3em;
+    font-weight: 900;
+    font-family: "IBMPlexSans", Arial, sans-serif;
+    font-size: 1.1em;
     z-index: 500;
 }
 
@@ -221,7 +278,6 @@ body, html{
 #pARk-selector{
     position: absolute;
     font-family: monospace;
-    font-size: 1.3em;
     width: 150px;
     height: 30px;
     display: block;
@@ -230,6 +286,7 @@ body, html{
     margin-left: -75px;
     text-align: center;
     text-align-last: center;
+    font-size: 0.9em;
 }
 
 .pARk-location{
@@ -246,7 +303,7 @@ body, html{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -225px 0 0 -325px;
+    margin: -240px 0 0 -325px;
 }
 
 #explore-button:focus{
@@ -295,25 +352,30 @@ body, html{
     outline: none;
 }
 
+.mission-paragraph{
+    text-align: center;
+    margin: 5% auto;
+}
+
 #station-details-container{
     position: absolute;
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 380px;
     border: 2px black solid;
     border-radius: 10px;
     z-index: 100;
     left: 50%;
     top: 50%;
     font-family: monospace;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin: -275px 0 0 -200px;
+    margin: -275px 0 0 -225px;
 }
 
 #mission-container{
     width: 80%;
     margin: 2% auto;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 #pARk-address{
@@ -323,7 +385,7 @@ body, html{
 }
 
 #station-title{
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 80%;
     text-align: center;
     height: 30px;

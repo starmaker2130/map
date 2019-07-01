@@ -191,7 +191,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@forttotten',
                     fillColor: 'white',
-                    mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                    mission: `<div id='forttotten-boARd-portal' class='boARd-launch-pin' style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
                 },
                 'West Hyattsville': {
                     name: 'West Hyattsville',
@@ -213,7 +213,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@pgplaza',
                     fillColor: 'white',
-                    mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                    mission: `<div  id='pgplaza-boARd-portal' class='boARd-launch-pin' style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
                 },
                 'College Park-U of Md': {
                     name: 'College Park-U of Md',
@@ -224,7 +224,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@cp',
                     fillColor: 'white',
-                    mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                    mission: `<div  id='cp-boARd-portal' class='boARd-launch-pin' style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
                 },
                 'Greenbelt': {
                     name: 'Greenbelt',
@@ -235,7 +235,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@greenbelt',
                     fillColor: 'white',
-                    mission: `<div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
+                    mission: `<div  id='greenbelt-boARd-portal' class='boARd-launch-pin' style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px black solid;'></div> <div style='cursor: pointer; width: 50px; height: 50px; background-image: url("../media/img/shell.png"); background-size: 100% 100%; background-repeat: no-repeat; margin: 1% auto; border-radius: 50%; display: inline-block; border: 2px red solid;'></div>`
                 }
             },
             yellowLineStations : {
