@@ -6,9 +6,6 @@
 // required modules
 var bodyParser = require('body-parser');
 var express = require('express');
-var formidable = require('formidable');
-var util = require('util');
-var fs = require('fs');
 var WhichBrowser = require('which-browser');
 // main application instance
 
@@ -19,7 +16,7 @@ var app = express();
 // main application settings
 
 var config = {
-    PORT: process.env.PORT || 8080,
+    PORT: process.env.PORT || 3000,
     DIRECTORY: [
         "./",           /* 0 */
         "./css",        /* 1 */
@@ -141,8 +138,6 @@ var scenes = [];
 /*
 
 orientation: 0 = landmark; 1 = face; 2 = hand
-
-
 
 */
 
