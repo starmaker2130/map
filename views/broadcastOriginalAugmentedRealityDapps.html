@@ -188,7 +188,7 @@
                     
                     if(nodesVisible){
                         $('#toggle-nodes-button').css({
-                            backgroundColor: 'green'
+                            backgroundColor: 'aquamarine'
                         });
                     }
                     else{
@@ -212,7 +212,7 @@
                         }
                         else{
                             $('#toggle-nodes-button').css({
-                                backgroundColor: 'green'
+                                backgroundColor: 'aquamarine'
                             });
                             
                             $('.board-icon').show().animate({
@@ -293,7 +293,35 @@
                     $('#mission-container').css({
                         margin: '1% auto',
                         width: '90%'
-                    }).empty().append(`<div id='content-container'><div id='weekly-highlights-container'><div id='weekly-highlights-title'>week 21 (alpha)</div></div><div id='content-link-dashboard'><input type='button' id='medium-link-button' class='content-link-button' value='' /><input type='button' id='instagram-link-button' class='content-link-button' value='' /><input type='button' id='twitter-link-button' class='content-link-button' value='' /><input type='button' id='docs-link-button' class='content-link-button' value='' /></div><div id='potw-container'><h3 id="potw-header">roster</h3><div id="roster-bubble-1" class='roster-bubble-container'></div><div id="roster-bubble-ceo" class='roster-bubble-container'></div><div id="roster-bubble-2" class='roster-bubble-container'></div></div></div>`);
+                    }).empty().append(`<div id='content-container'><div id='weekly-highlights-container'><div id='weekly-highlights-title'>week 22 (alpha)</div></div><div id='content-link-dashboard'><input type='button' id='medium-link-button' class='content-link-button' value='' /><input type='button' id='instagram-link-button' class='content-link-button' value='' /><input type='button' id='twitter-link-button' class='content-link-button' value='' /><input type='button' id='docs-link-button' class='content-link-button' value='' /></div><div id='potw-container'><h3 id="potw-header">roster</h3><div id="roster-bubble-1" class='roster-bubble-container'></div><div id="roster-bubble-ceo" class='roster-bubble-container'></div><div id="roster-bubble-2" class='roster-bubble-container'></div></div></div>`);
+                    
+                    $('#medium-link-button').click(function(){
+                        window.open("https://medium.com/@m0errGan", "_blank");
+                    });
+                    
+                    $('#instagram-link-button').click(function(){
+                        window.open("https://www.instagram.com/ceo.hov/", "_blank");
+                    });
+                    
+                    $('#twitter-link-button').click(function(){
+                        window.open("https://twitter.com/acornparkstudio", "_blank");
+                    });
+                    
+                    $('#docs-link-button').click(function(){
+                        window.open("./profile/ceo.files.docs", "_blank");
+                    });
+                    
+                    $('#roster-bubble-1').click(function(){
+                        window.open("./profile/cam", "_blank");
+                    });
+                    
+                    $('#roster-bubble-ceo').click(function(){
+                        window.open("./profile/ceo", "_blank");
+                    });
+                    
+                    $('#roster-bubble-2').click(function(){
+                        window.open("./profile/v", "_blank");
+                    });
                 });
                 
                 

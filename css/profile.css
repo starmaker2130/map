@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("../media/fonts/IBMPlexSans-Regular.woff") format("woff"),
+        url("../media/fonts/IBMPlexSans-Regular.tff") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBMPlexSans", Arial, sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+#profile-picture-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: -100px 0 0 -100px;
+    background-color: blue;
+    border: 2px white solid;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    transition: border 0.5s;
+}
+
+#profile-picture-container:hover{
+    border: 3px aquamarine solid;
+}
+
+.hyperlink-bubble-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px black solid;
+    position: absolute;
+    cursor: pointer;
+    background-position: center center;
+    transition: border 0.5s;
+}
+
+.hyperlink-bubble-container:hover{
+    border: 3px white solid;
+}
+
+#linkedin-bubble-container{
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    background-image: url("../media/texture/linkedin-texture.png");
+    background-size: 100% 100%;
+}
+
+#instagram-bubble-container{
+    top: 58%;
+    right: 50%;
+    margin-right: -90px;
+    background-image: url("../media/texture/instagram-texture.png");
+    background-size: 100% 100%;
+}
+
+#hov-bubble-container{
+    top: 60%;
+    left: 50%;
+    margin-left: -25px;
+    background-image: url("../media/texture/hov-md-original.png");
+    background-size: 200% 200%;
+}
+
+#twitter-bubble-container{
+    top: 58%;
+    left: 50%;
+    margin-left: -90px;
+    background-image: url("../media/img/blue-twitter-icon.png");
+    background-size: 100% 100%;
+}
+
+#bio-bubble-container{
+    top: 50%;
+    right: 50%;
+    margin-right: -120px;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+}
+
+#profile-description, #profile-title, #profile-name{
+    font-size: 1.0em;
+    cursor: pointer;
+    font-weight: 400;
+    transition: font-weight, font-size 0.5s;
+}
+
+#profile-title:hover, #profile-name:hover, #profile-description:hover{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+#profile-name:hover{
+    color: rgba(245, 66, 84, 0.9);
+}
+
+#profile-title:hover{
+    color: aquamarine;
+}
+
+#profile-description:hover{
+    color: deepskyblue;
+}
+
+#profile-header-container{
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -175px 0 0 -175px;
+    text-align: center;
+}

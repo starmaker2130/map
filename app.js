@@ -68,6 +68,11 @@ app.get('/b/:dia_handle', function(req, res){
 
 /**/
 
+app.get('/profile/:profile_target', function(req, res){
+    let profile = req.params.profile_target;
+    res.render(profile+".html",{root: dir[0]});
+});
+
 app.get('/hosts', function(req, res){
     res.render('hosts.html',{root: dir[0]});
 });
@@ -2881,6 +2886,59 @@ var WWWPeeks = {
     }
 };
 
+var profileArray = {
+    "@ceo": {
+        name: "Patrice-Morgan T. Ongoly",
+        title: "Founder, CEO",
+        description: "inventor @ House of Venus",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
+    },
+    "@cam": {
+        name: "Cameron H. Reed",
+        title: "Director of AugR",
+        description: "reality engineer @ House of Venus",
+        profile: {
+            url: "../media/img/cam_profile.jpg",
+            size: "100% 100%"
+        }
+    },
+    "@v": {
+        name: "Vaibhav I. Ponnuri",
+        title: "Director of stud.io",
+        description: "data analyst @ House of Venus",
+        profile: {
+            url: "../media/img/v_profile.jpg",
+            size: "100% 100%"
+        }
+    },
+    "@louis": {
+        name: "Louis B",
+        title: "Insights Team",
+        description: "legel/marketing @ House of Venus",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
+    },
+    "@mel": {
+        name: "Melissa Dina-Lenda",
+        title: "Flight Dev/Ops",
+        description: "avionics @ House of Venus",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
+    },
+    "@guedalia": {
+        name: "Roger Guedalia Dina",
+        title: "Flight Dev/Ops",
+        description: "avionics @ House of Venus"
+    },
+};
+
 io.sockets.on('connection', function(socket){
     console.log('client connected.');
     var conn = socket;
@@ -3012,6 +3070,13 @@ io.sockets.on('connection', function(socket){
         }
     });
         
+    socket.on("requestProfileData", function(data){
+        if(data.status){
+            if(profileArray[data.user]!=undefined)
+                socket.emit("loadProfileData", profileArray[data.user]);
+        }
+    });
+    
     socket.on('disconnect', function(){
         console.log(`socket ${socket.id} disconnected.`);
     });

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOCUMENTATION: PARK by House of Venus</title>
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" />
+    <script>
+        let openFeed = true;
+        let bg = [
+            {
+                bgColor: "white",
+                textColor: "black"
+            },
+            {
+                bgColor: "red",
+                textColor: "white"
+            },
+            {
+                bgColor:"orange",
+                textColor: "black"
+            },
+            {
+                bgColor: "yellow",
+                textColor: "black"
+            },
+            {
+                bgColor: "green",
+                textColor: "white"
+            },
+            {
+                bgColor: "blue",
+                textColor: "white"
+            },
+            {
+                bgColor:"indigo",
+                textColor: "white"
+            },
+            {
+                bgColor: "violet",
+                textColor: "black"
+            },
+            {   
+                bgColor: "crimson",
+                textColor: "black"
+            },
+        ];
+        
+        function animateHeight(target, finalHeight){
+            let el = target;
+            let interval = 0;
+            let counter = 0;
+            
+            if(finalHeight<500){
+                interval = (500-finalHeight)/10;
+                let shrink = setInterval(function(){
+                   // console.log('shrink')
+                    counter++;
+                    el.style.height = (500 - interval*counter) + "px";
+                    if(counter>19) clearInterval(shrink);
+                }, 50);
+                el.style.height = finalHeight + "px";
+                el.style.overflow = "hidden";
+            }
+            else{
+                interval = Math.abs(500-finalHeight)/10;
+                if(interval==0) interval = 25;
+                let grow = setInterval(function(){
+                   // console.log('grow')
+                    counter++;
+                    el.style.height = (interval*counter) + "px";
+                    if(counter>19) clearInterval(grow);
+                }, 50);
+                el.style.height = finalHeight + "px";
+            }
+        }
+        
+        function openChapter(item, content){
+            content[item].addEventListener("click", function(){
+                let i = item;
+                if(openFeed){
+                   // console.log(`select ${i}`);
+                    animateHeight(document.getElementById("table-of-contents-container"), 40);
+                    document.querySelector("body").style.backgroundColor = bg[i].bgColor;
+                    document.querySelector("body").style.color = bg[i].textColor;
+                }
+                else{
+                    if(i==0){
+                        animateHeight(document.getElementById("table-of-contents-container"), 500);
+                        document.querySelector("body").style.backgroundColor = bg[i].bgColor;
+                        document.querySelector("body").style.color = bg[i].textColor;
+                    }
+                }
+                openFeed=!openFeed;
+            });    
+        }
+        
+        document.addEventListener("DOMContentLoaded", function(){
+            
+            var chapters = document.getElementsByClassName("chapter-label");
+            for(var j=0; j<chapters.length; j++){
+                openChapter(j, chapters);                
+            }
+        });    
+    </script>
+</head>
+<body>
+    <div id="table-of-contents-container">
+        <div id="docs-chapter-label" class="chapter-label">docs</div>
+        <div id="atown-chapter-label" class="chapter-label">atown</div>
+        <div id="lyoko-chapter-label" class="chapter-label">lyoko</div>
+        <div id="pARk-chapter-label" class="chapter-label">pARk</div>
+        <div id="dmv-chapter-label" class="chapter-label">dmv</div>
+        <div id="paris-chapter-label" class="chapter-label">paris</div>
+        <div id="brazzaville-chapter-label" class="chapter-label">brazzaville</div>
+        <div id="la-chapter-label" class="chapter-label">los angeles</div>
+        <div id="cambridge-chapter-label" class="chapter-label">cambridge</div>
+    </div>
+    <div id="main-body-container">
+        <div id="atown-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Atown</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Applications of Set Theory to Reality Computing</div>
+        </div>
+        <div id="lyoko-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Lyoko</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">The Language of Our DIAs</div>
+        </div>
+        <div id="pARk-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">pARk</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Distributing Immersive Content via a Transparent, Persistent, Append-Only Hyper-Real Space</div>
+        </div>
+        <div id="dmv-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">DMV</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Exploring the DC Metropolitan Area</div>
+        </div>
+        <div id="paris-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Paris</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Exploring l'Ile-de-France</div>
+        </div>
+        <div id="brazzaville-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Brazzaville</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Exploring la Terre des Dieus Vivants</div>
+        </div>
+        <div id="la-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Los Angeles</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Exploring the City of Angels</div>
+        </div>
+        <div id="cambridge-chapter-container" class="chapter-container">
+            <div id="atown-chapter-header" class="chapter-header">Cambrdge</div>
+            <div id="atown-chapter-sub-header" class="chapter-sub-header">Further Applications of Reality Computing; in Cambridge, Lexington, and Weston</div>
+        </div>
+    </div>
+</body>
+</html>

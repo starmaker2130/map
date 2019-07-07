@@ -34,7 +34,7 @@ body, html{
     background-color: black;
 }
 
-#house-of-venus-board-icon:hover{
+.board-icon, #house-of-venus-board-icon:hover{
     cursor: pointer;
 }
 
@@ -177,8 +177,8 @@ body, html{
 }
 
 #roster-bubble-ceo{
-    background-color: blue;
-    /*background-image: src("");*/
+    background-image: url("../media/img/profile_icon.png");
+    background-size: 100% 100%;
 }
 
 #roster-bubble-1{

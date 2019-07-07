@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/profile.css" type="text/css" />
+    <script src="../js/socket.io.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            init();
+        })
+        
+        function init(){
+            let socket = io.connect(location.host);
+            socket.emit("requestProfileData", {status: true, user: "@cam"});
+            
+            socket.on("loadProfileData", function(data){
+                let response = data;
+                loadProfileData(response);
+            });
+        }
+        
+        function loadProfileData(response){
+            let name = response.name;
+            let title = response.title;
+            let description = response.description;
+
+            document.getElementById("profile-name").innerHTML = name;
+            document.getElementById("profile-title").innerHTML = title;
+            document.getElementById("profile-description").innerHTML = description;
+            
+            if(response.profile!=undefined){
+                document.getElementById("profile-picture-container").style = `background-color: white; background-image: url("${response.profile.url}"); background-size: ${response.profile.size}; background-position: center center;`;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="profile-header-container">
+        <div id="profile-name">PROFILE NAME</div>
+        <div id="profile-title">PROFILE TITLE</div>
+        <div id="profile-description">PROFILE DESCRIPTION</div>
+    </div>
+    <div id="profile-picture-container"></div>
+    <div id="linkedin-bubble-container" class="hyperlink-bubble-container"></div>
+    <div id="twitter-bubble-container" class="hyperlink-bubble-container"></div>
+    <div id="hov-bubble-container" class="hyperlink-bubble-container"></div>
+    <div id="instagram-bubble-container" class="hyperlink-bubble-container"></div>
+    <div id="bio-bubble-container" class="hyperlink-bubble-container">i</div>
+</body>
+</html>
