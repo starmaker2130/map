@@ -8,6 +8,7 @@
     <script src='../js/broadcastOriginalAugmentedRealityDapps.js'></script>
     <script>        
         var stationInFocus = 'Silver Spring';
+        let nodesVisible = true;
         
         document.addEventListener('DOMContentLoaded', function(){
             var socket = io.connect(location.host);
@@ -166,8 +167,8 @@
             
             
             document.getElementById('cARd-page-button').addEventListener('click', function(){
-                $('#pARk-address').text('cARd');
-                $('#station-title').text('creative Augmented Reality desktop');
+                $('#pARk-address').text('creative Augmented Reality desktop');
+                $('#station-title').text('network settings');
                 
                 $('#station-details-container').css({
                     backgroundColor: 'rgba(0, 0, 0, 0.6)',
@@ -183,8 +184,43 @@
                 }, 1000, function(){
                     $('#mission-container').css({
                         margin: '1% auto'
-                    }).empty().append(`<div id=''></div><video id="demo-video-container" width="440" height="330" controls><source src="../media/img/testvideo.mp4" type="video/mp4"></video>`);
+                    }).empty().append(`<div id='settings-container'><input type="button" id="connect-cARd-button" value="connect" /><input type="button" id="toggle-nodes-button" value="toggle" /></div>`);
                     
+                    if(nodesVisible){
+                        $('#toggle-nodes-button').css({
+                            backgroundColor: 'green'
+                        });
+                    }
+                    else{
+                        $('#toggle-nodes-button').css({
+                            backgroundColor: 'red'
+                        });
+                    }
+                    
+                    $('#toggle-nodes-button').click(function(){
+                        if(nodesVisible){
+                            $('#toggle-nodes-button').css({
+                                backgroundColor: 'red'
+                            });
+                            
+                            $('.board-icon').animate({
+                                opacity: 0
+                            }, 1000, function(){
+                                let myId = $(this).attr('id');
+                                $(`#${myId}`).hide();
+                            });
+                        }
+                        else{
+                            $('#toggle-nodes-button').css({
+                                backgroundColor: 'green'
+                            });
+                            
+                            $('.board-icon').show().animate({
+                                opacity: 1.0
+                            }, 1000);
+                        }
+                        nodesVisible=!nodesVisible;
+                    });
                     /*$('#view-docs-button').addEventListener('click', function(){
                         window.location.href = './cARd'
                     });*/
@@ -269,8 +305,6 @@
             document.getElementById('house-of-venus-board-icon').addEventListener('click', function(){
                 window.open('./b/@houseofvenus', '_blank');
             });
-            
-            
                 
         });
     </script>
@@ -313,7 +347,51 @@
             
             <path d="M25 130 l 15 20 l 15 20 l 15 20 l 15 20 l 15 20 l 60 0 l 0 -30 l 65 -30 l 30 0 l 50 0 l 20 30 l 0 30 l 0 30 l 40 20 l 70 0 l 20 -30 l 40 -20 l 10 0 l 125 0 l -125 0 l -10 0 l -40 20 l -20 30 l -70 0 l -40 -20 l 0 -30 l 0 -30 l -20 -30 l -50 0 l -30 0 l -65 30 l 0 30 l -60 0 l -15 -20 z" stroke-width="10" stroke="silver" fill="none" />
             
-            <image xlink:href="../media/img/home-icon.png" id="house-of-venus-board-icon" x="380" y="20" height="25px" width="25px"/>
+            <image xlink:href="../media/img/home-icon.png" id="house-of-venus-board-icon" x="360" y="25" height="25px" width="25px"/>
+            
+            <image xlink:href="../media/img/7-eleven_symbol.png" id="house-of-mercury-board-icon" class="board-icon" x="390" y="5" height="35px" width="35px"/>
+            
+            <image xlink:href="../media/img/umd.png" id="umd-board-icon" class="board-icon" x="470" y="35" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/gmu.png" id="gmu-board-icon" class="board-icon" x="10" y="160" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/dod.png" id="dod-board-icon" class="board-icon" x="250" y="305" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/monument.png" id="monument-board-icon" class="board-icon" x="265" y="225" height="60px" width="50px"/>
+            
+            <image xlink:href="../media/img/smithsonian.png" id="smithsonian-board-icon" class="board-icon" x="235" y="230" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/capitol.png" id="capitol-board-icon" class="board-icon" x="385" y="235" height="35px" width="45px"/>
+            
+            <image xlink:href="../media/img/gwu.png" id="gwu-board-icon" class="board-icon" x="185" y="185" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/georgetown.png" id="georgetown-board-icon" class="board-icon" x="175" y="130" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/dcunited.png" id="dcunited-board-icon" class="board-icon" x="400" y="290" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/nationals.png" id="nationals-board-icon" class="board-icon" x="390" y="360" height="35px" width="35px"/>
+            
+            <image xlink:href="../media/img/airport.png" id="reagan-board-icon" class="board-icon" x="240" y="360" height="35px" width="35px"/>
+            
+            <image xlink:href="../media/img/airport.png" id="cp-airport-board-icon" class="board-icon" x="430" y="0" height="35px" width="35px"/>
+
+            <image xlink:href="../media/img/cua.png" id="cua-board-icon" class="board-icon" x="420" y="100" height="75px" width="75px"/>
+            
+            <image xlink:href="../media/img/easternmarket.jpg" id="eastern-market-board-icon" class="board-icon" x="470" y="245" height="60px" width="60px"/>
+            
+            <image xlink:href="../media/img/nih.png" id="nih-board-icon" class="board-icon" x="135" y="43" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/afi.png" id="afi-board-icon" class="board-icon" x="330" y="35" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/discovery.png" id="discovery-board-icon" class="board-icon" x="255" y="5" height="50px" width="50px"/>
+            
+            <image xlink:href="../media/img/fillmore.png" id="fillmore-board-icon" class="board-icon" x="285" y="55" height="40px" width="30px"/>
+            
+            <image xlink:href="../media/img/noaa.png" id="noaa-board-icon" class="board-icon" x="240" y="55" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/microcenter.png" id="micro-center-board-icon" class="board-icon" x="40" y="55" height="40px" width="40px"/>
+            
+            <image xlink:href="../media/img/rockville.png" id="rockville-board-icon" class="board-icon" x="80" y="5" height="40px" width="40px"/>
         </svg>
     </div>
     <select id='pARk-selector'>
