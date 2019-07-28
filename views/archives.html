@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tysons Corner | pARk 0.1.0</title>
+    <title>Archives | pARk 0.1.0</title>
     <link rel="stylesheet" type="text/css" href="../css/boardStats.css" />
     <script src='../js/socket.io.js'></script>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             var socket = io.connect(location.host);
             
-            socket.emit('pingARIA', {name: 'Tysons Corner', type: 'SUBJECT-OBJECT'});
+            socket.emit('pingARIA', {name: 'Archives', type: 'SUBJECT-OBJECT'});
             
             socket.on('returnARIALedgerSpaceSummary', function(data){
                 let summary = data.summary;

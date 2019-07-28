@@ -15,7 +15,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@branchave',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='branch-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='branch-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Suitland': {
                     name: 'Suitland',
@@ -26,7 +26,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@suitland',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='suitland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='suitland-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Naylor Rd': {
                     name: 'Naylor Rd',
@@ -37,7 +37,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@naylor',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='naylor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='naylor-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Southern Ave': {
                     name: 'Southern Ave',
@@ -48,7 +48,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@southernave',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='southern-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='southern-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Congress Heights': {
                     name: 'Congress Heights',
@@ -59,7 +59,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@congressheights',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='congressheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='congressheights-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Anacostia': {
                     name: 'Anacostia',
@@ -70,7 +70,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@anacostia',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='anacostia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='anacostia-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Navy Yard-Ballpark': {
                     name: 'Navy Yard-Ballpark',
@@ -81,7 +81,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@navyyard',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='ballpark-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Waterfront': {
                     name: 'Waterfront',
@@ -92,7 +92,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@waterfront',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='waterfront-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='waterfront-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'L Enfant Plaza': {
                     name: 'L Enfant Plaza',
@@ -103,7 +103,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@lenfant',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='lenfant-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='lenfant-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Archives': {
                     name: 'Archives',
@@ -114,7 +114,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@archives',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='archives-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='archives-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Gallery Place': {
                     name: 'Gallery Place',
@@ -125,7 +125,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@galleryplace',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='galleryplace-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='galleryplace-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Mt Vernon Sq/7th St-Convention Center': {
                     name: 'Mt Vernon Sq/7th St-Convention Center',
@@ -136,7 +136,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@mtvernon',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mtvernon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='mtvernon-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Shaw-Howard U': {
                     name: 'Shaw-Howard U',
@@ -147,7 +147,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@howard',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shaw-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='shaw-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'U Street': {
                     name: 'U Street',
@@ -158,7 +158,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@ustreet',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ustreet-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='ustreet-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Columbia Heights': {
                     name: 'Columbia Heights',
@@ -169,7 +169,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@columbiaheights',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='columbiaheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='columbiaheights-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Georgia Ave-Pentworth': {
                     name: 'Georgia Ave-Pentworth',
@@ -180,7 +180,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@georgiaave',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='georgiaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='georgiaave-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Fort Totten': {
                     name: 'Fort Totten',
@@ -202,7 +202,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@hyattsville',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='gmu-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Prince Georges Plaza': {
                     name: 'Prince Georges Plaza',
@@ -248,7 +248,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@huntington',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='huntington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='huntington-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Eisenhower Ave': {
                     name: 'Eisenhower Ave',
@@ -259,7 +259,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@eisenhower',
                     fillColor: 'white',
-                    mission:  `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission:  `<div id='eisenhower-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'King St-Old Town': {
                     name: 'King St-Old Town',
@@ -270,7 +270,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@kingstoldtown',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='kingstoldtown-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Braddock Rd': {
                     name: 'Braddock Rd',
@@ -281,7 +281,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@braddockrd',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='braddock-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='braddock-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Ronald Reagan Washington National Airport': {
                     name: 'Ronald Reagan Washington National Airport',
@@ -292,7 +292,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@reagannational',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='reagan-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='reagan-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Crystal City': {
                     name: 'Crystal City',
@@ -303,7 +303,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@crystalcity',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='crystalcity-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Pentagon City': {
                     name: 'Pentagon City',
@@ -314,7 +314,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@navyyard',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='navyyard-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Pentagon': {
                     name: 'Pentagon',
@@ -325,7 +325,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@pentagon',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='pentagon-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 }
             },
             blueLineStations : {
@@ -338,7 +338,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='franconia-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='franconia-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Van Dorn': {
                     name: 'Van Dorn',
@@ -349,7 +349,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='vandorn-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Arlington Cemetery': {
                     name: 'Arlington Cemetery',
@@ -360,7 +360,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='arlington-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Rosslyn': {
                     name: 'Rosslyn',
@@ -371,7 +371,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='rosslyn-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Foggy Bottom-GWU': {
                     name: 'Foggy Bottom-GWU',
@@ -382,7 +382,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='foggybottom-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Farragut West': {
                     name: 'Farragut West',
@@ -393,7 +393,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragut-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='farragut-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'McPherson Square': {
                     name: 'McPherson Square',
@@ -404,7 +404,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='mcpherson-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Metro Center': {
                     name: 'Metro Center',
@@ -415,7 +415,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='metrocenter-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Federal Triangle': {
                     name: 'Federal Triangle',
@@ -426,7 +426,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='federaltriangle-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Smithsonian': {
                     name: 'Smithsonian',
@@ -437,7 +437,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='smithsonian-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Federal Center SW': {
                     name: 'Federal Center SW',
@@ -448,7 +448,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='federalcenter-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Capitol South': {
                     name: 'Capitol South',
@@ -459,7 +459,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='capitolsouth-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Eastern Market': {
                     name: 'Eastern Market',
@@ -470,7 +470,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='easternmarket-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Potomac Ave': {
                     name: 'Potomac Ave',
@@ -481,7 +481,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },        
                 'Stadium-Armory': {
                     name: 'Stadium-Armory',
@@ -492,7 +492,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='stadiumarmory-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Benning Road': {
                     name: 'Benning Road',
@@ -503,7 +503,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='benningroad-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='benningroad-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Capitol Heights': {
                     name: 'Capitol Heights',
@@ -514,7 +514,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='capitolheights-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Addison Rd/Seat Pleasant': {
                     name: 'Addison Rd/Seat Pleasant',
@@ -525,7 +525,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id=addison-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id=addison-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Morgan Blvd': {
                     name: 'Morgan Blvd',
@@ -536,7 +536,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='morganbl-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Largo Town Center': {
                     name: 'Largo Town Center',
@@ -547,7 +547,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='largo-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='largo-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
             },
             orangeLineStations : {
@@ -560,7 +560,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@gmu',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='gmu-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Dunn Loring/ Merrifeld': {
                     name: 'Dunn Loring/ Merrifeld',
@@ -571,7 +571,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@dunnloring',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='dunnloring-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'West Falls Church/ VT-UVA': {
                     name: 'West Falls Church/ VT-UVA',
@@ -582,7 +582,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@westfallschurch',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='westfalls-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'East Falls Church': {
                     name: 'East Falls Church',
@@ -593,7 +593,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@eastfallschurch',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='eastfalls-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Ballston-MU': {
                     name: 'Ballston-MU',
@@ -604,7 +604,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@ballston',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='ballstonmu-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Virginia Sq-GMU': {
                     name: 'Virginia Sq-GMU',
@@ -615,7 +615,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@gmu',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='gmu-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='gmu-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Clarendon': {
                     name: 'Clarendon',
@@ -626,7 +626,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@navyyard',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='clarendon-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Court House': {
                     name: 'Court House',
@@ -637,7 +637,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@courthouse',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='courthouse-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Minnesota Ave': {
                     name: 'Minnesota Ave',
@@ -648,7 +648,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@minnesotaave',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='minnesotaave-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Deanwood': {
                     name: 'Deanwood',
@@ -659,7 +659,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@deanwood',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='deanwood-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Cheverly': {
                     name: 'Cheverly',
@@ -670,7 +670,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@cheverly',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='cheverly-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Landover': {
                     name: 'Landover',
@@ -681,7 +681,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@landover',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='landover-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='landover-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'New Carrolton': {
                     name: 'New Carrolton',
@@ -692,7 +692,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@newcarrolton',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='newcarrolton-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 }
             },
             silverLineStations : {	
@@ -705,7 +705,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@wiehle-reston-east',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='wiehlereston-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Spring Hill': {
                     name: 'Spring Hill',
@@ -716,7 +716,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@springhill',
                     fillColor: 'white',
-                    mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='springhill-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission:`<div id='springhill-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Greensboro': {
                     name: 'Greensboro',
@@ -727,7 +727,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@greensboro',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='greensboro-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Tysons Corner': {
                     name: 'Tysons Corner',
@@ -738,7 +738,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@tysonscorner',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='tysonscorner-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'McLean': {
                     name: 'McLean',
@@ -749,7 +749,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@mclean',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='mclean-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 }
             },
             redLineStations : {        	     
@@ -762,7 +762,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@shadygrove',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='shadygrove-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Rockville': {
                     name: 'Rockville',
@@ -773,7 +773,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@rockville',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rockville-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='rockville-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },	
                 'Twinbrook': {
                     name: 'Twinbrook',
@@ -784,7 +784,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@twinbrook',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='twinbrook-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='twinbrook-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'White Flint': {
                     name: 'White Flint',
@@ -795,7 +795,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@whiteflint',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='whiteflint-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='whiteflint-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Grosvenor-Strathmore': {
                     name: 'Grosvenor-Strathmore',
@@ -806,7 +806,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@grosvenor-strathmore',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='grosvenor-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='grosvenor-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Medical Center': {
                     name: 'Medical Center',
@@ -817,7 +817,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@medicalcenter',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='medicalcenter-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='medicalcenter-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Bethesda': {
                     name: 'Bethesda',
@@ -828,7 +828,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@bethesda',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='bethesda-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='bethesda-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Friendship Heights': {
                     name: 'Friendship Heights',
@@ -839,7 +839,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@friendshipheights',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='friendship-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='friendship-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },         
                 'Tenleytown  AU': {
                     name: 'Tenleytown  AU',
@@ -850,7 +850,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@tenleytownau',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='tenleytownau-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='tenleytownau-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Van Ness-UDC': {
                     name: 'Van Ness-UDC',
@@ -861,7 +861,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@udc',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='vanness-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='vanness-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Cleveland Park': {
                     name: 'Cleveland Park',
@@ -872,7 +872,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@clevelandpARk',
                     fillColor: 'white',
-                    mission:`<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='clevelandpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission:`<div id='clevelandpark-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Woodley Park': {
                     name: 'Woodley Park',
@@ -883,7 +883,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@woodleypARk',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='woodleypark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='woodleypark-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'DuPont Circle': {
                     name: 'DuPont Circle',
@@ -894,7 +894,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@dupontcircle',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='dupont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='dupont-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Farragut North': {
                     name: 'Farragut North',
@@ -905,7 +905,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@farragutnorth',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='farragutnorth-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='farragutnorth-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Takoma': {
                     name: 'Takoma',
@@ -916,7 +916,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@takoma',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='takoma-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Judiciary Sq': {
                     name: 'Judiciary Sq',
@@ -927,7 +927,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@judiciarysq',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='judiciarysq-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='judiciarysq-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Union Station': {
                     name: 'Union Station',
@@ -938,7 +938,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@unionstation',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='union-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='union-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'NoMa-Gallaudet U': {
                     name: 'NoMa-Gallaudet U',
@@ -949,7 +949,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@noma',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='noma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='noma-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Rhode Island Ave': {
                     name: 'Rhode Island Ave',
@@ -960,7 +960,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@rhodeislandave',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rhodeisland-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='rhodeisland-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Brookland-CUA': {
                     name: 'Brookland-CUA',
@@ -971,7 +971,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@brooklancua',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='brooklandcua-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='brooklandcua-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Takoma': {
                     name: 'Takoma',
@@ -982,7 +982,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@takoma',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png"); background-size: 100% 100%; margin: 5% 9%;' id='takoma-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Silver Spring': {
                     name: 'Silver Spring',
@@ -993,7 +993,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@acornpARk',
                     fillColor: 'red',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='acornpark-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='acornpark-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Forest Glen': {
                     name: 'Forest Glen',
@@ -1004,7 +1004,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@forestglen',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='forestglen-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Wheaton': {
                     name: 'Wheaton',
@@ -1015,7 +1015,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@wheaton',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='wheatonboARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='wheatonboARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 },
                 'Glenmont': {
                     name: 'Glenmont',
@@ -1026,7 +1026,7 @@ var broadcastOriginalAugmentedRealityDapps = {
                     },
                     url: '@glenmont',
                     fillColor: 'white',
-                    mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
+                    mission: `<div id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div class='boARd-launch-info'></div>`
                 }
             },
         },

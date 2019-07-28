@@ -27,6 +27,7 @@ body, html{
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .chapter-label{
     font-weight: 400;
     font-size: 1.1em;
@@ -40,4 +41,17 @@ body, html{
 
 #main-body-container{
     display: none;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    margin: -200px 0 0 -175px;
+    top: 50%;
+    left: 50%;
+/*    border: 2px white solid;*/
+}
+
+.chapter-container{
+    display: none;
+    opacity: 0;
+    text-align: center;
 }

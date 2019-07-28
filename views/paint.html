@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../js/aframe092.js"></script>
+    <script src="https://unpkg.com/aframe-curve-component/dist/aframe-curve-component.min.js"></script>
+    <script>
+        /*&&(console.warn("THREE.Object3D: .getWorldPosition() target is now required")*/
+        AFRAME.registerComponent('change-color-on-hover', {
+            init: function () {
+                var data = this.data;
+                var el = this.el;  // <a-box>
+                var defaultColor = el.getAttribute('material').color;
+
+                el.addEventListener('mouseenter', function () {
+                    //el.setAttribute('color', data.color);
+                    loadColor(data.color);
+                });
+            }
+        });
+        
+        AFRAME.registerComponent('raycaster-listen', {
+            init: function () {
+                // Use events to figure out what raycaster is listening so we don't have to
+                // hardcode the raycaster.
+                this.el.addEventListener('raycaster-intersected', evt => {
+                  this.raycaster = evt.detail.el;
+                });
+                this.el.addEventListener('raycaster-intersected-cleared', evt => {
+                  this.raycaster = null;
+                });
+            },
+            tick: function () {
+                if (!this.raycaster) {
+                    intersecting = false;
+                    
+                    return;
+                }  // Not intersecting.
+                
+                
+                let intersection = this.raycaster.components.raycaster.getIntersection(this.el);
+                if (!intersection) { return; }
+                
+                intersecting = true;
+                
+                let x = Math.round(intersection.point.x*100)/100;
+                let y = Math.round(intersection.point.y*100)/100;
+                let z = -3.9;
+                //Math.round(intersection.point.z*100)/100;
+                
+                if(currentPoint!=`${x} ${y} ${z}`){
+                    currentPoint = `${x} ${y} ${z}`;
+                    // console.log(`new point ${currentPoint}`);
+                    
+                    let additive = document.createElement("a-curve-point");
+                    additive.setAttribute("position", currentPoint);
+                    document.getElementById("track"+currentTrack).appendChild(additive);
+                    // console.log("adding additive!");
+                }
+                else{
+                    //console.log("raycaster has not moved from previous location");
+                }        
+            }
+        });
+        
+        var intersecting = true;
+        var currentTrack = 0;
+        var currentPoint = null;
+        var paintColor = "blue";
+        
+        function loadColor(color){
+            let colorArr = [
+                "red",
+                "orange",
+                "yellow",
+                "green",
+                "blue",
+                "indigo",
+                "violet"
+            ];
+            
+            if(paintColor!=color){
+                paintColor = color;
+                console.log(`new paint color: ${paintColor}`);
+                
+                currentTrack = colorArr.indexOf(paintColor);
+                
+                
+                /*
+                let track = document.createElement("a-curve");
+                track.setAttribute("id", "track"+currentTrack);
+                
+                let brush = document.createElement("a-draw-curve");
+                brush.setAttribute("curveref", "track"+currentTrack);
+                brush.setAttribute("material", `shader: line; color${paintColor}`);
+                
+                document.getElementById("main-app-container").appendChild(track);
+                document.getElementById("main-app-container").appendChild(brush);
+                */
+            }
+            else{
+                console.log("this color is the current color already");
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function(){
+            var canvas = document.querySelector("paint-canvas");
+            /*
+            let options = document.getElementsByClassName("color-button");
+            
+            for(var k=0; k<options.length; k++){
+                options[k].addEventListener("click", loadColor(k));
+            }*/
+        });
+    </script>
+</head>
+<body>
+    <a-scene id="main-app-container">
+       <a-curve id="track0">
+            <a-curve-point position="0 1.6 -3.9"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track0" material="shader: line; color: red;"></a-draw-curve>
+        
+        <a-curve id="track1">
+            <a-curve-point position="0 1.6 -3.85"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track1" material="shader: line; color: orange;"></a-draw-curve>
+        
+        <a-curve id="track2">
+            <a-curve-point position="0 1.6 -3.8"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track2" material="shader: line; color: yellow;"></a-draw-curve>
+        
+        <a-curve id="track3">
+            <a-curve-point position="0 1.6 -3.75"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track3" material="shader: line; color: green;"></a-draw-curve>
+        
+        <a-curve id="track4">
+            <a-curve-point position="0 1.6 -3.7"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track4" material="shader: line; color: blue;"></a-draw-curve>
+        
+        <a-curve id="track5">
+            <a-curve-point position="0 1.6 -3.65"></a-curve-point>        
+        </a-curve>
+        <a-draw-curve curveref="#track5" material="shader: line; color: indigo;"></a-draw-curve>
+        
+        <a-curve id="track6">
+            <a-curve-point position="0 1.6 -3.6"></a-curve-point>        
+        </a-curve>        
+        <a-draw-curve curveref="#track6" material="shader: line; color: violet;"></a-draw-curve>
+        <!-- color palette -->
+        
+        <a-entity
+                id="red-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: red;"
+                position="-1.5 0 -0.4"
+                change-color-on-hover="color: red;">
+        </a-entity>
+        
+        <a-entity
+                id="orange-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: orange;"
+                position="-1 0 -0.65"
+                change-color-on-hover="color: orange;">
+        </a-entity>
+        
+        <a-entity
+                id="yellow-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: yellow;"
+                position="-0.5 0 -0.9"
+                change-color-on-hover="color: yellow;">
+        </a-entity>
+        
+        <a-entity
+                id="green-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: green;"
+                position="0 0 -1"
+                change-color-on-hover="color: yellow;">
+        </a-entity>
+        
+        <a-entity
+                id="blue-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: blue;"
+                position="0.5 0 -0.9"
+                change-color-on-hover="color: blue;">
+        </a-entity>
+        
+        <a-entity
+                id="indigo-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: indigo;"
+                position="1 0 -0.65"
+                change-color-on-hover="color: indigo;">
+        </a-entity>
+        
+        <a-entity
+                id="violet-button"
+                class="collidable"
+                geometry="primitive: sphere; radius: 0.15;"
+                material="color: violet;"
+                position="1.5 0 -0.4"
+                change-color-on-hover="color: violet;">
+        </a-entity>
+
+        <a-entity
+                id="paint-canvas"
+                class="collidable"
+                position="0 1 -4"
+                rotation="0 0 0"
+                material="color: #7BC8A4;"
+                geometry="primitive: plane; width: 0; height: 4"
+                animation__expand="property: geometry.width; to: 4; startEvents: mouseenter; dur: 2000;"
+                raycaster-listen>
+        </a-entity>
+        
+        <a-sky color="#ECECEC"></a-sky>
+        
+        <a-entity id="rig" position="0 1.6 0">
+            <a-entity id="camera" camera wasd-controls look-controls>
+                <a-entity raycaster="objects: .collidable;"
+                          line="color: orange; opacity: 1.0"
+                          cursor="fuse: true; fuseTimeout: 500"
+                          position="0 0 -1"
+                          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                          material="color: black; shader: flat">
+                </a-entity>
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+</html>

@@ -74,19 +74,48 @@
         }
         
         function openChapter(item, content){
+            let chapters = [
+                "main-menu",
+                "#atown-chapter-container",
+                "#lyoko-chapter-container",
+                "#pARk-chapter-container",
+                "#dmv-chapter-container",
+                "#paris-chapter-container",
+                "#brazzaville-chapter-container",
+                "#la-chapter-container",
+                "#cambridge-chapter-container"
+            ];
+            
             content[item].addEventListener("click", function(){
                 let i = item;
                 if(openFeed){
+                    let chapterContainer = document.querySelector(chapters[item]);
                    // console.log(`select ${i}`);
                     animateHeight(document.getElementById("table-of-contents-container"), 40);
                     document.querySelector("body").style.backgroundColor = bg[i].bgColor;
                     document.querySelector("body").style.color = bg[i].textColor;
+                    
+                    setTimeout(function(){
+                        document.querySelector("#main-body-container").style.display = "block";
+                        chapterContainer.style.display = "block";
+                        chapterContainer.style.opacity = "1.0";
+                    }, 550);
                 }
                 else{
                     if(i==0){
+                        let chapterContainers = document.getElementsByClassName("chapter-container");
+                        
                         animateHeight(document.getElementById("table-of-contents-container"), 500);
                         document.querySelector("body").style.backgroundColor = bg[i].bgColor;
                         document.querySelector("body").style.color = bg[i].textColor;
+                        
+                        document.querySelector("#main-body-container").style.display = "none";
+                        
+                        for(var k=0; k<chapterContainers.length; k++){
+                            let item = k;
+                            chapterContainers.item(k).style.display = "none";
+                            chapterContainers.item(k).style.display = "0";
+                        }
                     }
                 }
                 openFeed=!openFeed;
@@ -94,10 +123,9 @@
         }
         
         document.addEventListener("DOMContentLoaded", function(){
-            
             var chapters = document.getElementsByClassName("chapter-label");
             for(var j=0; j<chapters.length; j++){
-                openChapter(j, chapters);                
+                openChapter(j, chapters);
             }
         });    
     </script>

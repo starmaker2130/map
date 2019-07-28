@@ -21,21 +21,80 @@ body, html{
     margin: 5% auto;
 }
 
-#connect-cARd-button, #toggle-nodes-button{
+.map-settings-button{
     width: 145px;
     height: 145px;
     margin: 10% 15px;
     border-radius: 50%;
-    border: 2px white solid;
+    border: 0;
     color: white;
     text-align: center;
     line-height: 150px;
     font-size: 1.2em;
     background-color: black;
+    cursor: pointer;
+}
+
+.map-settings-button:focus{
+    outline: none;
+}
+
+.map-settings-button:hover{
+    border: 5px white solid;
+    width: 143px;
+    height: 143px;
+    line-height: 145px;
 }
 
 .board-icon, #house-of-venus-board-icon:hover{
     cursor: pointer;
+}
+
+.boARd-launch-info, .boARd-launch-pin{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%;
+    margin: 5% 9%;
+    cursor: pointer;
+    border: 0;
+    transition: border 0.5s;
+}
+
+.boARd-launch-pin:hover, .boARd-launch-info:hover{
+    border: 3px aquamarine solid;
+}
+
+.b-data{
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2%;
+    text-align: justify;
+}
+
+.b-data-banner{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.b-data-container{
+    background-color: white;
+    display: block;
+    height: 225px;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+.boARd-launch-pin{
+    background-image: url("../media/texture/hov-md.png/");
+}
+
+.boARd-launch-info{
+    background-image: url("../media/img/docs-icon.png/");
 }
 
 #content-container{
@@ -113,6 +172,11 @@ body, html{
     background-size: 100% 100%;
     cursor: pointer;
     border: 0;
+    transition: border 0.5s;
+}
+
+.content-link-button:hover{
+    border: 3px aquamarine solid;
 }
 
 .content-link-button:focus{
@@ -173,11 +237,18 @@ body, html{
     border-radius: 50%;
     margin: 5% 2% 0 2%;
     background-color: white;
-    display: inline-block;'
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    transition: border 0.5s;
+}
+
+.roster-bubble-container:hover{
+    border: 3px aquamarine solid;
 }
 
 #roster-bubble-ceo{
-    background-image: url("../media/img/profile_icon.png");
+    background-image: url("../media/img/pamo_profile.jpeg");
     background-size: 100% 100%;
 }
 
@@ -354,7 +425,7 @@ body, html{
     width: 100%;
     height: 50px;
     border: 0;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 10px 10px;
     margin-left: -50%;
     font-family: monospace;
     text-align: center;
@@ -366,6 +437,7 @@ body, html{
 #return-to-map:hover{
     background-color: rgba(255, 255, 225, 1.0);
     color: black;
+    font-weight: 900;
 }
 #return-to-map:focus{
     outline: none;

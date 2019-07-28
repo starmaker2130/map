@@ -8,11 +8,11 @@
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             init();
-        })
+        });
         
         function init(){
             let socket = io.connect(location.host);
-            socket.emit("requestProfileData", {status: true, user: "@ceo"});
+            socket.emit("requestProfileData", {status: true, user: "@noah"});
             
             socket.on("loadProfileData", function(data){
                 let response = data;

@@ -68,6 +68,11 @@ app.get('/b/:dia_handle', function(req, res){
 
 /**/
 
+
+app.get('/paint', function(req, res){
+    res.render('paint.html',{root: dir[0]});
+});
+
 app.get('/profile/:profile_target', function(req, res){
     let profile = req.params.profile_target;
     res.render(profile+".html",{root: dir[0]});
@@ -2892,7 +2897,7 @@ var profileArray = {
         title: "Founder, CEO",
         description: "inventor @ House of Venus",
         profile: {
-            url: "../media/img/profile_icon.png",
+            url: "../media/img/pamo_profile.jpeg",
             size: "100% 100%"
         }
     },
@@ -2937,7 +2942,679 @@ var profileArray = {
         title: "Flight Dev/Ops",
         description: "avionics @ House of Venus"
     },
+    "@noah": {
+        name: "Noah Dagne",
+        title: "Graphics Dev",
+        description: "ux/ui @ House of Venus",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
+    }
 };
+
+var businesses = {
+    NATIONALS: {
+        name: 'The Washington Nationals',
+        handle: '@nationals',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Washington Nationals are a professional baseball team based in Washington, D.C. The Nationals compete in Major League Baseball as a member club of the National League East division.'
+        }
+    },
+    MONUMENT: {
+        name: 'The Washington Monument',
+        handle: '@monument',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Washington Monument is an obelisk on the National Mall in Washington, D.C., built to commemorate George Washington, once commander-in-chief of the Continental Army and the first President of the United States.'
+        }
+    },
+    NOAA: {
+        name: 'National Oceanographic and Atmospheric Administration',
+        handle: '@noaa',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The National Oceanic and Atmospheric Administration is an American scientific agency within the United States Department of Commerce that focuses on the conditions of the oceans, major waterways, and the atmosphere.'
+        }
+    },
+    FILLMORE: {
+        name: 'The Fillmore: Silver Spring',
+        handle: '@fillmore',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Fillmore Silver Spring brings a dynamic, first-class venue to the arts and entertainment district of Downtown Silver Spring, located just outside of Washington, DC. With a capacity of 2,000, the Fillmore offers an array of diverse live music programming and features state-of-the-art lighting and sound, stadium style tiers on the balcony level, and a lounge area.'
+        }
+    },
+    DOD: {
+        name: 'The Department of Defense',
+        handle: '@dod',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The United States Department of Defense is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government concerned directly with national security and the United States Armed Forces. The Pentagon is the headquarters of the United States DoD and is often used as a metonym for the DoD and its leadership.'
+        }
+    },
+    AFI: {
+        name: 'American Film Institute',
+        handle: '@afi',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'AFI Silver Theatre and Cultural Center or commonly known as AFI Silver is a three-screen movie theater complex in downtown Silver Spring, Maryland, north of Washington, D.C. Run by the American Film Institute, it plays modern art-house and independent works alongside classic films.'
+        }
+    },
+    DISCOVERY: {
+        name: 'Discovery Communications',
+        handle: '@discovery',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'Discovery, Inc. is an American mass media company based in New York City. Established in 1985, the company is best known with its factual television networks, such as the namesake Discovery Channel, Animal Planet, Science Channel, TLC, HGTV, Travel Channel, Food Network, Cooking Channel, and DIY Network, among others.'
+        }
+    },
+    "EASTERN-MARKET": {
+        name: 'Eastern Market',
+        handle: '@easternmarket',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Eastern Market is a public market in the Capitol Hill neighborhood of Washington, D.C., housed in a 19th-century brick building.'
+        }
+    },
+    "MICRO-CENTER": {
+        name: 'Micro Center',
+        handle: '@microcenter',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "Micro Center is an American computer department store, which has its headquarters in Hilliard, Ohio. It is one of the top 200 of America's largest private companies."
+        }
+    },
+    "HOUSE-OF-MERCURY": {
+        name: 'House of Mercury',
+        handle: '@mercury',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "HOUSE-OF-VENUS": {
+        name: 'House of Venus',
+        handle: '@venus',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "7-ELEVEN": {
+        name: '7-Eleven',
+        handle: '@7eleven',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "7-Eleven Inc. is a Japanese-U.S. international chain of convenience stores founded in 1927 and headquartered in Dallas, Texas. Its parent company since 2005, Seven-Eleven Japan Co., Ltd., operates, franchises, and licenses 68,236 stores in 17 countries as of June 2019, with up to 59% of a franchise's gross profit given to the company."
+        }
+    },
+    "HOUSE-OF-MARS": {
+        name: 'House of Mars',
+        handle: '@mars',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "HOUSE-OF-JUPITER": {
+        name: 'House of Jupiter',
+        handle: '@jupiter',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "HOUSE-OF-SATURN": {
+        name: 'House of Saturn',
+        handle: '@saturn',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "HOUSE-OF-NEPTUNE": {
+        name: 'House of Neptune',
+        handle: '@neptune',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    "HOUSE-OF-URANUS": {
+        name: 'House of Uranus',
+        handle: '@uranus',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+    UMD: {
+        name: 'University of Maryland',
+        handle: '@umd',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "The University of Maryland, College Park is a public research university in College Park, Maryland. Founded in 1856, UMD is the flagship institution of the University System of Maryland, and is the largest university in both the state and the Washington metropolitan area, with more than 41,000 students representing all fifty states and 123 countries, and a global alumni network of over 360,000."
+        }
+    },
+    GMU: {
+        name: 'George Mason University',
+        handle: '@gmu',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'George Mason University is a public research university in Fairfax, Virginia. Mason began as a branch of the University of Virginia in 1956 and later became an independent institution in 1972. It has since grown to become the largest four-year public university in the Commonwealth of Virginia.'
+        }
+    },
+    GWU: {
+        name: 'The George Washington University',
+        handle: '@gwu',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The George Washington University (GW or GWU) is a private research university in Washington, D.C. It was chartered in 1821 by an act of the United States Congress. The university is organized into 14 colleges and schools'
+        }
+    },
+    GEORGETOWN: {
+        name: 'Georgetown University',
+        handle: '@georgetown',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'Georgetown University is a private research university in the Georgetown neighborhood of Washington, D.C. Founded in 1789 as Georgetown College, the university has grown to comprise nine undergraduate and graduate schools, among which are the School of Foreign Service, School of Business, Medical School, and Law School.'
+        }
+    },
+    DCUNITED: {
+        name: 'DC United',
+        handle: '@dcunited',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'D.C. United is an American professional soccer club based in Washington, D.C. The club competes as a member of the Eastern Conference in Major League Soccer, the top level of professional American soccer. The franchise began play in 1996 as one of the ten charter clubs of the league.'
+        }
+    },
+    REAGAN: {
+        name: 'Ronald Reagan Washington National Airport',
+        handle: '@reagan',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "Ronald Reagan Washington National Airport is the smaller of two commercial airports operated by the Metropolitan Washington Airports Authority that serve the National Capital Region (NCR) around Washington, D.C., the larger airport being Washington Dulles International Airport approximately 30 miles (48 km) to the west in Virginia's Fairfax and Loudoun counties."
+        }
+    },
+    "CP-AIRPORT": {
+        name: 'College Park Airport',
+        handle: '@cpairport',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "College Park Airport (IATA: CGS, ICAO: KCGS, FAA LID: CGS) is a public airport located in the City of College Park, in Prince George's County, Maryland, United States. It is the world's oldest continuously operated airport."
+        }
+    },
+    NIH: {
+        name: 'National Institutes of Health',
+        handle: '@nih',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The National Institutes of Health (NIH) is the primary agency of the United States government responsible for biomedical and public health research. The NIH conducts its own scientific research through its Intramural Research Program (IRP) and provides major biomedical research funding to non-NIH research facilities through its Extramural Research Program.'
+        }
+    },
+    CAPITOL: {
+        name: 'The United States Capitol',
+        handle: '@capitol',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The United States Capitol, often called the Capitol Building, is the home of the United States Congress and the seat of the legislative branch of the U.S. federal government. It is located on Capitol Hill at the eastern end of the National Mall in Washington, D.C.'
+        }
+    },
+    SMITHSONIAN: {
+        name: 'The Smithsonian Institution',
+        handle: '@smithsonian',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Smithsonian Institution is a group of museums and research centers administered by the Government of the United States founded on August 10, 1846, "for the increase and diffusion of knowledge". The institution is named after its founding donor, British scientist James Smithson.'
+        }
+    },
+    CUA: {
+        name: 'The Catholic University of America',
+        handle: '@cua',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'Catholic University of America is a private Catholic university in Washington, D.C. It is a pontifical university of the Catholic Church in the United States and the only institution of higher education founded by the U.S. Catholic bishops. Established in 1887 as a graduate and research center following approval by Pope Leo XIII on Easter Sunday, the university began offering undergraduate education in 1904.'
+        }
+    },
+    ROCKVILLE: {
+        name: 'Rockville',
+        handle: '@rockvilletownsq',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: "Rockville is the county seat of Montgomery County, Maryland. Along with neighboring Gaithersburg and Bethesda, it is at the core of the Interstate 270 Technology Corridor which is home to numerous software and biotechnology companies as well as several federal government institutions. The city also has several upscale regional shopping centers."
+        }
+    },
+    GAITHERSBURG: {
+        name: 'Gaithersburg',
+        handle: '@gaithersburg',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'Gaithersburg (About this soundpronunciation (help·info)), officially the City of Gaithersburg, is a city in Montgomery County, Maryland. At the time of the 2010 U.S. Census, Gaithersburg had a population of 59,933, making it the fourth largest incorporated city in the state, behind Baltimore, Frederick, and Rockville.[6] Gaithersburg is located to the northwest of Washington, D.C., and is considered a suburb and a primary city within the Washington–Arlington–Alexandria, DC–VA–MD–WV Metropolitan Statistical Area. Gaithersburg was incorporated as a town in 1878 and as a city in 1968.'
+        }
+    },
+    LINCOLN: {
+        name: 'The Lincoln Memorial',
+        handle: '@lincoln',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The Lincoln Memorial is an American national memorial built to honor the 16th President of the United States, Abraham Lincoln. It is located on the western end of the National Mall in Washington, D.C., across from the Washington Monument. '
+        }
+    },
+    KENNEDY: {
+        name: 'The John F. Kennedy for the Performing Arts',
+        handle: '@kennedycenter',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'The John F. Kennedy Center for the Performing Arts is the United States National Cultural Center, located on the Potomac River, adjacent to the Watergate complex in Washington, D.C., named in 1964 as a memorial to President John F. Kennedy.'
+        }
+    },
+    WW2: {
+        name: 'World War II Memorial',
+        handle: '@ww2mem',
+        neighbors: {
+            ordinality: 0,
+            cARds: 0,
+            weight: 0
+        },
+        content:{
+            capacity: 0,
+            percentage: 0,
+            value: {
+                LYOKOIN: 0,
+                USD: 0,
+                EUR: 0
+            },
+            moderators: [],
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).'
+        }
+    },
+}
 
 io.sockets.on('connection', function(socket){
     console.log('client connected.');
@@ -3074,6 +3751,21 @@ io.sockets.on('connection', function(socket){
         if(data.status){
             if(profileArray[data.user]!=undefined)
                 socket.emit("loadProfileData", profileArray[data.user]);
+        }
+    });
+    
+    socket.on("requestBoardWWWPortalData", function(data){
+        if(data.status){
+            let name = data.name.toUpperCase();
+            console.log(`requesting boARd data for business ${name}`);
+            
+            if(businesses[name]!=undefined){
+                socket.emit("loadBoardWWWPortalData", {status: true, board: businesses[name]});
+                console.log('request complete. business data sent to client via response');
+            }
+            else{
+                console.log('request could not be completed. business data not located. no response sent to client.');
+            }
         }
     });
     
