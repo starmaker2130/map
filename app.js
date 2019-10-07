@@ -1,7 +1,7 @@
 // author(s):  Patrice-Morgan Ongoly
 // version: 0.2.2
 // last modified: Saturday, June 29, 2019 14:32 EST
-// description: 
+// description:
 
 // required modules
 var bodyParser = require('body-parser');
@@ -53,7 +53,7 @@ app.get('/', function(req, res){
         console.log('This is a mobile device.');
         deviceType = 'mobile';
     }
-    
+
     res.render('broadcastOriginalAugmentedRealityDapps.html',{root: dir[0]});
 });
 
@@ -137,11 +137,28 @@ app.get('/media/fonts/:font_id', function(req, res){
 });
 
 var io = require('socket.io').listen(app.listen(config.PORT, function(){
-    console.log('------------------------------------------');
-    console.log(' connecting to HOUSE OF VENUS BE')
-    console.log(`[0] listening on port ${config.PORT}`);
-    console.log('------------------------------------------');
-    
+    console.log("----------------------------------");
+    console.log("----------------------------------");
+    console.log("--------- HOUSE OF VENUS ---------");
+    console.log("-- TreeHouse Distributed Ledger --");
+    console.log("--         version 0.0.1        --");
+    console.log("----------------------------------");
+    console.log("----------------------------------");
+    console.log("-- loading ledger...            --");
+    console.log("-- connected to TreeHouse DL    --");
+    console.log("-- opening portal to Acorn pARk --");
+    console.log("-- .....                        --");
+    console.log("-- ....                         --");
+    console.log("-- ...                          --");
+    console.log("-- ..                           --");
+    console.log("-- .                            --");
+    console.log("----------------------------------");
+    console.log("----------------------------------");
+    console.log(`-- listening on port ${config.PORT}       --`);
+    console.log("----------------------------------");
+    console.log("----------------------------------");
+    console.log("----------------------------------");
+
 }));
 
 var scenes = [];
@@ -152,7 +169,7 @@ orientation: 0 = landmark; 1 = face; 2 = hand
 */
 
 var guests = [
-    
+
 ];
 
 var stations = {
@@ -328,7 +345,7 @@ var stations = {
                 EUR: 0
             },
             moderators: [],
-            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',            
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
             id: 'anacostia-station',
             position: {
                 x: 450,
@@ -1034,7 +1051,7 @@ var stations = {
             id: 'arlington-cemetery-station',
             position: {
                 x: 190,
-                y: 270 
+                y: 270
             },
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='arlington-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
@@ -1331,12 +1348,12 @@ var stations = {
             id: 'potomac-ave-station',
             position: {
                 x: 480,
-                y: 235 
+                y: 235
             },
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='potomacave-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
-    },        
+    },
     'Stadium-Armory': {
         name: 'Stadium-Armory',
         handle: '@stadiumarmory',
@@ -1983,7 +2000,7 @@ var stations = {
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='mclean-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
-    },   	     
+    },
     'Shady Grove': {
         name: 'Shady Grove',
         handle: '@shadygrove',
@@ -2037,7 +2054,7 @@ var stations = {
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='rockville-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
-    },	
+    },
     'Twinbrook': {
         name: 'Twinbrook',
         handle: '@twinbrook',
@@ -2136,7 +2153,7 @@ var stations = {
                 EUR: 0
             },
             moderators: [],
-            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',            
+            description: 'This is a the default configuration for the AUGMENTED REALITY INTERNET ASSISTANT as defined for the HOUSE OF VENUS PUBLIC AUGMENTED REALITY KINECTOME v. 0.20.0 released on May 21, 2019 at 00:00 (UTC-0500).',
             id: 'medical-center-station',
             position: {
                 x: 125,
@@ -2199,7 +2216,7 @@ var stations = {
             fillColor: 'white',
             mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='friendship-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
-    },         
+    },
     'Tenleytown  AU': {
         name: 'Tenleytown  AU',
         handle: '@tenleytownau',
@@ -2874,7 +2891,7 @@ var stations = {
                 fillColor: 'white',
                 mission: `<div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/texture/hov-md.png/"); background-size: 100% 100%; margin: 5% 9%;' id='glenmont-boARd-portal' class='boARd-launch-pin'></div><div style='width: 50px; height: 50px; border-radius: 50%; display: inline-block; background-image: url("../media/img/docs-icon.png/"); background-size: 100% 100%; margin: 5% 9%;' class='boARd-launch-info'></div>`
         }
-    }    
+    }
 };
 
 var WWWPeeks = {
@@ -2884,10 +2901,10 @@ var WWWPeeks = {
     },
     visited: [],
     hosts: {
-        
+
     },
     dias: {
-        
+
     }
 };
 
@@ -3619,11 +3636,11 @@ var businesses = {
 io.sockets.on('connection', function(socket){
     console.log('client connected.');
     var conn = socket;
-    
+
     socket.on('checkDeviceType', function(data){
         socket.emit('loadDeviceType', {type: deviceType});
     });
-    
+
     socket.on('pingARIA', function(data){
         /*
         * monday may 05, 2019
@@ -3633,11 +3650,11 @@ io.sockets.on('connection', function(socket){
         * this function receives a data object that contains the name of a board, the location of the requesting ENTITY, if the ENTITY is
         * a SUBJECT-OBJECT (VIEWER) then the data object should contain the latitude and longitude of the VIEWER, the accuracy of said measurements,
         * and a timestamp
-        * based on this information the server [i.e. this file] reads another file [currently included in this script as a JavaScript object] that 
+        * based on this information the server [i.e. this file] reads another file [currently included in this script as a JavaScript object] that
         * contains the board list as read from the pARk tHDL
         *
         */
-        
+
         let name = data.name;
         let type = data.type;
         if(type=='SUBJECT-OBJECT'){
@@ -3655,13 +3672,13 @@ io.sockets.on('connection', function(socket){
             console.log(type);
         }
     });
-    
+
     socket.on("requestHostsForHouseGuest", function(data){
         console.log(` -------------- fx] request hosts for house guest ------- \n status: ${data.status}`);
         if(data.status){
             let query = data.name;
             let result = stations[query];
-           
+
             console.log(` query: ${query} \n result: `);
             console.log(result);
             WWWPeeks.requests.H.push(query);
@@ -3669,13 +3686,13 @@ io.sockets.on('connection', function(socket){
             socket.emit("connectHouseGuestToHosts", {status: true});
         }
     });
-    
+
     socket.on("requestDIAsForHouseGuest", function(data){
         console.log(` -------------- fx] request dias for house guest ------- \n status: ${data.status}`);
         if(data.status){
             let query = data.name;
             let result = stations[query];
-           
+
             console.log(` query: ${query} \n result: `);
             console.log(result);
             WWWPeeks.requests.D.push(query);
@@ -3683,7 +3700,7 @@ io.sockets.on('connection', function(socket){
             socket.emit("connectHouseGuestToDIAs", {status: true});
         }
     });
-    
+
     socket.on("loadDataForHouseGuest", function(data){
         console.log(` ~~~ fx] load data for house guest ~~~~~~~~~~~~~~~~`);
         let req = null;
@@ -3691,7 +3708,7 @@ io.sockets.on('connection', function(socket){
         let source = null;
         if(data.status){
             console.log(` type: ${data.type}`);
-            
+
             if(data.type=="HOST"){
                 req = WWWPeeks.requests.H;
                 source = WWWPeeks.hosts[req.shift()];
@@ -3704,11 +3721,11 @@ io.sockets.on('connection', function(socket){
             latest = source;
             console.log(latest);
             WWWPeeks.visited.push(latest);
-        
+
             socket.emit("populateDataFields", {status: true, type: data.type, list: [latest]});
         }
     });
-    
+
     socket.on('requestStationHandle', function(data){
         console.log('-------------------------------- \n REQUEST STATION HANDLE FX \n --------------------------------')
         let result = stations[data.name].handle;
@@ -3716,7 +3733,7 @@ io.sockets.on('connection', function(socket){
         console.log(' ------sub complete ------------');
         socket.emit('returnStationHandle', {status: true, handle: result});
     });
-    
+
     socket.on('identify', function(data){
         console.log('configurind id...');
         var remote = data;
@@ -3731,7 +3748,7 @@ io.sockets.on('connection', function(socket){
         console.log('remote registered.');
         console.log(`connection ${user.socket.id} established b/w remote ${user.source.tapin} and ${user.source.product} ${user.source.device}`);
     });
-    
+
     socket.on('startWebcamCapture', function(data){
         var settings = data;
         var target = data.target;// 0 = default = backend only; 1 = front-end only
@@ -3746,19 +3763,19 @@ io.sockets.on('connection', function(socket){
             console.log('test value not recognized.')
         }
     });
-        
+
     socket.on("requestProfileData", function(data){
         if(data.status){
             if(profileArray[data.user]!=undefined)
                 socket.emit("loadProfileData", profileArray[data.user]);
         }
     });
-    
+
     socket.on("requestBoardWWWPortalData", function(data){
         if(data.status){
             let name = data.name.toUpperCase();
             console.log(`requesting boARd data for business ${name}`);
-            
+
             if(businesses[name]!=undefined){
                 socket.emit("loadBoardWWWPortalData", {status: true, board: businesses[name]});
                 console.log('request complete. business data sent to client via response');
@@ -3768,7 +3785,7 @@ io.sockets.on('connection', function(socket){
             }
         }
     });
-    
+
     socket.on('disconnect', function(){
         console.log(`socket ${socket.id} disconnected.`);
     });
