@@ -2912,7 +2912,7 @@ var profileArray = {
     "@ceo": {
         name: "Patrice-Morgan T. Ongoly",
         title: "Founder, CEO",
-        description: "inventor @ House of Venus",
+        description: "avionics, media",
         profile: {
             url: "../media/img/pamo_profile.jpeg",
             size: "100% 100%"
@@ -2920,8 +2920,8 @@ var profileArray = {
     },
     "@cam": {
         name: "Cameron H. Reed",
-        title: "Director of AugR",
-        description: "reality engineer @ House of Venus",
+        title: "Chief Evangelist",
+        description: "media",
         profile: {
             url: "../media/img/cam_profile.jpg",
             size: "100% 100%"
@@ -2948,21 +2948,34 @@ var profileArray = {
     "@mel": {
         name: "Melissa Dina-Lenda",
         title: "Flight Dev/Ops",
-        description: "avionics @ House of Venus",
+        description: "avionics",
         profile: {
             url: "../media/img/profile_icon.png",
             size: "100% 100%"
         }
     },
     "@guedalia": {
-        name: "Roger Guedalia Dina",
-        title: "Flight Dev/Ops",
-        description: "avionics @ House of Venus"
+        name: "Guedalia Dina-Lenda",
+        title: "Head of Content",
+        description: "comm mgmt, media",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
     },
     "@noah": {
         name: "Noah Dagne",
-        title: "Graphics Dev",
-        description: "ux/ui @ House of Venus",
+        title: "Head of Design",
+        description: "computer vision, design",
+        profile: {
+            url: "../media/img/profile_icon.png",
+            size: "100% 100%"
+        }
+    },
+    "@eric": {
+        name: "Eric Romano",
+        title: "Head of Avionics",
+        description: "avionics, computer vision",
         profile: {
             url: "../media/img/profile_icon.png",
             size: "100% 100%"
