@@ -6,7 +6,7 @@ function init(SM){
         let response = data;
         loadProfileData(response);
     });
-    
+
     setTimeout(function(){
         socket.emit("requestProfileData", {status: true, user:  sessionManager.user});
 
@@ -31,16 +31,44 @@ function loadProfileData(response){
 
 function buildPage(){
   document.body.innerHTML = `
+      <div id="profile-setup-container">
+          <div id="form-header-container">account</div>
+          <form id="setup-form-container"
+            action="https://formspree.io/mveaqekx"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+              <label>
+                  <p class="setup-form-label-container">Your email:</p>
+                  <input class="setup-form-input-container" type="text" name="_replyto">
+              </label>
+              <label>
+                  <p class="setup-form-label-container">Your username:</p>
+                  <input class="setup-form-input-container" type="text" name="_profilename">
+              </label>
+              <label>
+                  <p class="setup-form-label-container">Your password:</p>
+                  <input class="setup-form-input-container" type="password" name="_profilepass">
+              </label>
+              <button id="submit-form-button-container" type="submit">Register</button>
+          </form>
+      </div>
       <div id="profile-header-container">
           <div id="profile-name">PROFILE NAME</div>
           <div id="profile-title">PROFILE TITLE</div>
           <div id="profile-description">PROFILE DESCRIPTION</div>
       </div>
-      <div id="profile-picture-container"></div>
-      <div id="linkedin-bubble-container" class="hyperlink-bubble-container"></div>
+    <div id="profile-picture-container"></div>
+        <!--<div id="linkedin-bubble-container" class="hyperlink-bubble-container"></div>
       <div id="twitter-bubble-container" class="hyperlink-bubble-container"></div>
       <div id="hov-bubble-container" class="hyperlink-bubble-container"></div>
       <div id="instagram-bubble-container" class="hyperlink-bubble-container"></div>
-      <div id="bio-bubble-container" class="hyperlink-bubble-container">i</div>
+      <div id="bio-bubble-container" class="hyperlink-bubble-container">i</div>-->
       `;
+      document.getElementById("profile-picture-container").addEventListener("click", function(){
+          document.getElementById("profile-setup-container").style.height = "100%";
+          setTimeout(function(){
+              document.getElementById("setup-form-container").style.display = "block";
+          }, 1000);
+      });
 }
